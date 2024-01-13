@@ -1,0 +1,80 @@
+project:
+  type: website
+  output-dir: "docs/"
+  render: 
+    - "*.qmd"
+    - "!materiais/"
+    - "!planejamento_pratica/"
+    - "!pratica/"
+    - "!pratica-2023/"    
+    - "!duvidas/2023/exemplo-iteracao-child/"
+     
+
+lang: "pt"
+
+website:
+  page-navigation: true
+  title: "Relatórios reprodutíveis com R (2024)"
+  description: "Página do curso de verão oferecido pelo IME/USP, 2024."
+  repo-url: "https://github.com/beatrizmilz/2024-curso-de-verao-ime-usp-relatorios"
+  
+  page-footer: 
+    right: "Página criada usando [Quarto](https://quarto.org/). Licença de uso: [Creative Commons Atribuição-Compartilha Igual (CC BY-SA)](licenca.qmd)."
+    left: "&copy; Copyright 2022-2024, [Beatriz Milz](https://beamilz.com)"
+    background: "#1094ab"
+    
+  sidebar:
+    title: "Relatórios reprodutíveis com R (2024)"
+    background: "#1094ab"  
+    logo: https://www.ime.usp.br/verao/assets/images/logo_verao.png
+    pinned: true
+    align: center
+    style: "docked"
+    search: true
+    collapse-level: 1    
+    tools:
+      - icon: github
+        href: https://github.com/beatrizmilz/2024-curso-de-verao-ime-usp-relatorios   
+        text: "Repositório no GitHub"
+      - icon: book-half
+        href: https://www.ime.usp.br/~verao/
+        text: "Inscrições"
+    
+    contents:
+      - href: https://cursosextensao.usp.br/course/view.php?id=3818
+        text: "Plataforma USP"
+      - section: "Sobre o curso"
+        contents:
+           - informacoes-gerais.qmd
+           - profs.qmd
+        #   - turma.qmd           
+           - faq.qmd
+      - section: "Materias"
+        contents:
+           - instrucoes-de-instalacao.qmd        
+           - slides.qmd
+           - trabalho_final.qmd
+         #  - duvidas/index.qmd
+      - section: "Edições anteriores"
+        contents:
+          - href: https://beatrizmilz.github.io/2022-curso-de-verao-ime-usp-relatorios/programacao-do-curso.html
+            text: "Edição 2022" 
+          - href: https://beatrizmilz.github.io/2023-curso-de-verao-ime-usp-relatorios/
+            text: "Edição 2023"             
+      - licenca.qmd
+  
+  
+
+
+format:
+  html:
+    theme: cosmo
+#    mainfont: "Montserrat"
+    css: styles.scss
+    toc: true
+    code-copy: true
+    code-link: true
+    code-overflow: wrap
+
+editor: visual
+

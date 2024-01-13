@@ -1,0 +1,33 @@
+---
+title: "Turma"
+knitr:
+  opts_chunk: 
+    message: false
+    warning: false
+    echo: false
+---
+
+
+<!-- ```{r} -->
+<!-- url <- "https://docs.google.com/spreadsheets/d/127pSSmT7o6zTjg9wslajkklXiXgb2lXAWwHcatZEYbU/" -->
+<!-- ``` -->
+
+<!-- ```{r} -->
+<!-- googlesheets4::gs4_auth(email = "milz.bea@gmail.com") -->
+<!-- tabela <- googlesheets4::read_sheet(url) |>  -->
+<!--   janitor::clean_names() -->
+<!-- ``` -->
+
+<!-- ```{r} -->
+<!-- tabela |>  -->
+<!--   dplyr::select(nome = 3, github = 4) |>  -->
+<!--   dplyr::arrange(nome) |>  -->
+<!--   dplyr::mutate(link_github = dplyr::case_when( -->
+<!--     stringr::str_detect(github, "https://github.com/") ~ github, -->
+<!--     TRUE ~ paste0("https://github.com/", github) -->
+<!--   ), -->
+<!--   link = glue::glue("[{nome}]({link_github})")) |>  -->
+<!--   dplyr::select(link) |>  -->
+<!--   knitr::kable(col.names = "Participantes") -->
+<!-- ``` -->
+
