@@ -49,7 +49,7 @@ Em breve!
 #     )
 ```
 
-Obs:  Algumas pessoas realizaram o curso mas solicitaram que o trabalho final não fosse divulgado, e não constam na tabela acima.
+<!-- Obs:  Algumas pessoas realizaram o curso mas solicitaram que o trabalho final não fosse divulgado, e não constam na tabela acima. -->
 
 ## Etapas pré-codigo
 
@@ -100,7 +100,6 @@ fs::dir_create("img")
 
 Você deve salvar o arquivo com o nome `index.qmd`. Clique em `Render` assim que o arquivo for criado, e confira se o arquivo `index.html` foi gerado sem erros.
 
-### Aula 3
 
 4)  Agora você pode usar sua criatividade e adicionar conteúdo no relatório.
 
@@ -122,7 +121,7 @@ Adicione pelo menos:
 
 -   Caso seja uma análise de pesquisa, tente adicionar referências usando `.bib`.
 
-### Aula 4
+### Aula 3
 
 5)  Inicie o versionamento com a seguinte função:
 
@@ -140,7 +139,7 @@ usethis::use_github()
 
 Siga os passos até que uma janela do GitHub seja aberta e você possa ver o repositório criado. Guarde o link deste repositório!
 
-### Aula 5
+### Aula 4
 
 7)  No painel Git do RStudio, selecione os arquivos criados e faça um **Commit**. Clique no botão de **Push** (seta verde apontada para cima). Confira no repositório do GitHub se as suas mudanças aparecem por lá.
 
