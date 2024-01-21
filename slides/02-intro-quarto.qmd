@@ -1,5 +1,5 @@
 ---
-title: "Relatórios reprodutíveis com R"
+title: "Introdução ao Quarto"
 subtitle: 'Curso de Verão IME-USP 2022' 
 author: "Ministrante: Beatriz Milz"
 format: 
@@ -21,10 +21,6 @@ format:
 editor: visual
 ---
 
-
-# Introdução ao Quarto
-
-
 ## Objetivos de aprendizagem
 
 Responder as seguintes perguntas....
@@ -34,8 +30,6 @@ Responder as seguintes perguntas....
 ⬜ Qual é a diferença entre o Quarto e o RMarkdown?
 
 ⬜ Como criar um documento simples ?
-
-
 
 # O que é o Quarto?
 
@@ -56,6 +50,36 @@ Responder as seguintes perguntas....
 ::: footer
 Arte por [Allison Horst](https://mobile.twitter.com/allison_horst).
 :::
+
+## Ciclo da ciência de dados
+
+```{r, out.width="65%"}
+#| fig-align: "center"
+knitr::include_graphics("https://beatrizmilz.github.io/python-brasil-2021-reticulate/img/environmental-data-science-r4ds-general.png")
+```
+
+Fonte: Conceito do ciclo de ciência de dados apresentado por [Hadley Wickham no livro R for Data Science](https://r4ds.had.co.nz/introduction.html), ilustração por [Allison Horst](https://github.com/allisonhorst).
+
+
+
+## Pacote R Markdown
+
+-   Criado e mantido pela [RStudio](https://rstudio.com/)
+
+-   Princípio: arquivos onde escrevemos textos e marcamos com `markdown`, mas também podemos adicionar códigos que são executados.
+
+-   Extensão `.Rmd`
+
+-   Possibilita a utilização de códigos `R`, `Python`, `Markdown`, `HTML`, `CSS`, `SQL`, e outros em um único arquivo.
+
+-   É um **pacote em R**, portanto depende do R.
+
+```{r, out.width="70%", fig.cap="<center><b>Logo: <a href='https://rmarkdown.rstudio.com'>Pacote rmarkdown</a></b></center>"}
+#| fig-align: "center"
+knitr::include_graphics("https://beatrizmilz.github.io/python-brasil-2021-reticulate/img/hex-rmarkdown.png")
+```
+
+
 
 ## Por que o Quarto existe?
 
@@ -127,10 +151,10 @@ Arte por [Allison Horst](https://mobile.twitter.com/allison_horst).
 
 ### Com knitr
 
-Caso não tenha o pacote rmarkdown instalado, execute no console:
+Caso não tenha o pacote knitr instalado, execute no console:
 
 ``` r
-install.packages("rmarkdown")
+install.packages("knitr")
 ```
 
 <br>
@@ -139,7 +163,9 @@ install.packages("rmarkdown")
 
 Caso não tenha o jupyter instalado, execute no terminal:
 
-    python3 -m pip install jupyter
+```         
+python3 -m pip install jupyter
+```
 
 ## Criar novo arquivo: New file
 
@@ -148,24 +174,6 @@ Caso não tenha o jupyter instalado, execute no terminal:
 ## Renderizar o arquivo: Render file
 
 <center>![](images/rstudio-cloud-2.png){style="width: 90%; !important" fig-alt="Print screen da IDE RStudio Cloud" fig-align="center"}</center>
-
-## Visual Editor
-
-::: columns
-::: {.column width="45%"}
--   As versões mais recentes do RStudio permitem usar o Visual Editor.
-
-Leitura indicada:
-
--   [Exploring RStudio's Visual Markdown Editor](https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/)
-:::
-
-::: {.column width="50%"}
-```{r, echo=FALSE, out.width="90%", fig.align='center', fig.cap="Fonte: RStudio"}
-knitr::include_graphics("https://www.rstudio.com/blog/rstudio-v1-4-preview-visual-markdown-editing/images/visual-editing.png")
-```
-:::
-:::
 
 ## Vamos praticar! {.center}
 
@@ -201,35 +209,34 @@ editor: visual
 ---
 ```
 
-## Apresentação {auto-animate="true"}
+<!-- ## Apresentação {auto-animate="true"} -->
 
-``` r
----
-title: "Título"
-format: revealjs
-editor: visual
----
-```
+<!-- ``` r -->
+<!-- --- -->
+<!-- title: "Título" -->
+<!-- format: revealjs -->
+<!-- editor: visual -->
+<!-- --- -->
+<!-- ``` -->
 
--   Os slides são separados considerando os títulos e subtítulos: `#` e `##`.
+<!-- -   Os slides são separados considerando os títulos e subtítulos: `#` e `##`. -->
 
--   Use `#` para criar uma nova seção.
+<!-- -   Use `#` para criar uma nova seção. -->
 
--   Use `##` para criar um novo slide.
+<!-- -   Use `##` para criar um novo slide. -->
 
 ## Vamos praticar! {.center}
 
-## Onde aprender mais...
+<!-- ## Onde aprender mais... -->
 
--   [Documentação do Quarto](https://quarto.org/docs/gallery/) e a [Galeria](https://quarto.org/docs/gallery).
+<!-- -   [Documentação do Quarto](https://quarto.org/docs/gallery/) e a [Galeria](https://quarto.org/docs/gallery). -->
 
--   [Não falamos do Quarto](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/) <br>Post em inglês por [Alison Hill](https://www.apreshill.com/)
+<!-- -   [Não falamos do Quarto](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/) <br>Post em inglês por [Alison Hill](https://www.apreshill.com/) -->
 
--   [Reproducible Authoring with Quarto](https://www.youtube.com/watch?v=6p4vOKS6Xls&t=67s) <br> Apresentação em inglês por [Mine Çetinkaya-Rundel](https://mine-cr.com/)
+<!-- -   [Reproducible Authoring with Quarto](https://www.youtube.com/watch?v=6p4vOKS6Xls&t=67s) <br> Apresentação em inglês por [Mine Çetinkaya-Rundel](https://mine-cr.com/) -->
 
--   [Conteúdos sobre o Quarto na RStudio Conf 2022](https://quarto.org/docs/blog/posts/2022-06-21-rstudio-conf-2022-quarto/)
+<!-- -   [Conteúdos sobre o Quarto na RStudio Conf 2022](https://quarto.org/docs/blog/posts/2022-06-21-rstudio-conf-2022-quarto/) -->
 
--   [Workshop Get Started with Quarto](https://rstudio-conf-2022.github.io/get-started-quarto/)
+<!-- -   [Workshop Get Started with Quarto](https://rstudio-conf-2022.github.io/get-started-quarto/) -->
 
--   [Awesome Quarto](https://github.com/mcanouil/awesome-quarto)
-
+<!-- -   [Awesome Quarto](https://github.com/mcanouil/awesome-quarto) -->
