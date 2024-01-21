@@ -26,12 +26,19 @@ dplyr::mutate(
       icon_linkedin = dplyr::case_when(!is.na(url_linkedin) ~ glue::glue('<a href="{url_linkedin}" target="_blank"><i class="fab fa-linkedin"></i></a>'),
                                  TRUE ~ "") ,
   
-      icon_site = dplyr::case_when(!is.na(url_site) ~ glue::glue('<a href="{url_site}" target="_blank"><i class="fas fa-home"></i></a>'),
+      icon_site = dplyr::case_when(!is.na(url_site) ~ glue::glue('<a href="{url_site}" target="_blank"><i class="fas fa-home"></i></a>'),      TRUE ~ "") ,
+
+   icon_instagram = dplyr::case_when(!is.na(url_instagram) ~ glue::glue('<a href="{url_instagram}" target="_blank"><i class="fab fa-instagram"></i></a>'),                             
+                                   
+                                 TRUE ~ "") ,
+  
+     icon_linktree = dplyr::case_when(!is.na(url_linktree) ~ glue::glue('<a href="{url_linktree}" target="_blank"><i class="fas fa-link"></i></a>'),                             
+                                   
                                  TRUE ~ "") ,
   
   
   destaque = glue::glue("{mini_bio}"),
-  foto = glue::glue("<center><img src='{url_foto}' width='100' style='border-radius: 50%;'><br><b>{nome}</b> <br> {icon_site} {icon_github} {icon_linkedin} {icon_twitter} {icon_facebook}</center>")
+  foto = glue::glue("<center><img src='{url_foto}' width='100' style='border-radius: 50%;'><br><b>{nome}</b> <br> {icon_site} {icon_github} {icon_linkedin} {icon_twitter} {icon_instagram}  {icon_linktree} {icon_facebook}</center>")
     ) |>  
   dplyr::arrange(nome) |> 
   dplyr::select(foto, atividade, destaque) 
