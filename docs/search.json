@@ -206,7 +206,7 @@
     "href": "trabalho_final.html",
     "title": "Trabalho final",
     "section": "",
-    "text": "Objetivo: Você deverá criar um documento com Quarto, versionar no GitHub e disponibilizar na internet. Esse trabalho final oferece orientações para que você pratique o que foi apresentado no curso.\nRECOMENDAÇÃO: Faça as etapas sugeridas após cada aula.\nATENÇÃO: O recebimento do certificado está vinculado à entrega e aprovação deste trabalho final, além de ter frequência mínima de 75%.",
+    "text": "Objetivo: Você deverá criar um documento com Quarto e compartilhar conoscoa. Esse trabalho final oferece orientações para que você pratique o que foi apresentado no curso.\nRECOMENDAÇÃO: Faça as etapas sugeridas após cada aula.\nATENÇÃO: O recebimento do certificado está vinculado à entrega e aprovação deste trabalho final, além de ter frequência mínima de 75%.",
     "crumbs": [
       "Materias",
       "Trabalho final"
@@ -228,7 +228,7 @@
     "href": "trabalho_final.html#etapas-pré-codigo",
     "title": "Trabalho final",
     "section": "Etapas pré-codigo",
-    "text": "Etapas pré-codigo\n\n\nPense no tipo de relatório que quer criar, qual é o objetivo do mesmo e o público-alvo. Por exemplo:\n\nUma análise de dados da pesquisa, a ser apresentada para outras pessoas pesquisadoras.\nUm tutorial com código em R ou Python.\nUma página pessoal de divulgação.\n\n\n\nEscolha uma base de dados para utilizar! Segue algumas ideias:\n\nPacote dados\nRepositório tidytuesday (em inglês)\nMais pacotes da comunidade BR: mananciais, reservatoriosBR, qualR, Outros\nAlguma que você tenha interesse!",
+    "text": "Etapas pré-codigo\n\nPense no tipo de relatório que quer criar, qual é o objetivo do mesmo e o público-alvo.\n\nExemplos:\n\nUma análise de dados da pesquisa, a ser apresentada para outras pessoas pesquisadoras.\nUm tutorial com código em R ou Python.\nUma página pessoal de divulgação.\nUm artigo científico (não precisa ser completo, pode ser a estrutura, mas é bom usar código para fazer as tabelas e gráficos).\nUm dashboard.\nUm livro (estrutura, primeiros capítulos, etc).\n\n\n\nEscolha uma base de dados para utilizar! Segue algumas ideias:\n\nAlguma que você tenha interesse!\nPacote dados\nRepositório tidytuesday (em inglês)\nMais pacotes da comunidade BR: mananciais, reservatoriosBR, qualR, Outros\nAlguma que você tenha interesse!",
     "crumbs": [
       "Materias",
       "Trabalho final"
@@ -239,7 +239,7 @@
     "href": "trabalho_final.html#passo-a-passo-com-r",
     "title": "Trabalho final",
     "section": "Passo a passo com R",
-    "text": "Passo a passo com R\nAula 1\n\nCrie um Projeto do RStudio para realizar a tarefa. Lembre-se de boas práticas para nomear o projeto: não utilize espaços, caracteres especiais, acentuação. O seu projeto deverá chamar “trabalho_relatorios_nome_sobrenome” (tudo minúsculo, separado por _). Ex: trabalho_relatorios_beatriz_milz\n\n\nA função usethis::create_project() será útil neste passo:\nusethis::create_project(\"caminho/trabalho_relatorios_nome_sobrenome\")\nTodos os passos seguintes serão realizados neste projeto criado.\n\nCrie a estrutura do seu projeto: uma pasta dados, onde adicionará bases de dados (se necessário), e uma pasta img para imagens (se necessário). Você pode criar manualmente, ou utilizando a função fs::dir_create():\n\nfs::dir_create(\"dados\")\nfs::dir_create(\"img\")\nAulas 2\n\nCrie o arquivo que será utilizado.\n\n\nFile -&gt; New File -&gt; Quarto document.\n\nVocê deve salvar o arquivo com o nome index.qmd. Clique em Render assim que o arquivo for criado, e confira se o arquivo index.html foi gerado sem erros.\n\nAgora você pode usar sua criatividade e adicionar conteúdo no relatório.\n\nIsso depende do objetivo do relatório e o público-alvo.\nPense em quais opções de chunk utilizar em cada caso: você pretende mostrar o código ou escondê-lo? Faz sentido apra o seu público alvo ler o seu código?\nAdicione pelo menos:\n\nUm parágrafo de texto, com marcações.\nUm link para uma página da internet.\nUma imagem.\nUma tabela.\nCaso saiba usar ggplot, tente adicionar um gráfico.\nCaso seja uma análise de pesquisa, tente adicionar referências usando .bib.\nAula 3\n\nInicie o versionamento com a seguinte função:\n\nusethis::use_git()\nSiga os passos até que o RStudio reinicie.\n\nCrie um repositório no GitHub que esteja vinculado à este projeto:\n\nusethis::use_github()\nSiga os passos até que uma janela do GitHub seja aberta e você possa ver o repositório criado. Guarde o link deste repositório!\nAula 4\n\nNo painel Git do RStudio, selecione os arquivos criados e faça um Commit. Clique no botão de Push (seta verde apontada para cima). Confira no repositório do GitHub se as suas mudanças aparecem por lá.\nAtive o GitHub Pages para disponibilizar na internet. Isso deverá ser feito no GitHub, na aba Settings, e então na opção Pages. Siga as instruções neste slide, usando a opção root/.\n\nAnote o link que é fornecido pelo GitHub. Espere alguns minutos, e então veja se algum conteúdo aparece na página.\n\nQuando estiver feliz com o resultado, lembre-se de fazer o Commit com as mudanças, e enviá-las para o GitHub clicando no botão de Push (seta verde apontada para cima).\n\nConfira no repositório do GitHub se as suas mudanças aparecem por lá. Confira na página da internet se as mudanças estão lá.",
+    "text": "Passo a passo com R\n\nCrie um Projeto do RStudio para realizar a tarefa. Lembre-se de boas práticas para nomear o projeto: não utilize espaços, caracteres especiais, acentuação. O seu projeto deverá chamar “trabalho_relatorios_nome_sobrenome” (tudo minúsculo, separado por _). Ex: trabalho_relatorios_beatriz_milz\n\n\nTodos os passos seguintes serão realizados neste projeto criado.\n\nCrie a estrutura do seu projeto: uma pasta dados, onde adicionará bases de dados (se necessário), e uma pasta img para imagens (se necessário). Você pode criar manualmente, ou utilizando a função fs::dir_create():\n\nfs::dir_create(\"dados\")\nfs::dir_create(\"img\")\n\nCrie o arquivo que será utilizado.\n\n\nFile -&gt; New File -&gt; Quarto document.\n\nVocê deve salvar o arquivo com o nome index.qmd. Clique em Render assim que o arquivo for criado, e confira se o arquivo index.html foi gerado sem erros.\n\nAgora você pode usar sua criatividade e adicionar conteúdo ao relatório.\n\nIsso depende do objetivo do relatório e o público-alvo.\nPense em quais opções de chunk utilizar em cada caso: você pretende mostrar o código ou escondê-lo? Faz sentido para o seu público alvo ler o seu código?\nAdicione pelo menos:\n\nUm parágrafo de texto, com marcações.\nUm link para uma página da internet.\nUma imagem.\nUma tabela.\nCaso saiba usar ggplot, tente adicionar um gráfico.\nCaso seja uma análise de pesquisa, tente adicionar referências usando .bib.",
     "crumbs": [
       "Materias",
       "Trabalho final"
@@ -251,6 +251,129 @@
     "title": "Trabalho final",
     "section": "Pós curso",
     "text": "Pós curso\n\nEnvie o link do relatório online e também do repositório do GitHub no formulário.",
+    "crumbs": [
+      "Materias",
+      "Trabalho final"
+    ]
+  },
+  {
+    "objectID": "slides/01-intro-curso.html",
+    "href": "slides/01-intro-curso.html",
+    "title": "Relatórios reprodutíveis com R",
+    "section": "",
+    "text": "Como estão?\nEnvie no chat um emoji que represente como você está se sentindo agora!"
+  },
+  {
+    "objectID": "slides/01-intro-curso.html#boas-vindas",
+    "href": "slides/01-intro-curso.html#boas-vindas",
+    "title": "Relatórios reprodutíveis com R",
+    "section": "",
+    "text": "Como estão?\nEnvie no chat um emoji que represente como você está se sentindo agora!"
+  },
+  {
+    "objectID": "slides/01-intro-curso.html#ministrantes-e-monitoria",
+    "href": "slides/01-intro-curso.html#ministrantes-e-monitoria",
+    "title": "Relatórios reprodutíveis com R",
+    "section": "Ministrantes e monitoria",
+    "text": "Ministrantes e monitoria\nAuto-refreshing stale OAuth token.\n✔ Reading from \"informacoes-curso-de-verao-ime-2024-relatorios\".\n✔ Range ''info-profs''.\n\nBeatriz Milz - Docente\nAlan da Silva - Monitoria\nBeatriz Proença Carvalho - Monitoria\nLuana Nascimento - Monitoria\nNathália Demétrio - Monitoria\n\nSaiba mais na página do curso."
+  },
+  {
+    "objectID": "slides/01-intro-curso.html#quem-são-vocês",
+    "href": "slides/01-intro-curso.html#quem-são-vocês",
+    "title": "Relatórios reprodutíveis com R",
+    "section": "Quem são vocês?",
+    "text": "Quem são vocês?\n\nQual é o seu nome?\nOnde você está? Ex: Osasco - SP\nQual é o seu pacote favorito em R?\nCompartilhe conosco uma série, livro ou filme que indica!"
+  },
+  {
+    "objectID": "slides/01-intro-curso.html#sobre-hoje",
+    "href": "slides/01-intro-curso.html#sobre-hoje",
+    "title": "Relatórios reprodutíveis com R",
+    "section": "Sobre hoje",
+    "text": "Sobre hoje\n\nAlinhamentos!\n\nO que esperar do curso\nO que precisam fazer para ter o certificado\nQuais conteúdos serão abordados\n\n\nIntrodução ao Quarto"
+  },
+  {
+    "objectID": "slides/01-intro-curso.html#alinhamento-respeito-e-gentileza",
+    "href": "slides/01-intro-curso.html#alinhamento-respeito-e-gentileza",
+    "title": "Relatórios reprodutíveis com R",
+    "section": "Alinhamento: respeito e gentileza",
+    "text": "Alinhamento: respeito e gentileza\n\nSeja gentil! Estamos aqui para aprender, e estamos em etapas diferentes do aprendizado.\nNão existe “pergunta burra”. Não deveria ser comum ouvir “como você não sabe isso ainda?”."
+  },
+  {
+    "objectID": "slides/01-intro-curso.html#código-de-conduta",
+    "href": "slides/01-intro-curso.html#código-de-conduta",
+    "title": "Relatórios reprodutíveis com R",
+    "section": "Código de conduta",
+    "text": "Código de conduta\n\nObjetivo é proporcionar uma experiência de livre de assédio e inclusiva para todas as pessoas (incluindo alunas, alunos, professores, monitores, equipe da secretaria do IME/USP, etc).\nQualquer pessoa que viole estas regras pode ser advertida ou removida do curso, conforme critérios das pessoas docentes.\nLeia completo em: https://saopaulo2019.satrdays.org/codigodeconduta/"
+  },
+  {
+    "objectID": "slides/01-intro-curso.html#plataformas-utilizadas",
+    "href": "slides/01-intro-curso.html#plataformas-utilizadas",
+    "title": "Relatórios reprodutíveis com R",
+    "section": "Plataformas utilizadas",
+    "text": "Plataformas utilizadas\n\nPlataforma USP: https://cursosextensao.usp.br/course/view.php?id=3449\nSite do curso: https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/\nGrupo no Whatsapp temporário: Compartilhado por email e na Plataforma USP."
+  },
+  {
+    "objectID": "slides/01-intro-curso.html#gravação-das-aulas",
+    "href": "slides/01-intro-curso.html#gravação-das-aulas",
+    "title": "Relatórios reprodutíveis com R",
+    "section": "Gravação das aulas",
+    "text": "Gravação das aulas\n\nAs aulas serão gravadas.\nCaso a aula comece e não esteja sendo gravada, por favor nos avise no chat :)"
+  },
+  {
+    "objectID": "slides/01-intro-curso.html#dúvidas",
+    "href": "slides/01-intro-curso.html#dúvidas",
+    "title": "Relatórios reprodutíveis com R",
+    "section": "Dúvidas",
+    "text": "Dúvidas\n\nDe preferência, não envie no email :)\nDurante as aulas: enviem dúvidas no chat.\n\nFora do horário de aulas:\n\nDurante o oferecimento do curso: na plataforma USP Extensão se for dúvida técnica, no grupo do Whatsapp se for uma dúvida sobre o curso/plataforma/etc."
+  },
+  {
+    "objectID": "slides/01-intro-curso.html#requisitos-para-o-certificado",
+    "href": "slides/01-intro-curso.html#requisitos-para-o-certificado",
+    "title": "Relatórios reprodutíveis com R",
+    "section": "Requisitos para o certificado",
+    "text": "Requisitos para o certificado\n\nTeremos um trabalho final obrigatório para o recebimento do certificado.\nCertificado = Ter frequência igual ou superior à 75% (ou seja, pode ter 1 falta) + entrega do trabalho final.\nATENÇÃO: Vocês precisam marcar na plataforma USP a presença, durante o horário da aula."
+  },
+  {
+    "objectID": "slides/01-intro-curso.html#trabalho-final",
+    "href": "slides/01-intro-curso.html#trabalho-final",
+    "title": "Relatórios reprodutíveis com R",
+    "section": "Trabalho final",
+    "text": "Trabalho final\nObjetivo: Você deverá criar um documento com Quarto e compartilhar conosco (seja em word, pdf ou HTML). Esse trabalho final é importante para que você pratique o que foi discutido no curso.\nMais informações em: Trabalho final"
+  },
+  {
+    "objectID": "slides/01-intro-curso.html#alinhamento-alteração-dos-conteúdos",
+    "href": "slides/01-intro-curso.html#alinhamento-alteração-dos-conteúdos",
+    "title": "Relatórios reprodutíveis com R",
+    "section": "Alinhamento: alteração dos conteúdos",
+    "text": "Alinhamento: alteração dos conteúdos\n\nNão teremos mais conteúdo sobre Git e GitHub -&gt; isso será disponibilizado como as aulas gravadas de 2023, como material complementar para quem tiver interesse no assunto. Vocês podem tirar dúvidas!\nNão abordaremos o RMarkdown: é uma versão anterior ao Quarto, e o Quarto foi lançado há mais de 1,5 anos.\nTeremos conteúdo sobre extensões do Quarto (apresentações, dashboards, etc)."
+  },
+  {
+    "objectID": "slides/01-intro-curso.html#objetivos-de-aprendizagem",
+    "href": "slides/01-intro-curso.html#objetivos-de-aprendizagem",
+    "title": "Relatórios reprodutíveis com R",
+    "section": "Objetivos de aprendizagem",
+    "text": "Objetivos de aprendizagem\nQue vocês saibam ao final do curso:\n\nNoções de reprodutibilidade\nComo criar documentos usando Quarto\nComo exportar esses documentos em word, PDF e HTML.\nComo disponibilizar o documento na internet."
+  },
+  {
+    "objectID": "slides/01-intro-curso.html#calendário",
+    "href": "slides/01-intro-curso.html#calendário",
+    "title": "Relatórios reprodutíveis com R",
+    "section": "Calendário",
+    "text": "Calendário\n\n22/01 - Segunda - Introdução ao curso + Introdução ao Quarto\n24/01 - Quarta - Introdução à reprodutibilidade + Elementos para relatórios acadêmicos\n29/01 - Segunda - Como compartilhar o relatório + Relatórios com parâmetros\n31/01 - Quarta - Extensões do Quarto: apresentações, dashboards, etc\nPAUSA! - Tempo para fazerem o trabalho final. Teremos monitoria.\n19/02 - Segunda - Dúvidas sobre o trabalho final; Feedback coletivo nos trabalhos finais"
+  },
+  {
+    "objectID": "slides/01-intro-curso.html#alinhamento-ensino",
+    "href": "slides/01-intro-curso.html#alinhamento-ensino",
+    "title": "Relatórios reprodutíveis com R",
+    "section": "Alinhamento: ensino",
+    "text": "Alinhamento: ensino\nQuando você pensa em ensino, o que você imagina?"
+  },
+  {
+    "objectID": "trabalho_final.html#conteúdos-que-podem-ser-úteis",
+    "href": "trabalho_final.html#conteúdos-que-podem-ser-úteis",
+    "title": "Trabalho final",
+    "section": "Conteúdos que podem ser úteis",
+    "text": "Conteúdos que podem ser úteis\n\nTrabalhos finais feitos pela turma de 2023\nTrabalhos finais feitos pela turma de 2022\nAlgumas dúvidas da turma de 2023\nDicas para Relatórios\nDicas para Gráficos\nDicas para formatar tabelas",
     "crumbs": [
       "Materias",
       "Trabalho final"

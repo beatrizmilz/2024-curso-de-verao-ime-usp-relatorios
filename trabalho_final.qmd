@@ -2,15 +2,15 @@
 title: "Trabalho final"
 ---
 
-**Objetivo:** Você deverá criar um documento com Quarto, versionar no GitHub e disponibilizar na internet. Esse trabalho final oferece orientações para que você pratique o que foi apresentado no curso.
+**Objetivo:** Você deverá criar um documento com Quarto e compartilhar conoscoa. Esse trabalho final oferece orientações para que você pratique o que foi apresentado no curso.
 
 **RECOMENDAÇÃO**: Faça as etapas sugeridas após cada aula.
 
 **ATENÇÃO**: O recebimento do certificado está vinculado à entrega e aprovação deste trabalho final, além de ter frequência mínima de 75%.
 
-## Trabalhos entregues
+<!-- ## Trabalhos entregues -->
 
-Em breve!
+<!-- Em breve! -->
 
 ```{r}
 #| message: FALSE
@@ -53,15 +53,27 @@ Em breve!
 
 ## Etapas pré-codigo
 
--   Pense no tipo de relatório que quer criar, qual é o objetivo do mesmo e o público-alvo. Por exemplo:
+-   Pense no tipo de relatório que quer criar, qual é o objetivo do mesmo e o público-alvo. 
 
-    -   Uma análise de dados da pesquisa, a ser apresentada para outras pessoas pesquisadoras.
 
-    -   Um tutorial com código em R ou Python.
+- Exemplos:
 
-    -   Uma página pessoal de divulgação.
+    - Uma análise de dados da pesquisa, a ser apresentada para outras pessoas pesquisadoras.
+
+    - Um tutorial com código em R ou Python.
+
+    - Uma página pessoal de divulgação.
+    
+    - Um artigo científico (não precisa ser completo, pode ser a estrutura, mas é bom usar código para fazer as tabelas e gráficos).
+    
+    - Um dashboard.
+    
+    - Um livro (estrutura, primeiros capítulos, etc).
+
 
 -   Escolha uma base de dados para utilizar! Segue algumas ideias:
+
+    -   Alguma que você **tenha interesse**!
 
     -   Pacote [dados](https://cienciadedatos.github.io/dados/)
 
@@ -73,15 +85,7 @@ Em breve!
 
 ## Passo a passo com R
 
-### Aula 1
-
 1)  Crie um Projeto do RStudio para realizar a tarefa. Lembre-se de boas práticas para nomear o projeto: não utilize espaços, caracteres especiais, acentuação. O seu projeto deverá chamar "trabalho_relatorios_nome_sobrenome" (tudo minúsculo, separado por `_`). Ex: `trabalho_relatorios_beatriz_milz`
-
-A função `usethis::create_project()` será útil neste passo:
-
-``` r
-usethis::create_project("caminho/trabalho_relatorios_nome_sobrenome")
-```
 
 **Todos os passos seguintes serão realizados neste projeto criado.**
 
@@ -92,20 +96,17 @@ fs::dir_create("dados")
 fs::dir_create("img")
 ```
 
-### Aulas 2
-
 3)  Crie o arquivo que será utilizado.
 
 > File -\> New File -\> Quarto document.
 
 Você deve salvar o arquivo com o nome `index.qmd`. Clique em `Render` assim que o arquivo for criado, e confira se o arquivo `index.html` foi gerado sem erros.
 
-
-4)  Agora você pode usar sua criatividade e adicionar conteúdo no relatório.
+4)  Agora você pode usar sua criatividade e adicionar conteúdo ao relatório.
 
 Isso depende do objetivo do relatório e o público-alvo.
 
-Pense em quais opções de chunk utilizar em cada caso: você pretende mostrar o código ou escondê-lo? Faz sentido apra o seu público alvo ler o seu código?
+Pense em quais opções de chunk utilizar em cada caso: você pretende mostrar o código ou escondê-lo? Faz sentido para o seu público alvo ler o seu código?
 
 Adicione pelo menos:
 
@@ -121,39 +122,21 @@ Adicione pelo menos:
 
 -   Caso seja uma análise de pesquisa, tente adicionar referências usando `.bib`.
 
-### Aula 3
+## Conteúdos que podem ser úteis
 
-5)  Inicie o versionamento com a seguinte função:
+- [Trabalhos finais feitos pela turma de 2023](https://beatrizmilz.github.io/2023-curso-de-verao-ime-usp-relatorios/trabalho_final.html)
 
-``` r
-usethis::use_git()
-```
+- [Trabalhos finais feitos pela turma de 2022](https://beatrizmilz.github.io/2022-curso-de-verao-ime-usp-relatorios/trabalho_final.html)
 
-Siga os passos até que o RStudio reinicie.
+- [Algumas dúvidas da turma de 2023](https://beatrizmilz.github.io/2023-curso-de-verao-ime-usp-relatorios/duvidas/)
 
-6)  Crie um repositório no GitHub que esteja vinculado à este projeto:
+- [Dicas para Relatórios](https://blog.curso-r.com/posts/2021-03-15-dicas-relatorios-r4ds1_relatorios/)
 
-``` r
-usethis::use_github()
-```
+- [Dicas para Gráficos](https://blog.curso-r.com/posts/2020-17-02-dicas-relatorios-r4ds1_graficos/)
 
-Siga os passos até que uma janela do GitHub seja aberta e você possa ver o repositório criado. Guarde o link deste repositório!
+- [Dicas para formatar tabelas](https://blog.curso-r.com/posts/2020-12-03-dicas-relatorios-r4ds1_tabelas/)
 
-### Aula 4
 
-7)  No painel Git do RStudio, selecione os arquivos criados e faça um **Commit**. Clique no botão de **Push** (seta verde apontada para cima). Confira no repositório do GitHub se as suas mudanças aparecem por lá.
-
-8)  Ative o GitHub Pages para disponibilizar na internet. Isso deverá ser feito no GitHub, na aba Settings, e então na opção Pages. [Siga as instruções neste slide](https://beatrizmilz.github.io/2022-curso-de-verao-ime-usp-relatorios/slides/#githubpages), usando a opção `root/`.
-
-Anote o link que é fornecido pelo GitHub. Espere alguns minutos, e então veja se algum conteúdo aparece na página.
-
-9)  Quando estiver feliz com o resultado, lembre-se de fazer o **Commit** com as mudanças, e enviá-las para o GitHub clicando no botão de **Push** (seta verde apontada para cima).
-
-Confira no repositório do GitHub se as suas mudanças aparecem por lá. Confira na página da internet se as mudanças estão lá.
-
-## Pós curso
-
-10) Envie o link do relatório online e também do repositório do GitHub no formulário.
 
 <!-- inicio font awesome -->
 

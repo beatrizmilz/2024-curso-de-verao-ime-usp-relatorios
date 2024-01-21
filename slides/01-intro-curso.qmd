@@ -55,8 +55,17 @@ Saiba mais [na página do curso](https://beatrizmilz.github.io/2024-curso-de-ver
 
 - Compartilhe conosco uma série, livro ou filme que indica!
 
+## Sobre hoje
 
-## Alinhamento
+- Alinhamentos
+
+- Sobre o curso
+
+- Introdução ao Quarto
+
+# Alinhamentos!
+
+## Alinhamento: respeito e gentileza
 
 -   Seja gentil! Estamos aqui para aprender, e estamos em etapas diferentes do aprendizado.
 
@@ -69,6 +78,21 @@ Saiba mais [na página do curso](https://beatrizmilz.github.io/2024-curso-de-ver
 -   Qualquer pessoa que viole estas regras pode ser advertida ou removida do curso, conforme critérios das pessoas docentes.
 
 -   Leia completo em: <https://saopaulo2019.satrdays.org/codigodeconduta/>
+
+## Alinhamento: ensino
+
+
+Quando você pensa em ensino, o que você imagina?
+
+## Alinhamento: alteração dos conteúdos
+
+- Não teremos mais conteúdo sobre Git e GitHub -> isso será disponibilizado como as aulas gravadas de 2023, como material complementar para quem tiver interesse no assunto. Vocês podem tirar dúvidas!
+
+- Não abordaremos o RMarkdown: é uma versão anterior ao Quarto, e o Quarto foi lançado há mais de 1,5 anos.
+
+- Teremos conteúdo sobre extensões do Quarto (apresentações, dashboards, etc).
+
+# Sobre o curso!
 
 ## Plataformas utilizadas
 
@@ -112,13 +136,7 @@ Saiba mais [na página do curso](https://beatrizmilz.github.io/2024-curso-de-ver
 
 Mais informações em: [Trabalho final](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/trabalho_final.html)
 
-## Alinhamento: alteração dos conteúdos
 
-- Não teremos mais conteúdo sobre Git e GitHub -> isso será disponibilizado como as aulas gravadas de 2023, como material complementar para quem tiver interesse no assunto. Vocês podem tirar dúvidas!
-
-- Não abordaremos o RMarkdown: é uma versão anterior ao Quarto, e o Quarto foi lançado há mais de 1,5 anos.
-
-- Teremos conteúdo sobre extensões do Quarto (apresentações, dashboards, etc).
 
 ## Objetivos de aprendizagem
 
@@ -145,6 +163,13 @@ Que vocês saibam ao final do curso:
 
 - **PAUSA!** - Tempo para fazerem o trabalho final. Teremos monitoria.
 
+
+- **16/02** - Sexta - Data da entrega do trabalho final
+
 - **19/02** - Segunda - Dúvidas sobre o trabalho final; Feedback coletivo nos trabalhos finais
+
+
+
+
 
 
