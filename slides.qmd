@@ -21,11 +21,22 @@ criar_tabela_links_extras <- function(links_extras) {
 }
 ```
 
+## Revisão de conceitos úteis
+
+- [O que é o R?](https://www.instagram.com/p/C2DDu-MLZ4W/)
+
+- [O que é o RStudio?](https://www.instagram.com/p/C2IJPYqLjIe/)
+
+
+
+
 ## Aula 1
 
 ### Slides
 
 -   [Slide 1 - Introdução ao Curso](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/01-intro-curso.html)
+
+-   [Slide 2 - Introdução ao Quarto](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/02-intro-quarto.html)
 
 
 <!-- ### Scripts/anotações -->
