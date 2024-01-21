@@ -4,7 +4,18 @@
     "href": "slides.html",
     "title": "Slides e materiais por aula",
     "section": "",
-    "text": "Em breve!",
+    "text": "O que é o R?\nO que é o RStudio?",
+    "crumbs": [
+      "Materias",
+      "Slides e materiais por aula"
+    ]
+  },
+  {
+    "objectID": "slides.html#revisão-de-conceitos-úteis",
+    "href": "slides.html#revisão-de-conceitos-úteis",
+    "title": "Slides e materiais por aula",
+    "section": "",
+    "text": "O que é o R?\nO que é o RStudio?",
     "crumbs": [
       "Materias",
       "Slides e materiais por aula"
@@ -14,8 +25,8 @@
     "objectID": "slides.html#aula-1",
     "href": "slides.html#aula-1",
     "title": "Slides e materiais por aula",
-    "section": "",
-    "text": "Em breve!",
+    "section": "Aula 1",
+    "text": "Aula 1\nSlides\n\nSlide 1 - Introdução ao Curso\nSlide 2 - Introdução ao Quarto",
     "crumbs": [
       "Materias",
       "Slides e materiais por aula"
@@ -134,21 +145,21 @@
     "href": "index.html",
     "title": "Relatórios reprodutíveis com R",
     "section": "",
-    "text": "Utilizaremos o Quarto (https://quarto.org/), e conheceremos como criar relatórios reprodutíveis com R ou Python, como: listas de exercícios, relatórios, apresentações em HTML, apresentações em powerpoint, relatórios em word, relatórios interativos, entre outros.\nAprenderemos também a criar relatórios reprodutíveis utilizando relatórios parametrizados, que permitem especificar parâmetros para customizar a análise, o que é muito útil para criar relatórios que podem ser reutilizados.\nAlém disso, o conceito de controle de versão com Git será apresentado. Também aprenderemos a disponibilizar o conteúdo criado no curso de forma online, através do GitHub."
+    "text": "Atenção!\n\n\n\nCurso iniciado. Para turmas futuras, acompanhe no site do Programa de Verão IME-USP."
   },
   {
     "objectID": "index.html#sobre-o-curso",
     "href": "index.html#sobre-o-curso",
     "title": "Relatórios reprodutíveis com R",
-    "section": "",
-    "text": "Utilizaremos o Quarto (https://quarto.org/), e conheceremos como criar relatórios reprodutíveis com R ou Python, como: listas de exercícios, relatórios, apresentações em HTML, apresentações em powerpoint, relatórios em word, relatórios interativos, entre outros.\nAprenderemos também a criar relatórios reprodutíveis utilizando relatórios parametrizados, que permitem especificar parâmetros para customizar a análise, o que é muito útil para criar relatórios que podem ser reutilizados.\nAlém disso, o conceito de controle de versão com Git será apresentado. Também aprenderemos a disponibilizar o conteúdo criado no curso de forma online, através do GitHub."
+    "section": "Sobre o curso",
+    "text": "Sobre o curso\nUtilizaremos o Quarto (https://quarto.org/), e conheceremos como criar relatórios reprodutíveis, como: listas de exercícios, relatórios, apresentações em HTML, apresentações em powerpoint, relatórios em word, relatórios interativos, entre outros.\nAprenderemos também a criar relatórios reprodutíveis utilizando relatórios parametrizados, que permitem especificar parâmetros para customizar a análise, o que é muito útil para criar relatórios que podem ser reutilizados.\nTambém aprenderemos a disponibilizar o conteúdo criado no curso de forma online."
   },
   {
     "objectID": "index.html#temas-abordados",
     "href": "index.html#temas-abordados",
     "title": "Relatórios reprodutíveis com R",
     "section": "Temas abordados",
-    "text": "Temas abordados\n\nO que é reprodutibilidade;\nO que é o RMarkdown e o Quarto, e quais são as diferenças;\nComo criar um documento reprodutível com Quarto;\nComo versionar os arquivos com Git e armazenar no GitHub;\nComo disponibilizar estes documentos HTML criados com Quarto na internet para que outras pessoas consigam acessar."
+    "text": "Temas abordados\n\nO que é reprodutibilidade;\nComo criar um documento reprodutível com Quarto;\nO que é o RMarkdown e o Quarto, e quais são as diferenças;\nComo disponibilizar estes documentos HTML criados com Quarto na internet para que outras pessoas consigam acessar."
   },
   {
     "objectID": "index.html#edições-passadas",
@@ -162,18 +173,7 @@
     "href": "instrucoes-de-instalacao.html",
     "title": "Pré-curso: Instalações necessárias",
     "section": "",
-    "text": "Criar uma conta gratuita no GitHub",
-    "crumbs": [
-      "Materias",
-      "Pré-curso: Instalações necessárias"
-    ]
-  },
-  {
-    "objectID": "instrucoes-de-instalacao.html#contas-em-serviços",
-    "href": "instrucoes-de-instalacao.html#contas-em-serviços",
-    "title": "Pré-curso: Instalações necessárias",
-    "section": "",
-    "text": "Criar uma conta gratuita no GitHub",
+    "text": "Instalar o R - Versão 4.2 ou superior:\n\n\nDownload direto: https://vps.fmvz.usp.br/CRAN/\nTutorial: https://livro.curso-r.com/1-1-instalacao-do-r.html\n\n\n\nInstalar o RStudio - Versão mínima 2023.12:\n\n\nDownload direto: https://posit.co/download/rstudio-desktop/#download\nTutorial: https://livro.curso-r.com/1-2-instalacao-do-rstudio.html\nCaso você tenha dificuldade em instalar o R e o RStudio, você pode utilizar a Posit Cloud gratuitamente: https://posit.cloud/",
     "crumbs": [
       "Materias",
       "Pré-curso: Instalações necessárias"
@@ -183,19 +183,8 @@
     "objectID": "instrucoes-de-instalacao.html#instalações-obrigatórias",
     "href": "instrucoes-de-instalacao.html#instalações-obrigatórias",
     "title": "Pré-curso: Instalações necessárias",
-    "section": "Instalações obrigatórias",
-    "text": "Instalações obrigatórias\n\n\nInstalar o R - Versão 4.2 ou superior:\n\n\nDownload direto: https://vps.fmvz.usp.br/CRAN/\nTutorial: https://livro.curso-r.com/1-1-instalacao-do-r.html\n\n\n\nInstalar o RStudio - Versão mínima 2023.12:\n\n\nDownload direto: https://posit.co/download/rstudio-desktop/#download\nTutorial: https://livro.curso-r.com/1-2-instalacao-do-rstudio.html\n\n\n\nInstalar o Git:\n\n\nCaso você utilize Linux ou Mac, confira antes se o Git já está instalado. Você pode conferir abrindo o terminal, e digitando git. Caso o terminal avise que você não tem git instalado, você precisará instalar.\nDownload direto: http://git-scm.com/download/\n\n\n\nInstalar pacotes:\n\npacotes_necessarios &lt;- c(\n  \"here\",\n  \"quarto\",\n  \"usethis\",\n  \"devtools\",\n  \"rmarkdown\",\n  \"knitr\",\n  \"pagedown\",\n  \"bookdown\",\n  \"xaringan\",\n  \"readr\",\n  \"dplyr\",\n  \"DT\",\n  \"reactable\",\n  \"janitor\",\n  \"prettydoc\"\n)\ninstall.packages(pacotes_necessarios)\npacotes_exemplos &lt;-\n  c(\n    \"xaringanthemer\",\n    \"distill\",\n    \"flexdashboard\",\n    \"rmdformats\",\n    \"bslib\",\n    \"officedown\",\n    \"postcards\",\n    \"rticles\"\n  )\ninstall.packages(pacotes_exemplos)",
-    "crumbs": [
-      "Materias",
-      "Pré-curso: Instalações necessárias"
-    ]
-  },
-  {
-    "objectID": "instrucoes-de-instalacao.html#instalações-recomendadas",
-    "href": "instrucoes-de-instalacao.html#instalações-recomendadas",
-    "title": "Pré-curso: Instalações necessárias",
-    "section": "Instalações recomendadas",
-    "text": "Instalações recomendadas\n\n\nGoogle Chrome. Para exportar os relatórios em formato PDF, utilizaremos uma função que depende do uso do navegador Google Chrome.\n\n\nDownload direto: https://www.google.com/intl/pt-BR/chrome/\nCaso você utilize Linux, uma alternativa é instalar o Chromium: https://www.chromium.org/getting-involved/download-chromium/\nMais informações em: https://livro.curso-r.com/1-3-instalacao-adicionais.html#pagedown-e-chrome\n\n\n\nLibreOffice. Para abrir documentos do Office, como .pptx e .docx, é necessário ter o Office ou alguma alternativa gratuita instalados. Caso não tenha nenhum software para abertura destes arquivos instalado, recomendo instalar o LibreOffice, pois é um software gratuito:\n\n\nDownload direto: https://pt-br.libreoffice.org/baixe-ja/libreoffice-novo/\nTutorial de instalação: https://livro.curso-r.com/1-3-instalacao-adicionais.html#office",
+    "section": "",
+    "text": "Instalar o R - Versão 4.2 ou superior:\n\n\nDownload direto: https://vps.fmvz.usp.br/CRAN/\nTutorial: https://livro.curso-r.com/1-1-instalacao-do-r.html\n\n\n\nInstalar o RStudio - Versão mínima 2023.12:\n\n\nDownload direto: https://posit.co/download/rstudio-desktop/#download\nTutorial: https://livro.curso-r.com/1-2-instalacao-do-rstudio.html\nCaso você tenha dificuldade em instalar o R e o RStudio, você pode utilizar a Posit Cloud gratuitamente: https://posit.cloud/",
     "crumbs": [
       "Materias",
       "Pré-curso: Instalações necessárias"

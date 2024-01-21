@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.4.521">
 
   <meta name="author" content="Ministrante: Beatriz Milz">
-  <title>Relatórios reprodutíveis com R (2024) - Relatórios reprodutíveis com R</title>
+  <title>Relatórios reprodutíveis com R (2024) - Introdução ao Quarto</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -391,7 +391,7 @@
     <div class="slides">
 
 <section class="quarto-title-block center">
-  <h1 class="title">Relatórios reprodutíveis com R</h1>
+  <h1 class="title">Introdução ao Quarto</h1>
   <p class="subtitle">Curso de Verão IME-USP 2022</p>
 
 <div class="quarto-title-authors">
@@ -403,18 +403,13 @@ Ministrante: Beatriz Milz
 </div>
 
 </section>
-<section>
-<section class="title-slide slide level1 center">
-<h1>Introdução ao Quarto</h1>
-
-</section>
 <section class="slide level2">
 <h2>Objetivos de aprendizagem</h2>
 <p>Responder as seguintes perguntas….</p>
 <p>⬜ O que é o Quarto?</p>
 <p>⬜ Qual é a diferença entre o Quarto e o RMarkdown?</p>
 <p>⬜ Como criar um documento simples ?</p>
-</section></section>
+</section>
 <section>
 <section class="title-slide slide level1 center">
 <h1>O que é o Quarto?</h1>
@@ -441,6 +436,22 @@ Ministrante: Beatriz Milz
 <p>Arte por <a href="https://mobile.twitter.com/allison_horst">Allison Horst</a>.</p>
 </div>
 </section>
+<section class="slide level2">
+<h2>Ciclo da ciência de dados</h2>
+
+<img data-src="https://beatrizmilz.github.io/python-brasil-2021-reticulate/img/environmental-data-science-r4ds-general.png" class="quarto-figure quarto-figure-center r-stretch" style="width:65.0%"><p>Fonte: Conceito do ciclo de ciência de dados apresentado por <a href="https://r4ds.had.co.nz/introduction.html">Hadley Wickham no livro R for Data Science</a>, ilustração por <a href="https://github.com/allisonhorst">Allison Horst</a>.</p>
+</section>
+<section class="slide level2">
+<h2>Pacote R Markdown</h2>
+<ul>
+<li><p>Criado e mantido pela <a href="https://rstudio.com/">RStudio</a></p></li>
+<li><p>Princípio: arquivos onde escrevemos textos e marcamos com <code>markdown</code>, mas também podemos adicionar códigos que são executados.</p></li>
+<li><p>Extensão <code>.Rmd</code></p></li>
+<li><p>Possibilita a utilização de códigos <code>R</code>, <code>Python</code>, <code>Markdown</code>, <code>HTML</code>, <code>CSS</code>, <code>SQL</code>, e outros em um único arquivo.</p></li>
+<li><p>É um <strong>pacote em R</strong>, portanto depende do R.</p></li>
+</ul>
+
+<img data-src="https://beatrizmilz.github.io/python-brasil-2021-reticulate/img/hex-rmarkdown.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"></section>
 <section class="slide level2">
 <h2>Por que o Quarto existe?</h2>
 <ul>
@@ -523,8 +534,8 @@ Ministrante: Beatriz Milz
 <li>Ao criar um novo arquivo com Quarto, podemos escolher entre duas <em>engines</em>: knitr ou jupyter.</li>
 </ul>
 <h3>Com knitr</h3>
-<p>Caso não tenha o pacote rmarkdown instalado, execute no console:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">install.packages</span>(<span class="st">"rmarkdown"</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Caso não tenha o pacote knitr instalado, execute no console:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">install.packages</span>(<span class="st">"knitr"</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><br></p>
 <h3>Com jupyter</h3>
 <p>Caso não tenha o jupyter instalado, execute no terminal:</p>
@@ -541,31 +552,6 @@ Ministrante: Beatriz Milz
 <center>
 <img data-src="images/rstudio-cloud-2.png" class="quarto-figure quarto-figure-center" style="width: 90%; !important" alt="Print screen da IDE RStudio Cloud">
 </center>
-</section>
-<section class="slide level2">
-<h2>Visual Editor</h2>
-<div class="columns">
-<div class="column" style="width:45%;">
-<ul>
-<li>As versões mais recentes do RStudio permitem usar o Visual Editor.</li>
-</ul>
-<p>Leitura indicada:</p>
-<ul>
-<li><a href="https://www.rstudio.com/blog/exploring-rstudio-visual-markdown-editor/">Exploring RStudio’s Visual Markdown Editor</a></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://www.rstudio.com/blog/rstudio-v1-4-preview-visual-markdown-editing/images/visual-editing.png" style="width:90.0%"></p>
-<figcaption>Fonte: RStudio</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</div>
 </section>
 <section class="slide level2 center">
 <h2>Vamos praticar!</h2>
@@ -598,33 +584,27 @@ Ministrante: Beatriz Milz
 <span id="cb6-3" class="hljs-ln-code"><a href="#cb6-3"></a>format<span class="sc">:</span> pdf</span>
 <span id="cb6-4" class="hljs-ln-code"><a href="#cb6-4"></a>editor<span class="sc">:</span> visual</span>
 <span id="cb6-5" class="hljs-ln-code"><a href="#cb6-5"></a><span class="sc">---</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Apresentação</h2>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb7-1" class="hljs-ln-code"><a href="#cb7-1"></a><span class="sc">---</span></span>
-<span id="cb7-2" class="hljs-ln-code"><a href="#cb7-2"></a>title<span class="sc">:</span> <span class="st">"Título"</span></span>
-<span id="cb7-3" class="hljs-ln-code"><a href="#cb7-3"></a>format<span class="sc">:</span> revealjs</span>
-<span id="cb7-4" class="hljs-ln-code"><a href="#cb7-4"></a>editor<span class="sc">:</span> visual</span>
-<span id="cb7-5" class="hljs-ln-code"><a href="#cb7-5"></a><span class="sc">---</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li><p>Os slides são separados considerando os títulos e subtítulos: <code>#</code> e <code>##</code>.</p></li>
-<li><p>Use <code>#</code> para criar uma nova seção.</p></li>
-<li><p>Use <code>##</code> para criar um novo slide.</p></li>
-</ul>
+<!-- ## Apresentação {auto-animate="true"} -->
+<!-- ``` r -->
+<!-- --- -->
+<!-- title: "Título" -->
+<!-- format: revealjs -->
+<!-- editor: visual -->
+<!-- --- -->
+<!-- ``` -->
+<!-- -   Os slides são separados considerando os títulos e subtítulos: `#` e `##`. -->
+<!-- -   Use `#` para criar uma nova seção. -->
+<!-- -   Use `##` para criar um novo slide. -->
 </section>
 <section class="slide level2 center">
 <h2>Vamos praticar!</h2>
-</section>
-<section class="slide level2">
-<h2>Onde aprender mais…</h2>
-<ul>
-<li><p><a href="https://quarto.org/docs/gallery/">Documentação do Quarto</a> e a <a href="https://quarto.org/docs/gallery">Galeria</a>.</p></li>
-<li><p><a href="https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/">Não falamos do Quarto</a> <br>Post em inglês por <a href="https://www.apreshill.com/">Alison Hill</a></p></li>
-<li><p><a href="https://www.youtube.com/watch?v=6p4vOKS6Xls&amp;t=67s">Reproducible Authoring with Quarto</a> <br> Apresentação em inglês por <a href="https://mine-cr.com/">Mine Çetinkaya-Rundel</a></p></li>
-<li><p><a href="https://quarto.org/docs/blog/posts/2022-06-21-rstudio-conf-2022-quarto/">Conteúdos sobre o Quarto na RStudio Conf 2022</a></p></li>
-<li><p><a href="https://rstudio-conf-2022.github.io/get-started-quarto/">Workshop Get Started with Quarto</a></p></li>
-<li><p><a href="https://github.com/mcanouil/awesome-quarto">Awesome Quarto</a></p></li>
-</ul>
+<!-- ## Onde aprender mais... -->
+<!-- -   [Documentação do Quarto](https://quarto.org/docs/gallery/) e a [Galeria](https://quarto.org/docs/gallery). -->
+<!-- -   [Não falamos do Quarto](https://www.apreshill.com/blog/2022-04-we-dont-talk-about-quarto/) <br>Post em inglês por [Alison Hill](https://www.apreshill.com/) -->
+<!-- -   [Reproducible Authoring with Quarto](https://www.youtube.com/watch?v=6p4vOKS6Xls&t=67s) <br> Apresentação em inglês por [Mine Çetinkaya-Rundel](https://mine-cr.com/) -->
+<!-- -   [Conteúdos sobre o Quarto na RStudio Conf 2022](https://quarto.org/docs/blog/posts/2022-06-21-rstudio-conf-2022-quarto/) -->
+<!-- -   [Workshop Get Started with Quarto](https://rstudio-conf-2022.github.io/get-started-quarto/) -->
+<!-- -   [Awesome Quarto](https://github.com/mcanouil/awesome-quarto) -->
 
 
 <img src="https://www.ime.usp.br/verao/assets/images/logo_verao.png" class="slide-logo r-stretch"><div class="footer footer-default">
