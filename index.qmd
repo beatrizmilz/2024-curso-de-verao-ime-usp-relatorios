@@ -2,38 +2,34 @@
 title: "Relatórios reprodutíveis com R"
 ---
 
-<!-- ::: callout-warning -->
-<!-- ## Atenção! -->
+::: callout-warning
 
-<!-- **Curso iniciado.** Para turmas futuras, acompanhe no site do [Programa de Verão IME-USP](https://www.ime.usp.br/verao/index.php/turmas/apresentacao.php). -->
-<!-- ::: -->
+## Atenção!
+
+**Curso iniciado.** Para turmas futuras, acompanhe no site do [Programa de Verão IME-USP](https://www.ime.usp.br/verao/index.php/turmas/apresentacao.php).
+
+:::
 
 ## Sobre o curso
 
-Utilizaremos o Quarto (<https://quarto.org/>), e conheceremos como criar relatórios reprodutíveis com R ou Python, como: listas de exercícios, relatórios, apresentações em HTML, apresentações em powerpoint, relatórios em word, relatórios interativos, entre outros.
+Utilizaremos o Quarto (<https://quarto.org/>), e conheceremos como criar relatórios reprodutíveis, como: listas de exercícios, relatórios, apresentações em HTML, apresentações em powerpoint, relatórios em word, relatórios interativos, entre outros.
 
 Aprenderemos também a criar relatórios reprodutíveis utilizando relatórios parametrizados, que permitem especificar parâmetros para customizar a análise, o que é muito útil para criar relatórios que podem ser reutilizados.
 
-Além disso, o conceito de controle de versão com Git será apresentado. Também aprenderemos a disponibilizar o conteúdo criado no curso de forma online, através do GitHub.
+Também aprenderemos a disponibilizar o conteúdo criado no curso de forma online.
 
 ## Temas abordados
 
 -   O que é reprodutibilidade;
 
--   O que é o RMarkdown e o Quarto, e quais são as diferenças;
-
 -   Como criar um documento reprodutível com Quarto;
 
--   Como versionar os arquivos com Git e armazenar no GitHub;
+-   O que é o RMarkdown e o Quarto, e quais são as diferenças;
 
 -   Como disponibilizar estes documentos HTML criados com Quarto na internet para que outras pessoas consigam acessar.
 
 ## Edições passadas
 
+-   Confira a [página do curso de 2023](https://beatrizmilz.github.io/2023-curso-de-verao-ime-usp-relatorios/programacao-do-curso.html) e os [trabalhos finais](https://beatrizmilz.github.io/2023-curso-de-verao-ime-usp-relatorios/trabalho_final.html) criados pelas pessoas participantes da edição.
 
-- Confira a [página do curso de 2023](https://beatrizmilz.github.io/2023-curso-de-verao-ime-usp-relatorios/programacao-do-curso.html) e os [trabalhos finais](https://beatrizmilz.github.io/2023-curso-de-verao-ime-usp-relatorios/trabalho_final.html) criados pelas pessoas participantes da edição.
-
-- Confira a [página do curso de 2022](https://beatrizmilz.github.io/2022-curso-de-verao-ime-usp-relatorios/programacao-do-curso.html) e os [trabalhos finais](https://beatrizmilz.github.io/2022-curso-de-verao-ime-usp-relatorios/trabalho_final.html) criados pelas pessoas participantes da edição.
-
-
-
+-   Confira a [página do curso de 2022](https://beatrizmilz.github.io/2022-curso-de-verao-ime-usp-relatorios/programacao-do-curso.html) e os [trabalhos finais](https://beatrizmilz.github.io/2022-curso-de-verao-ime-usp-relatorios/trabalho_final.html) criados pelas pessoas participantes da edição.

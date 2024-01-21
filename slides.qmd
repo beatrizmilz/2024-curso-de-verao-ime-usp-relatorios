@@ -23,12 +23,10 @@ criar_tabela_links_extras <- function(links_extras) {
 
 ## Aula 1
 
-Em breve!
-<!-- ### Slides -->
+### Slides
 
-<!-- -   [Slide 1 - Introdução ao Curso](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/01-intro-curso.html) -->
+-   [Slide 1 - Introdução ao Curso](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/01-intro-curso.html)
 
-<!-- -   [Slide 2 - Introdução ao conceito de reprodutibilidade](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/02-reprodutibilidade.html) -->
 
 <!-- ### Scripts/anotações -->
 
@@ -37,14 +35,24 @@ Em breve!
 <!-- ### Links úteis -->
 
 <!-- ```{r, echo=FALSE, message=FALSE, warning=FALSE} -->
+
 <!-- sheet_links |> -->
+
 <!--   dplyr::filter(numero_aula == 1) |> -->
+
 <!--   criar_tabela_links_extras() -->
+
 <!-- ``` -->
 
 <!-- ## Aula 2 -->
 
+
+
 <!-- ### Slides -->
+
+<!-- -   [Slide 2 - Introdução ao conceito de reprodutibilidade](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/02-reprodutibilidade.html) -->
+
+
 
 <!-- -   [Slide 3 - Introdução ao RMarkdown](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/03-intro-rmarkdown.html) -->
 
@@ -57,9 +65,13 @@ Em breve!
 <!-- ### Links úteis -->
 
 <!-- ```{r, echo=FALSE, message=FALSE, warning=FALSE} -->
+
 <!-- sheet_links |> -->
+
 <!--   dplyr::filter(numero_aula == 2) |> -->
+
 <!--   criar_tabela_links_extras() -->
+
 <!-- ``` -->
 
 <!-- ## Aula 3 -->
@@ -77,9 +89,13 @@ Em breve!
 <!-- ### Links úteis -->
 
 <!-- ```{r, echo=FALSE, message=FALSE, warning=FALSE} -->
+
 <!-- sheet_links |> -->
+
 <!--   dplyr::filter(numero_aula == 3) |> -->
+
 <!--   criar_tabela_links_extras() -->
+
 <!-- ``` -->
 
 <!-- ## Aula 4 -->
@@ -101,9 +117,13 @@ Em breve!
 <!-- ### Links úteis -->
 
 <!-- ```{r, echo=FALSE, message=FALSE, warning=FALSE} -->
+
 <!-- sheet_links |> -->
+
 <!--   dplyr::filter(numero_aula == 4) |> -->
+
 <!--   criar_tabela_links_extras() -->
+
 <!-- ``` -->
 
 <!-- ## Aula 5 -->
@@ -112,7 +132,6 @@ Em breve!
 
 <!-- -   [Slide 7 - Introdução ao Git e GitHub no RStudio](https://beatrizmilz.github.io/2022-curso-de-verao-ime-usp-relatorios/slides/#80) -->
 
-
 <!-- ### Scripts/anotações -->
 
 <!-- -   [Pasta com arquivos da aula 5](https://github.com/beatrizmilz/2024-curso-de-verao-ime-usp-relatorios/blob/main/pratica/aula-5/). -->
@@ -120,19 +139,25 @@ Em breve!
 <!-- ### Links úteis -->
 
 <!-- ```{r, echo=FALSE, message=FALSE, warning=FALSE} -->
+
 <!-- sheet_links |> -->
+
 <!--   dplyr::filter(numero_aula == 5) |> -->
+
 <!--   criar_tabela_links_extras() -->
+
 <!-- ``` -->
-
-
 
 <!-- ## Extra -->
 
 <!-- ### Links úteis -->
 
 <!-- ```{r, echo=FALSE, message=FALSE, warning=FALSE} -->
+
 <!-- sheet_links |> -->
+
 <!--   dplyr::filter(numero_aula == "Extra") |> -->
+
 <!--   criar_tabela_links_extras() -->
+
 <!-- ``` -->
