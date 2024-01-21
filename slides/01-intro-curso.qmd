@@ -21,7 +21,11 @@ format:
 editor: visual
 ---
 
-# Sobre o curso
+## Boas vindas!
+
+- Como estão?
+
+- Envie no chat um emoji que represente como você está se sentindo agora!
 
 ## Ministrantes e monitoria
 
@@ -40,6 +44,17 @@ profs |>
 ```
 
 Saiba mais [na página do curso](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/profs.html).
+
+## Quem são vocês?
+
+- Qual é o seu nome?
+
+- Onde você está? Ex: Osasco - SP
+
+- Qual é o seu pacote favorito em R?
+
+- Compartilhe conosco uma série, livro ou filme que indica!
+
 
 ## Alinhamento
 
@@ -63,17 +78,6 @@ Saiba mais [na página do curso](https://beatrizmilz.github.io/2024-curso-de-ver
 
 -   Grupo no Whatsapp temporário: **Compartilhado por email e na Plataforma USP**.
 
-## Objetivos de aprendizagem
-
-Que vocês saibam ao final do curso:
-
--   Noções de reprodutibilidade
-
--   Como criar documentos usando Quarto
-
--   Como exportar esses documentos em word, PDF e HTML.
-
--   Como disponibilizar o documento na internet.
 
 ## Gravação das aulas
 
@@ -115,6 +119,19 @@ Mais informações em: [Trabalho final](https://beatrizmilz.github.io/2024-curso
 - Não abordaremos o RMarkdown: é uma versão anterior ao Quarto, e o Quarto foi lançado há mais de 1,5 anos.
 
 - Teremos conteúdo sobre extensões do Quarto (apresentações, dashboards, etc).
+
+## Objetivos de aprendizagem
+
+Que vocês saibam ao final do curso:
+
+-   Noções de reprodutibilidade
+
+-   Como criar documentos usando Quarto
+
+-   Como exportar esses documentos em word, PDF e HTML.
+
+-   Como disponibilizar o documento na internet.
+
 
 ## Calendário
 
