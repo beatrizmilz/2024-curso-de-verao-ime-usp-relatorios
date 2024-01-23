@@ -1,0 +1,114 @@
+---
+title: "Aula 1"
+author: "Beatriz"
+format: html # página da internet
+# format: revealjs # slide em html
+# format: docx # arquivos word
+# format: pdf
+editor: visual
+lang: pt # mostrar depois como mudar para autoria
+---
+
+## Elementos usados pela turma
+
+-   Figuras (jpeg, png)
+
+-   gráficos
+
+-   tabelas
+
+-   textos
+
+-   códigos
+
+-   filtros de dados
+
+-   mapas
+
+-   fórmulas/equações em latex
+
+-   código em python / compilar com a engine do jupyter
+
+-   logos
+
+-   cabeçalho
+
+-   paginação
+
+-   filtros tipo slicer do excel é legal
+
+-   pesquisar depois: tem ferramentas mais novas de spelling para português?
+
+------------------------------------------------------------------------
+
+## Carregando pacotes
+
+```{r}
+library(tidyverse)
+```
+
+## Criando um gráfico
+
+-   ARRUMAR NA PRÓXIMA AULA: Tirar o warning, mostrar como alterar o tamanho da imagem.
+
+```{r}
+starwars |> 
+  ggplot(aes(x = height, y = mass)) +
+  geom_point() + 
+  theme_light()
+```
+
+## Tabelas
+
+```{r}
+contagem_especies <- starwars |> 
+  count(species, sort = TRUE)
+```
+
+### knitr::kable()
+
+```{r}
+contagem_especies |> 
+  # podemos melhorar
+  knitr::kable()
+```
+
+### flextable
+
+```{r}
+contagem_especies |> 
+  flextable::flextable()
+```
+
+### reactable
+
+```{r}
+contagem_especies |> 
+  reactable::reactable(
+    searchable = TRUE
+  )
+```
+
+### gt
+
+```{r}
+contagem_especies |> 
+  gt::gt()
+```
+
+## DT::datatable()
+
+```{r}
+contagem_especies |> 
+  DT::datatable()
+```
+
+### Sugestão do Bruno
+
+
+```{r}
+starwars |>
+dplyr::count(species, sort = T) |>
+rmarkdown::paged_table()
+
+```
