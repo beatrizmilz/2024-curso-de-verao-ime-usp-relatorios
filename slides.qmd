@@ -23,12 +23,11 @@ criar_tabela_links_extras <- function(links_extras) {
 
 ## Revisão de conceitos úteis
 
-- [O que é o R?](https://www.instagram.com/p/C2DDu-MLZ4W/)
+-   [O que é o R?](https://www.instagram.com/p/C2DDu-MLZ4W/)
 
-- [O que é o RStudio?](https://www.instagram.com/p/C2IJPYqLjIe/)
+-   [O que é o RStudio?](https://www.instagram.com/p/C2IJPYqLjIe/)
 
-
-
+- [Versões gratuitas do RStudio](https://www.instagram.com/p/C2Xh63gLWIM/?img_index=4)
 
 ## Aula 1
 
@@ -38,32 +37,25 @@ criar_tabela_links_extras <- function(links_extras) {
 
 -   [Slide 2 - Introdução ao Quarto](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/02-intro-quarto.html)
 
+### Scripts
 
-<!-- ### Scripts/anotações -->
-
-<!-- -   [aula-1.R](https://github.com/beatrizmilz/2024-curso-de-verao-ime-usp-relatorios/blob/main/pratica/aula-1.R) - anotações. -->
+-   [aula-1.R](https://github.com/beatrizmilz/2024-curso-de-verao-ime-usp-relatorios/blob/main/pratica/aula-1/aula-1.qmd) 
 
 <!-- ### Links úteis -->
 
 <!-- ```{r, echo=FALSE, message=FALSE, warning=FALSE} -->
 
 <!-- sheet_links |> -->
-
 <!--   dplyr::filter(numero_aula == 1) |> -->
-
 <!--   criar_tabela_links_extras() -->
 
 <!-- ``` -->
 
 <!-- ## Aula 2 -->
 
-
-
 <!-- ### Slides -->
 
 <!-- -   [Slide 2 - Introdução ao conceito de reprodutibilidade](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/02-reprodutibilidade.html) -->
-
-
 
 <!-- -   [Slide 3 - Introdução ao RMarkdown](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/03-intro-rmarkdown.html) -->
 

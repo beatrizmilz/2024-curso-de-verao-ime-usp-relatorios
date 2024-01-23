@@ -4,7 +4,7 @@
     "href": "slides.html",
     "title": "Slides e materiais por aula",
     "section": "",
-    "text": "O que é o R?\nO que é o RStudio?",
+    "text": "O que é o R?\nO que é o RStudio?\nVersões gratuitas do RStudio",
     "crumbs": [
       "Materias",
       "Slides e materiais por aula"
@@ -15,7 +15,7 @@
     "href": "slides.html#revisão-de-conceitos-úteis",
     "title": "Slides e materiais por aula",
     "section": "",
-    "text": "O que é o R?\nO que é o RStudio?",
+    "text": "O que é o R?\nO que é o RStudio?\nVersões gratuitas do RStudio",
     "crumbs": [
       "Materias",
       "Slides e materiais por aula"
@@ -26,7 +26,7 @@
     "href": "slides.html#aula-1",
     "title": "Slides e materiais por aula",
     "section": "Aula 1",
-    "text": "Aula 1\nSlides\n\nSlide 1 - Introdução ao Curso\nSlide 2 - Introdução ao Quarto",
+    "text": "Aula 1\nSlides\n\nSlide 1 - Introdução ao Curso\nSlide 2 - Introdução ao Quarto\nScripts\n\naula-1.R",
     "crumbs": [
       "Materias",
       "Slides e materiais por aula"

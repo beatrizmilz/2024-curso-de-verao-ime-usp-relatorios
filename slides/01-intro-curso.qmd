@@ -23,9 +23,9 @@ editor: visual
 
 ## Boas vindas!
 
-- Como estão?
+-   Como estão?
 
-- Envie no chat um emoji que represente como você está se sentindo agora!
+-   Envie no chat um emoji que represente como você está se sentindo agora!
 
 ## Ministrantes e monitoria
 
@@ -47,21 +47,21 @@ Saiba mais [na página do curso](https://beatrizmilz.github.io/2024-curso-de-ver
 
 ## Quem são vocês?
 
-- Qual é o seu nome?
+-   Qual é o seu nome?
 
-- Onde você está? Ex: Osasco - SP
+-   Onde você está? Ex: Osasco - SP
 
-- Qual é o seu pacote favorito em R?
+-   Qual é o seu pacote favorito em R?
 
-- Compartilhe conosco uma série, livro ou filme que indica!
+-   Compartilhe conosco uma série, livro ou filme que indica!
 
 ## Sobre hoje
 
-- Alinhamentos
+-   Alinhamentos
 
-- Sobre o curso
+-   Sobre o curso
 
-- Introdução ao Quarto
+-   Introdução ao Quarto
 
 # Alinhamentos!
 
@@ -81,34 +81,31 @@ Saiba mais [na página do curso](https://beatrizmilz.github.io/2024-curso-de-ver
 
 ## Alinhamento: ensino
 
-
 Quando você pensa em ensino, o que você imagina?
 
 ## Alinhamento: alteração dos conteúdos
 
-- Não teremos mais conteúdo sobre Git e GitHub -> isso será disponibilizado como as aulas gravadas de 2023, como material complementar para quem tiver interesse no assunto. Vocês podem tirar dúvidas!
+-   Não teremos mais conteúdo sobre Git e GitHub -\> isso será disponibilizado como as aulas gravadas de 2023, como material complementar para quem tiver interesse no assunto. Vocês podem tirar dúvidas!
 
-- Não abordaremos o RMarkdown: é uma versão anterior ao Quarto, e o Quarto foi lançado há mais de 1,5 anos.
+-   Não abordaremos o RMarkdown: é uma versão anterior ao Quarto, e o Quarto foi lançado há mais de 1,5 anos.
 
-- Teremos conteúdo sobre extensões do Quarto (apresentações, dashboards, etc).
+-   Teremos conteúdo sobre extensões do Quarto (apresentações, dashboards, etc).
 
 # Sobre o curso!
 
 ## Plataformas utilizadas
 
--   Plataforma USP: <https://cursosextensao.usp.br/course/view.php?id=3449>
+-   Plataforma USP: <https://cursosextensao.usp.br/course/view.php?id=3818>
 
 -   Site do curso: <https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/>
 
 -   Grupo no Whatsapp temporário: **Compartilhado por email e na Plataforma USP**.
-
 
 ## Gravação das aulas
 
 -   As aulas serão gravadas.
 
 -   Caso a aula comece e não esteja sendo gravada, por favor nos avise no chat :)
-
 
 ![](images/paste-66D271C4.png){fig-align="center"}
 
@@ -120,7 +117,7 @@ Quando você pensa em ensino, o que você imagina?
 
 -   Fora do horário de aulas:
 
-    -   Durante o oferecimento do curso: [na plataforma USP Extensão](https://cursosextensao.usp.br/mod/forum/view.php?id=160206) se for dúvida técnica, no grupo do Whatsapp se for uma dúvida sobre o curso/plataforma/etc.
+    -   Durante o oferecimento do curso: na plataforma USP Extensão se for dúvida técnica, no grupo do Whatsapp se for uma dúvida sobre o curso/plataforma/etc.
 
 ## Requisitos para o certificado
 
@@ -128,15 +125,13 @@ Quando você pensa em ensino, o que você imagina?
 
 -   Certificado = Ter **frequência igual ou superior à 75%** (ou seja, pode ter 1 falta) + entrega do trabalho final.
 
-- ATENÇÃO: Vocês precisam marcar na plataforma USP a presença, **durante** o horário da aula.
+-   ATENÇÃO: Vocês precisam marcar na plataforma USP a presença, **durante** o horário da aula.
 
 ## Trabalho final
 
 **Objetivo:** Você deverá criar um documento com Quarto e compartilhar conosco (seja em word, pdf ou HTML). Esse trabalho final é importante para que você pratique o que foi discutido no curso.
 
 Mais informações em: [Trabalho final](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/trabalho_final.html)
-
-
 
 ## Objetivos de aprendizagem
 
@@ -150,26 +145,18 @@ Que vocês saibam ao final do curso:
 
 -   Como disponibilizar o documento na internet.
 
-
 ## Calendário
 
-- **22/01** - Segunda - Introdução ao curso + Introdução ao Quarto
+-   **22/01** - Segunda - Introdução ao curso + Introdução ao Quarto
 
-- **24/01** - Quarta - Introdução à reprodutibilidade + Elementos para relatórios acadêmicos
+-   **24/01** - Quarta - Introdução à reprodutibilidade + Elementos para relatórios acadêmicos
 
-- **29/01** - Segunda - Como compartilhar o relatório + Relatórios com parâmetros
+-   **29/01** - Segunda - Como compartilhar o relatório + Relatórios com parâmetros
 
-- **31/01** - Quarta - Extensões do Quarto: apresentações, dashboards, etc
+-   **31/01** - Quarta - Extensões do Quarto: apresentações, dashboards, etc
 
-- **PAUSA!** - Tempo para fazerem o trabalho final. Teremos monitoria.
+-   **PAUSA!** - Tempo para fazerem o trabalho final. Teremos monitoria.
 
+-   **16/02** - Sexta - Data da entrega do trabalho final
 
-- **16/02** - Sexta - Data da entrega do trabalho final
-
-- **19/02** - Segunda - Dúvidas sobre o trabalho final; Feedback coletivo nos trabalhos finais
-
-
-
-
-
-
+-   **19/02** - Segunda - Dúvidas sobre o trabalho final; Feedback coletivo nos trabalhos finais
