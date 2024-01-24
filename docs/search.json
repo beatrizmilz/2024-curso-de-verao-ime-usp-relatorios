@@ -26,7 +26,18 @@
     "href": "slides.html#aula-1",
     "title": "Slides e materiais por aula",
     "section": "Aula 1",
-    "text": "Aula 1\nSlides\n\nSlide 1 - Introdução ao Curso\nSlide 2 - Introdução ao Quarto\nScripts\n\naula-1.R",
+    "text": "Aula 1\nSlides\n\nIntrodução ao Curso\nIntrodução ao Quarto\nScripts\n\naula-1.R",
+    "crumbs": [
+      "Materias",
+      "Slides e materiais por aula"
+    ]
+  },
+  {
+    "objectID": "slides.html#aula-2",
+    "href": "slides.html#aula-2",
+    "title": "Slides e materiais por aula",
+    "section": "Aula 2",
+    "text": "Aula 2\nSlides\n\nIntrodução ao conceito de reprodutibilidade\nElementos úteis para relatórios acadêmicos",
     "crumbs": [
       "Materias",
       "Slides e materiais por aula"

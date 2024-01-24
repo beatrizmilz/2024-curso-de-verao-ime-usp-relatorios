@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.4.521">
 
   <meta name="author" content="Ministrante: Beatriz Milz">
-  <title>Relatórios reprodutíveis com R (2024) - Relatórios reprodutíveis com R</title>
+  <title>Relatórios reprodutíveis com R (2024) - Relatórios com parâmetros</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -29,71 +29,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -391,8 +326,8 @@
     <div class="slides">
 
 <section class="quarto-title-block center">
-  <h1 class="title">Relatórios reprodutíveis com R</h1>
-  <p class="subtitle">Curso de Verão IME-USP 2022</p>
+  <h1 class="title">Relatórios com parâmetros</h1>
+  <p class="subtitle">Relatórios reprodutíveis com R - Curso de Verão IME-USP 2024</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -405,176 +340,35 @@ Ministrante: Beatriz Milz
 </section>
 <section>
 <section class="title-slide slide level1 center">
-<h1>Elementos úteis para relatórios acadêmicos</h1>
+<h1>Relatórios com parâmetros</h1>
 
 </section>
 <section class="slide level2">
-<h2>Adicionar equações</h2>
-<ul>
-<li><p>Podemos adicionar equações em LaTeX. Dica: <a href="https://app.mettzer.com/latex">Equações em LaTeX no Mettzer</a>, ou pesquise no google por “Equações em LaTeX”.</p></li>
-<li><p>Equação centralizada: Envolver a equação por dois <code>$</code>.</p></li>
-</ul>
-<p><span class="math display">\[{\text{Média}=\frac {a_{1}+a_{2}+\cdots +a_{n}}{n}}\]</span></p>
-<p><strong>Código Markdown:</strong></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a>$${\text{Média}=\frac {a_{1}+a_{2}+\cdots +a_{n}}{n}}$$</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<h2>Parâmetros com R</h2>
+<p>Devemos adicionar os parâmetros (e algum valor padrão) no YAML.</p>
+<p>Ex:</p>
+<pre><code>---
+title: "Relatório com Parâmetros"
+author: "Beatriz"
+date: "Janeiro de 2023"
+format: html
+params:
+  mes: 01
+  ano: 2023
+---</code></pre>
 </section>
 <section class="slide level2">
-<h2>Adicionar equações</h2>
-<ul>
-<li>Equação junto ao texto: Envolver a equação por um <code>$</code>.</li>
-</ul>
-<blockquote>
-<p>Ou também na linha <span class="math inline">\({\text{Média}=\frac {a_{1}+a_{2}+\cdots +a_{n}}{n}}\)</span>, junto ao texto!</p>
-</blockquote>
-<p><strong>Código Markdown:</strong></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1"></a>Ou também na linha ${\text{Média}=\frac {a_{1}+a_{2}+\cdots +a_{n}}{n}}$, junto ao texto!</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<h2>Parâmetros com R</h2>
+<p>Para acessar os parâmetros, usamos: <code>params$nome_parametro</code>.</p>
+<p>Ex: <code>params$mes</code> para acessar o mês, ou <code>params$ano</code>.</p>
+<p>Recomendação de leitura: <a href="https://bookdown.org/yihui/rmarkdown/parameterized-reports.html">R Markdown: The Definitive Guide - Chapter 15 Parameterized reports</a></p>
 </section>
 <section class="slide level2">
-<h2>Adicionar referências</h2>
+<h2>Dicas sobre parâmetros</h2>
 <ul>
-<li><p>Podemos adicionar referências no texto usando um arquivo <code>.bib</code>.</p></li>
-<li><p>Podemos gerar um arquivo <code>.bib</code> usando um gerenciador de referências. Eu utilizo o <a href="https://www.zotero.org/">Zotero</a>, a extensão <a href="https://retorque.re/zotero-better-bibtex/installation/">Better Bibtex for Zotero</a> e a extensão do Zotero para o navegador.</p></li>
-<li><p>No arquivo <code>.bib</code>, cada referência deverá ter um rótulo, que usaremos para citar dentro do arquivo <code>.qmd</code>, precedido de <code>@</code>.</p></li>
-<li><p>Devemos indicar os arquivos <code>.bib</code> no YAML do relatório. Exemplo em um caso com 2 arquivos diferentes:</p></li>
-</ul>
-<pre><code>bibliography: 
-  - references.bib
-  - packages.bib</code></pre>
-</section>
-<section class="slide level2">
-<h2>Citar o R - Função citation()</h2>
-<pre><code>&gt; citation() 
-
-To cite R in publications use:
-
-  R Core Team (2021). R: A language and environment for
-  statistical computing. R Foundation for Statistical
-  Computing, Vienna, Austria. URL https://www.R-project.org/.
-
-A BibTeX entry for LaTeX users is
-
-  @Manual{,
-    title = {R: A Language and Environment for Statistical Computing},
-    author = {{R Core Team}},
-    organization = {R Foundation for Statistical Computing},
-    address = {Vienna, Austria},
-    year = {2021},
-    url = {https://www.R-project.org/},
-  }
-
-We have invested a lot of time and effort in creating R,
-please cite it when using it for data analysis. See also
-‘citation("pkgname")’ for citing R packages.</code></pre>
-</section>
-<section class="slide level2">
-<h2>Citar pacotes</h2>
-<ul>
-<li>Podemos gerar um <code>.bib</code> com as referências de pacotes utilizados usando a função <code>knitr::write_bib()</code>:</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>pacotes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"tidyverse"</span>)</span>
-<span id="cb5-2"><a href="#cb5-2"></a>knitr<span class="sc">::</span><span class="fu">write_bib</span>(pacotes, <span class="co"># pacotes para gerar a referencia</span></span>
-<span id="cb5-3"><a href="#cb5-3"></a>                 <span class="co"># local para salvar o arquivo</span></span>
-<span id="cb5-4"><a href="#cb5-4"></a>                 <span class="st">'packages.bib'</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section class="slide level2">
-<h2></h2>
-<pre><code>@Manual{R-tidyverse,
-  title = {tidyverse: Easily Install and Load the Tidyverse},
-  author = {Hadley Wickham},
-  year = {2021},
-  note = {R package version 1.3.1},
-  url = {https://CRAN.R-project.org/package=tidyverse},
-}
-
-@Article{tidyverse2019,
-  title = {Welcome to the {tidyverse}},
-  author = {Hadley Wickham and Mara Averick and Jennifer Bryan and Winston Chang and Lucy D'Agostino McGowan and Romain François and Garrett Grolemund and Alex Hayes and Lionel Henry and Jim Hester and Max Kuhn and Thomas Lin Pedersen and Evan Miller and Stephan Milton Bache and Kirill Müller and Jeroen Ooms and David Robinson and Dana Paige Seidel and Vitalie Spinu and Kohske Takahashi and Davis Vaughan and Claus Wilke and Kara Woo and Hiroaki Yutani},
-  year = {2019},
-  journal = {Journal of Open Source Software},
-  volume = {4},
-  number = {43},
-  pages = {1686},
-  doi = {10.21105/joss.01686},
-}</code></pre>
-</section>
-<section class="slide level2">
-<h2>Como citar no .qmd</h2>
-<ul>
-<li>Formas de usar os rótulos gerados no arquivo <code>.qmd</code>:</li>
-</ul>
-<div class="cell">
-<div class="cell-output-display">
-<table>
-<colgroup>
-<col style="width: 55%">
-<col style="width: 44%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">forma_de_citar</th>
-<th style="text-align: left;">resultado</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><span class="citation" data-cites="tidyverse2019">@tidyverse2019</span></td>
-<td style="text-align: left;">Wickham et al.&nbsp;(2019)</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span class="citation" data-cites="tidyverse2019 R-tidyverse">[@tidyverse2019; @R-tidyverse]</span></td>
-<td style="text-align: left;">(Wickham et al.&nbsp;2019; Wickham 2021)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Em -<span class="citation" data-cites="tidyverse2019">@tidyverse2019</span>, Hadley e colaboradores…</td>
-<td style="text-align: left;">Em 2019, Hadley e colaboradores…</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Segundo Hadley Wickham e colaboradores <span class="citation" data-cites="tidyverse2019">[-@tidyverse2019]</span></td>
-<td style="text-align: left;">Segundo Hadley Wickham e colaboradores (2019)</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</section>
-<section class="slide level2">
-<h2>Formatação das referências</h2>
-<ul>
-<li><p>O conteúdo do arquivo <code>.bib</code> é formatado a partir de um arquivo <code>.csl</code> (Citation Style Language).</p></li>
-<li><p>Devemos informar caminho até o arquivo CSL no YAML, por exemplo:</p></li>
-</ul>
-<pre><code>csl: template/abnt.csl</code></pre>
-<ul>
-<li><p>Lugares para baixar arquivos CSL:</p>
-<ul>
-<li><a href="https://github.com/citation-style-language/styles" class="uri">https://github.com/citation-style-language/styles</a></li>
-<li><a href="https://citationstyles.org/" class="uri">https://citationstyles.org/</a></li>
-</ul></li>
-</ul>
-</section>
-<section class="slide level2">
-<h2>Referências cruzadas</h2>
-<ul>
-<li><strong>Figuras, tabelas, equações, seções:</strong>
-<ul>
-<li>Usamos o rótulo do chunk (ou nome) onde a tabela ou imagem foi criada para fazer a referência cruzada.
-<ul>
-<li>Ex: <code>@fig-rotulo-da-imagem</code> , <code>@tab-rotulo-da-tabela</code>, <code>@eq-rotulo-da-equacao</code>, <code>@sec-rotulo-da-secao</code>.</li>
-</ul></li>
-</ul></li>
-</ul>
-</section>
-<section class="slide level2">
-<h2>Referências cruzadas de capítulos</h2>
-<ul>
-<li><p>Para fazer referência cruzada em capítulos/seções, devemos adicionar um rótulo para o capítulo, que deverá ser escrito logo após a cabeçalho (que delimitamos com <code>#</code>, <code>##</code>, etc).</p></li>
-<li><p>No RMarkdown, funciona com outputs que são derivados do pacote <code>{bookdown}</code>.</p></li>
-</ul>
-<p>Ex: <code>bookdown::html_document2</code>, <code>bookdown::word_document2</code></p>
-<ul>
-<li>Referência: <a href="https://bookdown.org/yihui/rmarkdown-cookbook/cross-ref.html" class="uri">https://bookdown.org/yihui/rmarkdown-cookbook/cross-ref.html</a></li>
+<li><p>No RStudio, é possível acessar os parâmetros com o autocomplete de <code>params$</code>.</p></li>
+<li><p>Podemos usar o combo <code>purrr::walk() + quarto::quarto_render()</code> para criar relatórios de forma automatizada.</p></li>
+<li><p>Vamos para as práticas!</p></li>
 </ul>
 
 
@@ -792,44 +586,6 @@ please cite it when using it for data analysis. See also
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

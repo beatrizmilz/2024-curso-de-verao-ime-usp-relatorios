@@ -27,37 +27,41 @@ criar_tabela_links_extras <- function(links_extras) {
 
 -   [O que é o RStudio?](https://www.instagram.com/p/C2IJPYqLjIe/)
 
-- [Versões gratuitas do RStudio](https://www.instagram.com/p/C2Xh63gLWIM/?img_index=4)
+-   [Versões gratuitas do RStudio](https://www.instagram.com/p/C2Xh63gLWIM/?img_index=4)
 
 ## Aula 1
 
 ### Slides
 
--   [Slide 1 - Introdução ao Curso](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/01-intro-curso.html)
+-   [Introdução ao Curso](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/01-intro-curso.html)
 
--   [Slide 2 - Introdução ao Quarto](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/02-intro-quarto.html)
+-   [Introdução ao Quarto](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/02-intro-quarto.html)
 
 ### Scripts
 
--   [aula-1.R](https://github.com/beatrizmilz/2024-curso-de-verao-ime-usp-relatorios/blob/main/pratica/aula-1/aula-1.qmd) 
+-   [aula-1.R](https://github.com/beatrizmilz/2024-curso-de-verao-ime-usp-relatorios/blob/main/pratica/aula-1/aula-1.qmd)
 
 <!-- ### Links úteis -->
 
 <!-- ```{r, echo=FALSE, message=FALSE, warning=FALSE} -->
 
 <!-- sheet_links |> -->
+
 <!--   dplyr::filter(numero_aula == 1) |> -->
+
 <!--   criar_tabela_links_extras() -->
 
 <!-- ``` -->
 
-<!-- ## Aula 2 -->
+## Aula 2
 
-<!-- ### Slides -->
+### Slides
 
-<!-- -   [Slide 2 - Introdução ao conceito de reprodutibilidade](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/02-reprodutibilidade.html) -->
+-   [Introdução ao conceito de reprodutibilidade](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/03-reprodutibilidade.html)
 
-<!-- -   [Slide 3 - Introdução ao RMarkdown](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/03-intro-rmarkdown.html) -->
+-   [Elementos úteis para relatórios acadêmicos](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/04-elementos-acad.html)
+
+
 
 <!-- ### Scripts/anotações -->
 

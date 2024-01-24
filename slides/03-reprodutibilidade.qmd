@@ -1,6 +1,6 @@
 ---
-title: "Relatórios reprodutíveis com R"
-subtitle: 'Curso de Verão IME-USP 2022' 
+title: "Introdução ao conceito de reprodutibilidade"
+subtitle: 'Relatórios reprodutíveis com R - Curso de Verão IME-USP 2024' 
 author: "Ministrante: Beatriz Milz"
 format: 
   revealjs:
@@ -39,8 +39,7 @@ editor: visual
 
 -   "Para alguém fazer uma afirmação científica legítima, ele deve ser capaz de reproduzir totalmente seus resultados a partir de seus dados brutos (e de preferência outros devem ser capazes de reproduzi-los também)". [Dr. John Paul Helveston](https://jhelvy.github.io/r4aPrimer/L6-reproducible-reporting.html)
 
----
-
+------------------------------------------------------------------------
 
 ### Reprodutibilidade
 
@@ -51,18 +50,13 @@ Quais fatores contribuem com pesquisa não reprodutível? Fonte: <a href='https:
 knitr::include_graphics("images/irreproducible.png")
 ```
 
-
----
+------------------------------------------------------------------------
 
 ### Reprodutibilidade
 
-
 > "Reprodutibilidade é como escovar os dentes. Isso é bom para você, mas leva tempo e esforço. Depois de aprender, torna-se um hábito." - Irakli Loladze, Bryan College of Health Sciences em Lincoln, Nebraska.
 
-
 Baker, M. 1,500 scientists lift the lid on reproducibility. Nature 533, 452--454 (2016). <https://doi.org/10.1038/533452a>
-
-
 
 ## Exemplos
 
@@ -80,7 +74,6 @@ Outras referências interessantes:
 
 ## Projetos do RStudio
 
-
 -   O RStudio permite a criação de Projetos.
 
 -   O projeto é uma pasta no computador, onde devemos armazenar todos os arquivos usados ou criados em uma análise. Essa pasta irá conter também um arquivo com o nome do projeto e a extensão `.Rproj`.
@@ -95,8 +88,6 @@ Outras referências interessantes:
 #| fig-align: "center"
 knitr::include_graphics("images/rprojs.png")
 ```
-
-
 
 ## Criando um projeto
 
@@ -144,14 +135,13 @@ Exemplos acessando o mesmo arquivo:
 
 -   Caminho absoluto:
 
-```
+```         
 "/Users/beatrizmilz/GitHub/2023-curso-de-verao-ime-usp-relatorios/docs/slides/images/rprojs.png"
 ```
 
-
 -   Caminho relativo:
 
-```
+```         
 "docs/slides/images/rprojs.png"
 ```
 
@@ -171,7 +161,7 @@ here::here()
 
 -   Ao reabrir o RStudio, o conteúdo armazenados nestes arquivos será carregado no ambiente de trabalho atual como se nada tivesse acontecido.
 
-- Leia mais [neste capítulo do livro Zen do R](https://curso-r.github.io/zen-do-r/rdata-rhistory.html)
+-   Leia mais [neste capítulo do livro Zen do R](https://curso-r.github.io/zen-do-r/rdata-rhistory.html)
 
 ## Por que desistir do .RData e .Rhistory
 
@@ -215,8 +205,7 @@ pinguins <- readr::read_csv(caminho)
 
 6)  Verifique no painel Environment do RStudio se a base de Pinguins foi importada corretamente.
 
-
----
+------------------------------------------------------------------------
 
 ### Exemplo do Session Info
 
@@ -230,7 +219,6 @@ devtools::session_info()
 
 -   Utilizar boas práticas aumentam as chances de escrever um código reprodutível.
 
-
 ## Exemplos de boas práticas:
 
 -   Utilizar Projetos do RStudio. Quando usamos projetos do RStudio, o diretório de trabalho será a pasta principal do projeto.
@@ -238,5 +226,5 @@ devtools::session_info()
 -   Desabilitar o .Rhistory e .Rdata.
 
 -   Utilizar caminhos relativos.
-    
--  Documentar os pacotes e versões utilizadas.
+
+-   Documentar os pacotes e versões utilizadas.

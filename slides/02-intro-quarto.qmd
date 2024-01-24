@@ -1,6 +1,6 @@
 ---
 title: "Introdução ao Quarto"
-subtitle: 'Curso de Verão IME-USP 2022' 
+subtitle: 'Relatórios reprodutíveis com R - Curso de Verão IME-USP 2024' 
 author: "Ministrante: Beatriz Milz"
 format: 
   revealjs:
@@ -60,8 +60,6 @@ knitr::include_graphics("https://beatrizmilz.github.io/python-brasil-2021-reticu
 
 Fonte: Conceito do ciclo de ciência de dados apresentado por [Hadley Wickham no livro R for Data Science](https://r4ds.had.co.nz/introduction.html), ilustração por [Allison Horst](https://github.com/allisonhorst).
 
-
-
 ## Pacote R Markdown
 
 -   Criado e mantido pela [RStudio](https://rstudio.com/)
@@ -78,8 +76,6 @@ Fonte: Conceito do ciclo de ciência de dados apresentado por [Hadley Wickham no
 #| fig-align: "center"
 knitr::include_graphics("https://beatrizmilz.github.io/python-brasil-2021-reticulate/img/hex-rmarkdown.png")
 ```
-
-
 
 ## Por que o Quarto existe?
 
@@ -212,11 +208,17 @@ editor: visual
 <!-- ## Apresentação {auto-animate="true"} -->
 
 <!-- ``` r -->
+
 <!-- --- -->
+
 <!-- title: "Título" -->
+
 <!-- format: revealjs -->
+
 <!-- editor: visual -->
+
 <!-- --- -->
+
 <!-- ``` -->
 
 <!-- -   Os slides são separados considerando os títulos e subtítulos: `#` e `##`. -->

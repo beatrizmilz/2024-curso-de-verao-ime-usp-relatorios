@@ -1,6 +1,6 @@
 ---
-title: "Relatórios reprodutíveis com R"
-subtitle: 'Curso de Verão IME-USP 2022' 
+title: "Relatórios com parâmetros"
+subtitle: 'Relatórios reprodutíveis com R - Curso de Verão IME-USP 2024' 
 author: "Ministrante: Beatriz Milz"
 format: 
   revealjs:
@@ -23,17 +23,13 @@ editor: visual
 
 # Relatórios com parâmetros
 
-
 ## Parâmetros com R
 
-
-Devemos adicionar os parâmetros (e algum valor padrão) no YAML. 
+Devemos adicionar os parâmetros (e algum valor padrão) no YAML.
 
 Ex:
 
-
-
-```
+```         
 ---
 title: "Relatório com Parâmetros"
 author: "Beatriz"
@@ -45,11 +41,7 @@ params:
 ---
 ```
 
-Referência: <https://quarto.org/docs/computations/parameters.html>
-
-
 ## Parâmetros com R
-
 
 Para acessar os parâmetros, usamos: `params$nome_parametro`.
 
@@ -57,12 +49,10 @@ Ex: `params$mes` para acessar o mês, ou `params$ano`.
 
 Recomendação de leitura: [R Markdown: The Definitive Guide - Chapter 15 Parameterized reports](https://bookdown.org/yihui/rmarkdown/parameterized-reports.html)
 
-
-
 ## Dicas sobre parâmetros
 
-- No RStudio, é possível acessar os parâmetros com o autocomplete de `params$`.
+-   No RStudio, é possível acessar os parâmetros com o autocomplete de `params$`.
 
-- Podemos usar o combo `purrr::walk() + quarto::quarto_render()` para criar relatórios de forma automatizada.
+-   Podemos usar o combo `purrr::walk() + quarto::quarto_render()` para criar relatórios de forma automatizada.
 
-- Vamos para as práticas!
+-   Vamos para as práticas!

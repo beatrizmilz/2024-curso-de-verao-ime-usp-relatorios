@@ -1,6 +1,6 @@
 ---
-title: "Relatórios reprodutíveis com R"
-subtitle: 'Curso de Verão IME-USP 2022' 
+title: "Elementos úteis para relatórios acadêmicos"
+subtitle: 'Relatórios reprodutíveis com R - Curso de Verão IME-USP 2024' 
 author: "Ministrante: Beatriz Milz"
 format: 
   revealjs:
@@ -20,58 +20,51 @@ format:
     preview-links: false    
 editor: visual
 ---
-
-# Elementos úteis para relatórios acadêmicos
-
 ## Adicionar equações
 
-- Podemos adicionar equações em LaTeX. Dica: [Equações em LaTeX no Mettzer](https://app.mettzer.com/latex), ou pesquise no google por "Equações em LaTeX".
-  
-- Equação centralizada: Envolver a equação por dois `$`.
+-   Podemos adicionar equações em LaTeX. Dica: [Equações em LaTeX no Mettzer](https://app.mettzer.com/latex), ou pesquise no google por "Equações em LaTeX".
+
+-   Equação centralizada: Envolver a equação por dois `$`.
 
 $${\text{Média}=\frac {a_{1}+a_{2}+\cdots +a_{n}}{n}}$$
 
 **Código Markdown:**
-```md
+
+``` md
 $${\text{Média}=\frac {a_{1}+a_{2}+\cdots +a_{n}}{n}}$$
 ```
 
-
 ## Adicionar equações
 
-  - Equação junto ao texto: Envolver a equação por um `$`.
+-   Equação junto ao texto: Envolver a equação por um `$`.
 
 > Ou também na linha ${\text{Média}=\frac {a_{1}+a_{2}+\cdots +a_{n}}{n}}$, junto ao texto!
 
 **Código Markdown:**
-```md
+
+``` md
 Ou também na linha ${\text{Média}=\frac {a_{1}+a_{2}+\cdots +a_{n}}{n}}$, junto ao texto!
 ```
 
-
-
 ## Adicionar referências
 
-- Podemos adicionar referências no texto usando um arquivo `.bib`. 
+-   Podemos adicionar referências no texto usando um arquivo `.bib`.
 
-- Podemos gerar um arquivo `.bib` usando um gerenciador de referências. Eu utilizo o [Zotero](https://www.zotero.org/), a extensão [Better Bibtex for Zotero](https://retorque.re/zotero-better-bibtex/installation/) e a extensão do Zotero para o navegador.
+-   Podemos gerar um arquivo `.bib` usando um gerenciador de referências. Eu utilizo o [Zotero](https://www.zotero.org/), a extensão [Better Bibtex for Zotero](https://retorque.re/zotero-better-bibtex/installation/) e a extensão do Zotero para o navegador.
 
-- No arquivo `.bib`, cada referência deverá ter um rótulo, que usaremos para citar dentro do arquivo `.qmd`, precedido de `@`.
+-   No arquivo `.bib`, cada referência deverá ter um rótulo, que usaremos para citar dentro do arquivo `.qmd`, precedido de `@`.
 
-- Devemos indicar os arquivos `.bib` no YAML do relatório. Exemplo em um caso com 2 arquivos diferentes:
+-   Devemos indicar os arquivos `.bib` no YAML do relatório. Exemplo em um caso com 2 arquivos diferentes:
 
-```
+```         
 bibliography: 
   - references.bib
   - packages.bib
 ```
-  
-  
 
 ## Citar o R - Função citation()
 
-
-```
+```         
 > citation() 
 
 To cite R in publications use:
@@ -96,10 +89,9 @@ please cite it when using it for data analysis. See also
 ‘citation("pkgname")’ for citing R packages.
 ```
 
-
 ## Citar pacotes
 
-- Podemos gerar um `.bib` com as referências de pacotes utilizados usando a função `knitr::write_bib()`:
+-   Podemos gerar um `.bib` com as referências de pacotes utilizados usando a função `knitr::write_bib()`:
 
 ```{r echo=TRUE}
 pacotes <- c("tidyverse")
@@ -108,11 +100,9 @@ knitr::write_bib(pacotes, # pacotes para gerar a referencia
                  'packages.bib')
 ```
 
+## 
 
-##
-
-
-````
+```         
 @Manual{R-tidyverse,
   title = {tidyverse: Easily Install and Load the Tidyverse},
   author = {Hadley Wickham},
@@ -131,14 +121,11 @@ knitr::write_bib(pacotes, # pacotes para gerar a referencia
   pages = {1686},
   doi = {10.21105/joss.01686},
 }
-````
-
-
-
+```
 
 ## Como citar no .qmd
 
-- Formas de usar os rótulos gerados no arquivo `.qmd`:
+-   Formas de usar os rótulos gerados no arquivo `.qmd`:
 
 ```{r echo=FALSE}
 tibble::tibble(
@@ -163,39 +150,33 @@ tibble::tibble(
   knitr::kable()
 ```
 
-
-
 ## Formatação das referências
 
-- O conteúdo do arquivo `.bib` é formatado a partir de um arquivo `.csl` (Citation Style Language).
+-   O conteúdo do arquivo `.bib` é formatado a partir de um arquivo `.csl` (Citation Style Language).
 
-- Devemos informar caminho até o arquivo CSL no YAML, por exemplo:
+-   Devemos informar caminho até o arquivo CSL no YAML, por exemplo:
 
-```
+```         
 csl: template/abnt.csl
 ```
 
-- Lugares para baixar arquivos CSL:
+-   Lugares para baixar arquivos CSL:
 
-  - <https://github.com/citation-style-language/styles>
-  - <https://citationstyles.org/>
-  
-  
+    -   <https://github.com/citation-style-language/styles>
+    -   <https://citationstyles.org/>
+
 ## Referências cruzadas
 
-
-- **Figuras, tabelas, equações, seções:**
-  - Usamos o rótulo do chunk (ou nome) onde a tabela ou imagem foi criada para fazer a referência cruzada. 
-    - Ex: `@fig-rotulo-da-imagem` , `@tab-rotulo-da-tabela`, `@eq-rotulo-da-equacao`, `@sec-rotulo-da-secao`.
-
+-   **Figuras, tabelas, equações, seções:**
+    -   Usamos o rótulo do chunk (ou nome) onde a tabela ou imagem foi criada para fazer a referência cruzada.
+        -   Ex: `@fig-rotulo-da-imagem` , `@tbl-rotulo-da-tabela`, `@eq-rotulo-da-equacao`, `@sec-rotulo-da-secao`.
 
 ## Referências cruzadas de capítulos
 
-- Para fazer referência cruzada em capítulos/seções, devemos adicionar um rótulo para o capítulo, que deverá ser escrito logo após a cabeçalho (que delimitamos com `#`, `##`, etc).
-  
-- No RMarkdown, funciona com outputs que são derivados do pacote `{bookdown}`.
+-   Para fazer referência cruzada em capítulos/seções, devemos adicionar um rótulo para o capítulo, que deverá ser escrito logo após a cabeçalho (que delimitamos com `#`, `##`, etc).
 
-Ex: `bookdown::html_document2`,  `bookdown::word_document2`
+-   No RMarkdown, funciona com outputs que são derivados do pacote `{bookdown}`.
 
+Ex: `bookdown::html_document2`, `bookdown::word_document2`
 
-- Referência: <https://bookdown.org/yihui/rmarkdown-cookbook/cross-ref.html>
+-   Referência: <https://bookdown.org/yihui/rmarkdown-cookbook/cross-ref.html>
