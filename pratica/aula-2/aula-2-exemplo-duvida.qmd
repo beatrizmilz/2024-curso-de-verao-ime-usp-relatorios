@@ -1,0 +1,12 @@
+---
+title: "Untitled"
+format: html
+editor: visual
+---
+
+```{r}
+source("auxiliar.R")
+```
+
+Hoje é dia `r formatar_data(Sys.Date())`!
+

@@ -1,0 +1,28 @@
+---
+title: "Aula 2"
+format: html
+editor: visual
+---
+
+```{r}
+library(dplyr)
+```
+
+
+```{r}
+# Ponto importante!
+
+# caminho <- "../dados/pinguins.csv"
+#caminho <- here::here("dados/pinguins.csv")
+caminho <- here::here("dados", "pinguins.csv")
+pinguins <- readr::read_csv(caminho)
+```
+
+
+```{r}
+# A base pinguins precisa estar carregada para isso funcionar!
+# E o pacote dplyr carregado.
+pinguins |> 
+  count(especie, sort = TRUE)
+```
+
