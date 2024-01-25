@@ -17,4 +17,4 @@ gerar_arquivo_presenca <- function(aula = 1) {
   return(lista_presenca)
 }
 
-
+gerar_arquivo_presenca(2)
