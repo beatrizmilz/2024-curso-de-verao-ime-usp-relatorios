@@ -1,0 +1,167 @@
+---
+title: "Aula 3"
+author: "Beatriz e turma de 2024"
+format:
+  html:
+    theme: minty # https://quarto.org/docs/output-formats/html-themes.html
+# format: 
+#   docx:
+#     reference-doc: "template.docx"    
+editor: visual
+lang: pt
+bibliography: 
+  - references.bib
+  - packages.bib
+---
+
+<!-- Lembretes para a aula 3: -->
+
+<!-- - relembrar como usar o here::here() :check!:  -->
+
+<!-- - Chunk options: como esconder as mensagens, códigos, etc? :check!: -->
+
+<!-- - Resultados de códigos no meio do texto (inline code) :check!: -->
+
+<!-- - Temas do quarto html -->
+
+<!-- prof, pra word tbm tem temas? -->
+
+```{r}
+#| label: pacotes
+#| warning: false
+#| echo: false
+library(tidyverse)
+library(here)
+```
+
+```{r}
+#| include: false
+# Não deu certo :(
+# pinguins <- read_csv("dados/pinguins.csv")
+# ! 'dados/pinguins.csv' does not exist in current working directory ('/Users/beatrizmilz/Documents/IME-Verao/relatorios-2024/aula-3').
+# Backtrace:
+#  1. readr::read_csv("Dados/pinguins.csv")
+#  4. vroom (local) `<fn>`("Dados/pinguins.csv")
+#  5. vroom:::check_path(path)
+```
+
+```{r}
+#| include: false
+# Esse dá certo, mas pode quebrar se você mudar os arquivos 
+# de lugar!
+
+# Os ../ sobe um nível de pastas
+# pinguins <- read_csv("../dados/pinguins.csv")
+```
+
+```{r}
+#| label: dados
+#| message: false
+#| echo: false
+# o here sempre considera a pasta inicial do projeto
+# como início
+pinguins <- read_csv(here("dados","pinguins.csv"))
+```
+
+```{r}
+#| include: false
+# O here apenas cria um texto com o caminho!
+# here("pasta_2", "dados","pinguins.csv")
+```
+
+```{r}
+#| include: false
+# Forma com o R base
+# length(unique(pinguins$ilha))
+
+# Forma com dplyr
+# n_distinct(pinguins$ilha)
+```
+
+```{r}
+#| echo: false
+# função para não repetir tanto o mesmo bloco de código!
+combinar_palavras <- function(vetor) {
+  knitr::combine_words(vetor,
+                       and = " e ",
+                       oxford_comma = FALSE)
+}
+```
+
+```{r}
+#| echo: false
+# nome das colunas
+# names(pinguins)
+
+ilhas_pinguins <- unique(pinguins$ilha) |> 
+  combinar_palavras()
+
+especies_pinguins <- unique(pinguins$especie) |> 
+  combinar_palavras()
+```
+
+## Inline code/Código na linha
+
+Esse relatório foi elaborado utilizando os dados de pinguins, que apresenta `r nrow(pinguins)` pinguins e `r ncol(pinguins)` variáveis. Esses pinguins são de `r n_distinct(pinguins$ilha)` ilhas: `r ilhas_pinguins`. As espécies coletadas são: `r especies_pinguins`. Os dados foram coletados entre os anos `r min(pinguins$ano)` e `r max(pinguins$ano)`. A média massa corporal dos pinguins encontrados foi de `r round(mean(pinguins$massa_corporal, na.rm = TRUE))` g.
+
+## Imagem
+
+```{r}
+#| label: fig-comprimento-bico-e-massa
+#| warning: false
+#| echo: false
+#| out-width: "90%"
+#| fig-cap: "Gráfico de dispersão"
+#| fig-align: "center"
+pinguins |> 
+  ggplot() +
+  aes(x = comprimento_bico, y = massa_corporal) +
+  geom_point(aes(color = especie)) +
+  labs(x = "Comprimento do bico (mm)",
+       y = "Massa corporal (g)",
+       color = "Espécie") +
+  scale_colour_viridis_d() +
+  theme_light()
+```
+
+## Tabela
+
+### Tabela com knitr
+
+```{r}
+#| echo: false
+pinguins |> 
+  count(especie, ilha) |> 
+  knitr::kable(
+    col.names = c("Espécie", "Ilha", "Quantidade de pinguins")
+  )
+```
+
+### Tabela com flextable
+
+```{r}
+#| echo: false
+pinguins |>
+  count(especie, ilha) |>
+  flextable::flextable() |>
+  flextable::autofit()
+```
+
+## Equações
+
+Ao realizar a conta $1 + 1 = 2$, descubro que ....
+
+$${\text{Média}=\frac {a_{1}+a_{2}+\cdots +a_{n}}{n}}$$
+
+## Adicionando referências
+
+Nesta análise, utilizamos dados de pinguins [@gorman2014] disponibilizados no pacote palmerpenguins e traduzidos no pacote dados [@R-palmerpenguins; @R-dados].
+
+
+```{r}
+knitr::write_bib(
+  x = c("palmerpenguins", "dados", "tidyverse", "knitr"),
+  file = "packages.bib"
+)
+```
+
