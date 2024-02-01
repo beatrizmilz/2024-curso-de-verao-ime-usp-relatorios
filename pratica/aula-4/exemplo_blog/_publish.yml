@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: e123b092-06f6-4d92-bc0b-d398d590f22b
+      url: 'https://blog-relatorios-reprodutiveis-2024.netlify.app'
