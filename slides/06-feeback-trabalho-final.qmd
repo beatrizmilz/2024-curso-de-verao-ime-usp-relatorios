@@ -30,22 +30,123 @@ bibliography: "feedback-packages.bib"
 
 # Entregas trabalho final
 
-# Feedback do trabalho final
-
 ## Objetivo do trabalho final
 
--  Aplicar os conceitos aprendidos durante o curso em um relatório reprodutível.
+-   Aplicar os conceitos aprendidos durante o curso em um relatório reprodutível.
+
+## Quantidade de entregas
+<center>
+```{r}
+#| fig-align: center
+#| fig-height: 8
+# Carregar o pacote ggplot2
+library(highcharter)
+
+# Dados
+dados <- data.frame(
+  cat = c("Não acessaram a Plataforma", "Não compareceram à pelo menos metade das aulas", "Acompanharam mas não entregaram o trabalho final", "Entregaram o trabalho final"),
+  n = c(5, 13, 13, 22)
+) |> 
+  dplyr::mutate(
+    porcentagem = n/sum(n) * 100
+  )
+
+
+options(highcharter.theme = hc_theme_smpl(tooltip = list(
+  valueDecimals = 1,
+  pointFormat = "{point.y}%"
+)))
+
+hchart(dados,
+       "funnel",
+       hcaes(x = cat, y = porcentagem), 
+       name = "Porcentagem")
+
+```
+</center>
+
+<!-- Inscrições no curso: -->
+
+<!-- - 53 pessoas inscritas -->
+
+<!--   - 5 pessoas não entraram na plataforma e não acompanharam o curso -->
+
+<!--   - 48 entraram na plataforma -->
+
+
+<!-- Inscrições na plataforma: -->
+
+<!-- - 48 pessoas fizeram cadastro na plataforma -->
+
+<!--   - 13 pessoas não compareceram nas aulas em pelos menos 3 das 4 aulas até agora. -->
+
+<!--   - 35 pessoas acompanharam o curso. -->
+
+<!-- Participantes que acompanharam o curso (35 pessoas): -->
+
+<!--   - 22 entregaram o trabalho final -->
+
+<!--   - 13 não entregaram o trabalho final -->
+
+
+
 
 
 ## Objetivo do feedback
 
-- Oferecer sugestões para que em atividades futuras (no trabalho, universidade, etc) vocês possam melhorar os relatórios gerados.
+-   Oferecer sugestões para que em atividades futuras (no trabalho, universidade, etc) vocês possam melhorar os relatórios gerados.
 
 ## Estrutura do feedback
 
-- Mostraremos alguns exemplos obtidos em trabalhos entregues (sem identificação).
+-   Mostraremos alguns exemplos obtidos em trabalhos entregues (sem identificação).
 
-- Comentaremos sugestões de melhoria, buscando oferecer links para a documentação do Quarto, e exemplos de código.
+-   Comentaremos sugestões de melhoria, buscando oferecer links para a documentação do Quarto, e exemplos de código.
+
+
+# Vamos aos feedbacks!
+
+## Estrutura do relatório
+
+- É interessante ter seções que representem a introdução, desenvolvimento e conclusão.
+
+- A introdução pode conter uma breve descrição do que será apresentado no relatório, sendo importante constar um objetivo claro. Se possível, tente escrever algumas perguntas que você pretende responder com a análise.
+
+- A conclusão pode resgatar os objetivos e a pergunta a ser respondida, e apontar quais foram as respostas e principais pontos encontrados. É interessante adicionar ideias para análises futuras.
+
+
+## Base de dados
+
+- Caso seja uma base de dados pública, é interessante apontar informações como:
+  - Nome da base de dados
+  - Link para a base de dados (URL para que outras pessoas encontrem)
+  - Descrição da base de dados
+  - Data de atualização (se existir)
+  - Data de acesso à base de dados
+  - Autores da base de dados (ex. qual órgão público? foi obtido no kaggle? etc).
+
+
+## Idioma do relatório
+
+-   Nos metadados, adicionar ([ver documentação](https://quarto.org/docs/authoring/language.html)):
+
+```         
+lang: pt  
+```
+
+## Centralizar imagens
+
+...
+
+## Aprimorando tabelas
+
+Utilize funções de criação de tabelas (como `knitr::kable()`, `flextable::flextable()`, `DT::datatable()`, `reactable::reactable()`, entre outros) para melhorar a aparência das tabelas.
+
+
+## Renomear colunas das tabelas
+
+...
+
+
 
 ## Citando pacotes (trabalho)
 
@@ -56,12 +157,11 @@ bibliography: "feedback-packages.bib"
 > Para realizar as análises, foram utilizados pacotes disponíveis no CRAN, tais como: `{dplyr}` [@R-dplyr], `{ggplot2}` [@R-ggplot2], `{knitr}` [@R-knitr], `{reactable}` [@R-reactable], `{flextable}` [@R-flextable], `{readxl}` [@R-readxl] e `{DT}` [@R-DT].
 
 
-
 ## Citando pacotes (como fazer - parte 1)
 
-- Nos metadados ([ver documentação](https://quarto.org/docs/output-formats/html-code.html#code-linking)):
+-   Nos metadados ([ver documentação](https://quarto.org/docs/output-formats/html-code.html#code-linking)):
 
-```
+```         
 format:
   html:
     code-link: true
@@ -70,11 +170,12 @@ bibliography: "feedback-packages.bib"
 
 ## Citando pacotes (como fazer - parte 2)
 
-- No relatório ([ver documentação](https://quarto.org/docs/authoring/footnotes-and-citations.html): 
+-   No relatório ([ver documentação](https://quarto.org/docs/authoring/footnotes-and-citations.html):
 
-```
+```         
 Para realizar as análises, foram utilizados pacotes disponíveis no CRAN, tais como: `{dplyr}` [@R-dplyr], `{ggplot2}` [@R-ggplot2], `{knitr}` [@R-knitr], `{reactable}` [@R-reactable], `{flextable}` [@R-flextable], `{readxl}` [@R-readxl] e `{DT}` [@R-DT].
 ```
+
 <br>
 
 ```{r}
@@ -90,5 +191,8 @@ knitr::write_bib(c(
 ),
 file =  "feedback-packages.bib")
 ```
+
+## Referências cruzadas
+
 
 ## Referências citadas nos slides
