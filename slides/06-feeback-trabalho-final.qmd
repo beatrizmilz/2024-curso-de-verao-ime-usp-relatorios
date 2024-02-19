@@ -6,11 +6,6 @@ format:
   revealjs:
     width: 1600
     height: 900  
-    toc: true
-    toc_float: true
-    toc-depth: 1
-    toc-location: body
-    toc-title: "Conteúdos"
     logo: "https://www.ime.usp.br/verao/assets/images/logo_verao.png" 
     footer: "Slides por [Beatriz Milz](https://beamilz.com), feito com  [Quarto](https://quarto.org/docs/presentations/revealjs/index.html). Código disponível no [GitHub](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/)."
     theme: ["custom.scss"]
@@ -28,14 +23,28 @@ bibliography: "feedback-packages.bib"
 
 -   Como estão?
 
-# Entregas trabalho final
+![](img-feedback/escala-naruto.jpg){fig-align="center"}
+
+## Plano para hoje
+
+-   Conversa sobre o trabalho final
+
+-   Comentários gerais sobre os trabalhos
+
+# Conversa sobre o trabalho final
+
+## Quais foram as impressões de vocês sobre os trabalhos finais?
+
+-   Mandem no chat :)
 
 ## Objetivo do trabalho final
 
 -   Aplicar os conceitos aprendidos durante o curso em um relatório reprodutível.
 
 ## Quantidade de entregas
+
 <center>
+
 ```{r}
 #| fig-align: center
 #| fig-height: 8
@@ -63,6 +72,7 @@ hchart(dados,
        name = "Porcentagem")
 
 ```
+
 </center>
 
 <!-- Inscrições no curso: -->
@@ -72,7 +82,6 @@ hchart(dados,
 <!--   - 5 pessoas não entraram na plataforma e não acompanharam o curso -->
 
 <!--   - 48 entraram na plataforma -->
-
 
 <!-- Inscrições na plataforma: -->
 
@@ -88,42 +97,40 @@ hchart(dados,
 
 <!--   - 13 não entregaram o trabalho final -->
 
-
-
-
-
 ## Objetivo do feedback
 
 -   Oferecer sugestões para que em atividades futuras (no trabalho, universidade, etc) vocês possam melhorar os relatórios gerados.
-
-## Estrutura do feedback
-
--   Mostraremos alguns exemplos obtidos em trabalhos entregues (sem identificação).
-
--   Comentaremos sugestões de melhoria, buscando oferecer links para a documentação do Quarto, e exemplos de código.
-
+-   Os monitores oferecem um feedback inicial, e eu complemento e envio.
 
 # Vamos aos feedbacks!
 
+Comentários baseados nos trabalhos já revisados!
+
 ## Estrutura do relatório
 
-- É interessante ter seções que representem a introdução, desenvolvimento e conclusão.
+-   É interessante ter seções que representem a introdução, desenvolvimento e conclusão.
 
-- A introdução pode conter uma breve descrição do que será apresentado no relatório, sendo importante constar um objetivo claro. Se possível, tente escrever algumas perguntas que você pretende responder com a análise.
+## Estrutura do relatório
 
-- A conclusão pode resgatar os objetivos e a pergunta a ser respondida, e apontar quais foram as respostas e principais pontos encontrados. É interessante adicionar ideias para análises futuras.
+-   A introdução pode conter uma breve descrição do que será apresentado no relatório, sendo importante constar um objetivo claro.
 
+-   Se possível, tente escrever algumas perguntas que você pretende responder com a análise.
+
+## Estrutura do relatório
+
+-   A conclusão pode resgatar os objetivos e a pergunta a ser respondida, e apontar quais foram as respostas e principais pontos encontrados.
+
+-   É interessante adicionar ideias para análises futuras.
 
 ## Base de dados
 
-- Caso seja uma base de dados pública, é interessante apontar informações como:
-  - Nome da base de dados
-  - Link para a base de dados (URL para que outras pessoas encontrem)
-  - Descrição da base de dados
-  - Data de atualização (se existir)
-  - Data de acesso à base de dados
-  - Autores da base de dados (ex. qual órgão público? foi obtido no kaggle? etc).
-
+-   Caso seja uma base de dados pública, é interessante apontar informações como:
+    -   Nome da base de dados
+    -   Link para a base de dados (URL para que outras pessoas encontrem)
+    -   Descrição da base de dados
+    -   Data de atualização (se existir)
+    -   Data de acesso à base de dados
+    -   Autores da base de dados (ex. qual órgão público? foi obtido no kaggle? etc).
 
 ## Idioma do relatório
 
@@ -135,18 +142,50 @@ lang: pt
 
 ## Centralizar imagens
 
-...
+-  Utilize o argumento `fig-align: center` para centralizar as imagens geradas em chunks.
 
-## Aprimorando tabelas
+- Em caso de imagens geradas via código markdown, utilize o argumento `fig-align="center"`.
+
+```
+![](img-feedback/escala-naruto.jpg){fig-align="center"}
+```
+
+- Caso, mesmo assim, a imagem não esteja centralizada, utilize a "força bruta" e centralize com HTML:
+
+```
+<center>
+  ....
+</center>
+```
+
+
+
+
+## Não apresentar tabelas como output do R
 
 Utilize funções de criação de tabelas (como `knitr::kable()`, `flextable::flextable()`, `DT::datatable()`, `reactable::reactable()`, entre outros) para melhorar a aparência das tabelas.
 
-
 ## Renomear colunas das tabelas
 
-...
+-   Algumas funções de tabela apresentam um argumento para alterar o nome das colunas.
 
+-   Outra opção é renomear as colunas logo antes de usar a função que gera a tabela (ex. `knitr::kable()`), usando a função `dplyr::rename()`.
 
+```{r}
+#| echo: fenced
+dados::pinguins |> 
+  dplyr::count(especie) |> 
+  dplyr::rename("Espécie" = especie, "Quantidade" = n) |>
+  knitr::kable()
+```
+
+## Tabelas com muitas linhas
+
+-   Evitar, pode deixar o relatório pesado.
+
+-   Caso você queira muito disponibilizar a base completa, poderia deixar embaixo um link para download da mesma.
+
+-   O melhor é manter no corpo do texto apenas coisas que serão úteis e espera-se que as pessoas leiam. Sugestão: apresentar os 10 registros mais importantes (e isso vai depender do gráfico que está sendo gerado).
 
 ## Citando pacotes (trabalho)
 
@@ -155,7 +194,6 @@ Utilize funções de criação de tabelas (como `knitr::kable()`, `flextable::fl
 ## Citando pacotes (sugestão)
 
 > Para realizar as análises, foram utilizados pacotes disponíveis no CRAN, tais como: `{dplyr}` [@R-dplyr], `{ggplot2}` [@R-ggplot2], `{knitr}` [@R-knitr], `{reactable}` [@R-reactable], `{flextable}` [@R-flextable], `{readxl}` [@R-readxl] e `{DT}` [@R-DT].
-
 
 ## Citando pacotes (como fazer - parte 1)
 
@@ -192,7 +230,48 @@ knitr::write_bib(c(
 file =  "feedback-packages.bib")
 ```
 
-## Referências cruzadas
+## Mais importante: Documentação do Quarto
 
+[![](img-feedback/documentacao-quarto.png){fig-align="center"}](https://quarto.org/docs/guide/)
+
+
+# Fechamento do curso
+
+## Próximos passos
+
+- Aula extra sobre Git e GitHub (opcional): 06/03. O acesso é igual às aulas comuns (através da plataforma).
+
+- Irei enviar para a secretaria do IME as notas para receberem o certificado. Em breve vocês devem receber um retorno.
+
+- Amanhã irei atualizar o repositório do curso com os materiais completos.
+
+## Recebimento de certificado
+
+Para receber o certificado, é necessário:
+
+- Presença nas aulas  (regra USP: mínimo 75% de presença, ou seja, ter participado de pelo menos 4 das 5 aulas)
+
+- Entrega do trabalho final (quem entregou recebeu a pontuação máxima)
+
+- Formulário pós-curso - 1 ponto extra! (precisa se identificar no formulário para contar)
+
+
+
+<!-- Pontos extras ajudam pessoas que tiveram 3 presenças e entregaram o trabalho final.  -->
+
+
+# Feedback do curso
+
+-   <https://forms.gle/hVBZ5pXx77X7bfDi8>
+
+[![](img-feedback/formulario-feedback.png){fig-align="center"}](https://forms.gle/hVBZ5pXx77X7bfDi8)
+
+# Agradeço a participação de todas e todos!
+
+- Blog: <https://beamilz.com/>
+
+- Instagram: <https://www.instagram.com/dadoseambiente>
+
+- Linkedin: <https://www.linkedin.com/in/beatrizmilz/>
 
 ## Referências citadas nos slides
