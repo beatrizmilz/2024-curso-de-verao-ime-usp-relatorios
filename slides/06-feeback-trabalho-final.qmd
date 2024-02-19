@@ -1,0 +1,94 @@
+---
+title: "Feedback do trabalho final"
+subtitle: 'Relatórios reprodutíveis com R - Curso de Verão IME-USP 2024' 
+author: "Ministrante: Beatriz Milz"
+format: 
+  revealjs:
+    width: 1600
+    height: 900  
+    toc: true
+    toc_float: true
+    toc-depth: 1
+    toc-location: body
+    toc-title: "Conteúdos"
+    logo: "https://www.ime.usp.br/verao/assets/images/logo_verao.png" 
+    footer: "Slides por [Beatriz Milz](https://beamilz.com), feito com  [Quarto](https://quarto.org/docs/presentations/revealjs/index.html). Código disponível no [GitHub](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/)."
+    theme: ["custom.scss"]
+    slide-number: c/t
+    show-slide-number: all
+    hash-type: number
+    preview-links: false    
+    code-link: true
+    code-copy: false
+editor: visual
+bibliography: "feedback-packages.bib"
+---
+
+## Olá!
+
+-   Como estão?
+
+# Entregas trabalho final
+
+# Feedback do trabalho final
+
+## Objetivo do trabalho final
+
+-  Aplicar os conceitos aprendidos durante o curso em um relatório reprodutível.
+
+
+## Objetivo do feedback
+
+- Oferecer sugestões para que em atividades futuras (no trabalho, universidade, etc) vocês possam melhorar os relatórios gerados.
+
+## Estrutura do feedback
+
+- Mostraremos alguns exemplos obtidos em trabalhos entregues (sem identificação).
+
+- Comentaremos sugestões de melhoria, buscando oferecer links para a documentação do Quarto, e exemplos de código.
+
+## Citando pacotes (trabalho)
+
+![](img-feedback/citar-pacotes.png){fig-align="center"}
+
+## Citando pacotes (sugestão)
+
+> Para realizar as análises, foram utilizados pacotes disponíveis no CRAN, tais como: `{dplyr}` [@R-dplyr], `{ggplot2}` [@R-ggplot2], `{knitr}` [@R-knitr], `{reactable}` [@R-reactable], `{flextable}` [@R-flextable], `{readxl}` [@R-readxl] e `{DT}` [@R-DT].
+
+
+
+## Citando pacotes (como fazer - parte 1)
+
+- Nos metadados ([ver documentação](https://quarto.org/docs/output-formats/html-code.html#code-linking)):
+
+```
+format:
+  html:
+    code-link: true
+bibliography: "feedback-packages.bib"    
+```
+
+## Citando pacotes (como fazer - parte 2)
+
+- No relatório ([ver documentação](https://quarto.org/docs/authoring/footnotes-and-citations.html): 
+
+```
+Para realizar as análises, foram utilizados pacotes disponíveis no CRAN, tais como: `{dplyr}` [@R-dplyr], `{ggplot2}` [@R-ggplot2], `{knitr}` [@R-knitr], `{reactable}` [@R-reactable], `{flextable}` [@R-flextable], `{readxl}` [@R-readxl] e `{DT}` [@R-DT].
+```
+<br>
+
+```{r}
+#| echo: fenced
+knitr::write_bib(c(
+  "dplyr",
+  "ggplot2",
+  "knitr",
+  "reactable",
+  "flextable",
+  "readxl",
+  "DT"
+),
+file =  "feedback-packages.bib")
+```
+
+## Referências citadas nos slides
