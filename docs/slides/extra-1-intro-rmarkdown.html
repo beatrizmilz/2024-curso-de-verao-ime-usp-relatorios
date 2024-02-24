@@ -8,7 +8,7 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.521">
+  <meta name="generator" content="quarto-1.4.549">
 
   <meta name="author" content="Ministrante: Beatriz Milz">
   <title>Relatórios reprodutíveis com R (2024) - Relatórios reprodutíveis com R</title>
@@ -511,9 +511,9 @@ Ministrante: Beatriz Milz
 <ol type="1">
 <li>No arquivo <code>primeiro-relatorio.Rmd</code>, crie um chunk e faça a importação da base de dados de pinguins.</li>
 </ol>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>caminho <span class="ot">&lt;-</span> <span class="st">"...."</span> </span>
-<span id="cb1-2"><a href="#cb1-2"></a>pinguins <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(caminho)</span>
-<span id="cb1-3"><a href="#cb1-3"></a>dplyr<span class="sc">::</span><span class="fu">glimpse</span>(pinguins)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>caminho <span class="ot">&lt;-</span> <span class="st">"...."</span> </span>
+<span id="cb1-2"><a></a>pinguins <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(caminho)</span>
+<span id="cb1-3"><a></a>dplyr<span class="sc">::</span><span class="fu">glimpse</span>(pinguins)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="2" type="1">
 <li><p>Lembre-se de se atentar aos caminhos!</p></li>
 <li><p>Aperte <code>knit</code> e observe o resultado. O código e o resultado deverá aparecer no relatório. Configure as opções de chunk para que apareça corretamente.</p></li>
@@ -528,9 +528,9 @@ Ministrante: Beatriz Milz
 <p>A base mtcars possui 32 carros. As colunas presentes na base são mpg, cyl, disp, hp, drat, wt, qsec, vs, am, gear, e carb.</p>
 <p><strong>Código Markdown:</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>A base mtcars possui <span class="st">`</span><span class="at">r nrow(mtcars)</span><span class="st">`</span> carros.</span>
-<span id="cb2-2"><a href="#cb2-2"></a>As colunas presentes na base são </span>
-<span id="cb2-3"><a href="#cb2-3"></a><span class="st">`</span><span class="at">r knitr::combine_words(names(mtcars), and = "e ")</span><span class="st">`</span>.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>A base mtcars possui <span class="st">`</span><span class="at">r nrow(mtcars)</span><span class="st">`</span> carros.</span>
+<span id="cb2-2"><a></a>As colunas presentes na base são </span>
+<span id="cb2-3"><a></a><span class="st">`</span><span class="at">r knitr::combine_words(names(mtcars), and = "e ")</span><span class="st">`</span>.</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section class="slide level2">
@@ -551,9 +551,9 @@ Ministrante: Beatriz Milz
 <li>Várias opções: <code>knitr::kable()</code>, <code>DT::datatable()</code> , <code>reactable::reactable()</code>, entre outras.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>pinguins <span class="sc">|&gt;</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a>  dplyr<span class="sc">::</span><span class="fu">count</span>(especie, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
-<span id="cb3-3"><a href="#cb3-3"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>pinguins <span class="sc">|&gt;</span></span>
+<span id="cb3-2"><a></a>  dplyr<span class="sc">::</span><span class="fu">count</span>(especie, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb3-3"><a></a>  knitr<span class="sc">::</span><span class="fu">kable</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <table>
 <thead>
@@ -586,9 +586,9 @@ Ministrante: Beatriz Milz
 <li>Adicione a seguinte tabela no seu relatório, usando a função <code>kable()</code>:</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>quantidade_de_especies <span class="ot">&lt;-</span> pinguins <span class="sc">|&gt;</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a>  dplyr<span class="sc">::</span><span class="fu">count</span>(especie, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
-<span id="cb4-3"><a href="#cb4-3"></a>  janitor<span class="sc">::</span><span class="fu">adorn_totals</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>quantidade_de_especies <span class="ot">&lt;-</span> pinguins <span class="sc">|&gt;</span></span>
+<span id="cb4-2"><a></a>  dplyr<span class="sc">::</span><span class="fu">count</span>(especie, <span class="at">sort =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-3"><a></a>  janitor<span class="sc">::</span><span class="fu">adorn_totals</span>()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Ela deverá ficar assim:</p>
 <div class="cell">
@@ -628,14 +628,14 @@ Ministrante: Beatriz Milz
 <li>Coloque o código usado para criar um gráfico em um chunk. Ex:</li>
 </ul>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb5-2"><a href="#cb5-2"></a>pinguins <span class="sc">|&gt;</span> </span>
-<span id="cb5-3"><a href="#cb5-3"></a>  dplyr<span class="sc">::</span><span class="fu">count</span>(especie) <span class="sc">|&gt;</span> </span>
-<span id="cb5-4"><a href="#cb5-4"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb5-5"><a href="#cb5-5"></a>  <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">x =</span> n, <span class="at">y =</span> especie, <span class="at">fill =</span> especie), <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
-<span id="cb5-6"><a href="#cb5-6"></a>  <span class="fu">theme_light</span>() <span class="sc">+</span></span>
-<span id="cb5-7"><a href="#cb5-7"></a>  <span class="fu">scale_fill_viridis_d</span>() <span class="sc">+</span></span>
-<span id="cb5-8"><a href="#cb5-8"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Quantidade de pinguins"</span>, <span class="at">y =</span> <span class="st">"Espécies"</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb5-2"><a></a>pinguins <span class="sc">|&gt;</span> </span>
+<span id="cb5-3"><a></a>  dplyr<span class="sc">::</span><span class="fu">count</span>(especie) <span class="sc">|&gt;</span> </span>
+<span id="cb5-4"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb5-5"><a></a>  <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">x =</span> n, <span class="at">y =</span> especie, <span class="at">fill =</span> especie), <span class="at">show.legend =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb5-6"><a></a>  <span class="fu">theme_light</span>() <span class="sc">+</span></span>
+<span id="cb5-7"><a></a>  <span class="fu">scale_fill_viridis_d</span>() <span class="sc">+</span></span>
+<span id="cb5-8"><a></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Quantidade de pinguins"</span>, <span class="at">y =</span> <span class="st">"Espécies"</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="extra-1-intro-rmarkdown_files/figure-revealjs/unnamed-chunk-11-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
@@ -646,14 +646,14 @@ Ministrante: Beatriz Milz
 <li><p>Caso não tenha experiência com ggplot, um gráfico simples pode ser gerado com esse código:</p></li>
 </ol>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb6-2"><a href="#cb6-2"></a>pinguins <span class="sc">|&gt;</span> </span>
-<span id="cb6-3"><a href="#cb6-3"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb6-4"><a href="#cb6-4"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> comprimento_bico, <span class="at">y =</span> profundidade_bico, <span class="at">color =</span> especie)) <span class="sc">+</span></span>
-<span id="cb6-5"><a href="#cb6-5"></a>  <span class="fu">theme_light</span>() <span class="sc">+</span></span>
-<span id="cb6-6"><a href="#cb6-6"></a>  <span class="fu">scale_color_viridis_d</span>() <span class="sc">+</span></span>
-<span id="cb6-7"><a href="#cb6-7"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Comprimento do bico"</span>, </span>
-<span id="cb6-8"><a href="#cb6-8"></a>       <span class="at">y =</span> <span class="st">"Profundidade do bico"</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb6-2"><a></a>pinguins <span class="sc">|&gt;</span> </span>
+<span id="cb6-3"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb6-4"><a></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> comprimento_bico, <span class="at">y =</span> profundidade_bico, <span class="at">color =</span> especie)) <span class="sc">+</span></span>
+<span id="cb6-5"><a></a>  <span class="fu">theme_light</span>() <span class="sc">+</span></span>
+<span id="cb6-6"><a></a>  <span class="fu">scale_color_viridis_d</span>() <span class="sc">+</span></span>
+<span id="cb6-7"><a></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Comprimento do bico"</span>, </span>
+<span id="cb6-8"><a></a>       <span class="at">y =</span> <span class="st">"Profundidade do bico"</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="extra-1-intro-rmarkdown_files/figure-revealjs/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
@@ -667,9 +667,11 @@ Ministrante: Beatriz Milz
 <li><p>Markdown é uma linguagem de marcação que possibilita marcar textos. Essa linguagem é utilizada nos arquivos RMarkdown e em muitos outros lugares.</p></li>
 </ul>
 
-
-<img src="https://www.ime.usp.br/verao/assets/images/logo_verao.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<div class="quarto-auto-generated-content">
+<p><img src="https://www.ime.usp.br/verao/assets/images/logo_verao.png" class="slide-logo"></p>
+<div class="footer footer-default">
 <p>Slides por <a href="https://beamilz.com">Beatriz Milz</a> (<span class="citation" data-cites="BeaMilz">@BeaMilz</span>), feito com <a href="https://quarto.org/docs/presentations/revealjs/index.html">Quarto</a>. Código disponível no <a href="https://beatrizmilz.github.io/2023-curso-de-verao-ime-usp-relatorios/">GitHub</a>.</p>
+</div>
 </div>
 </section></section>
     </div>

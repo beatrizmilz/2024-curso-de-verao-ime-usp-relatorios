@@ -1,67 +1,102 @@
 [
   {
-    "objectID": "slides.html",
-    "href": "slides.html",
-    "title": "Slides e materiais por aula",
+    "objectID": "profs.html#monitoria-em-ordem-alfabética",
+    "href": "profs.html#monitoria-em-ordem-alfabética",
+    "title": "Docentes",
+    "section": "Monitoria (em ordem alfabética)",
+    "text": "Monitoria (em ordem alfabética)",
+    "crumbs": [
+      "Sobre o curso",
+      "Docentes"
+    ]
+  },
+  {
+    "objectID": "instrucoes-de-instalacao.html",
+    "href": "instrucoes-de-instalacao.html",
+    "title": "Pré-curso: Instalações necessárias",
     "section": "",
-    "text": "O que é o R?\nO que é o RStudio?\nVersões gratuitas do RStudio",
+    "text": "Instalar o R - Versão 4.2 ou superior:\n\n\nDownload direto: https://vps.fmvz.usp.br/CRAN/\nTutorial: https://livro.curso-r.com/1-1-instalacao-do-r.html\n\n\n\nInstalar o RStudio - Versão mínima 2023.12:\n\n\nDownload direto: https://posit.co/download/rstudio-desktop/#download\nTutorial: https://livro.curso-r.com/1-2-instalacao-do-rstudio.html\nCaso você tenha dificuldade em instalar o R e o RStudio, você pode utilizar a Posit Cloud gratuitamente: https://posit.cloud/",
     "crumbs": [
       "Materias",
-      "Slides e materiais por aula"
+      "Pré-curso: Instalações necessárias"
     ]
   },
   {
-    "objectID": "slides.html#revisão-de-conceitos-úteis",
-    "href": "slides.html#revisão-de-conceitos-úteis",
-    "title": "Slides e materiais por aula",
+    "objectID": "instrucoes-de-instalacao.html#instalações-obrigatórias",
+    "href": "instrucoes-de-instalacao.html#instalações-obrigatórias",
+    "title": "Pré-curso: Instalações necessárias",
     "section": "",
-    "text": "O que é o R?\nO que é o RStudio?\nVersões gratuitas do RStudio",
+    "text": "Instalar o R - Versão 4.2 ou superior:\n\n\nDownload direto: https://vps.fmvz.usp.br/CRAN/\nTutorial: https://livro.curso-r.com/1-1-instalacao-do-r.html\n\n\n\nInstalar o RStudio - Versão mínima 2023.12:\n\n\nDownload direto: https://posit.co/download/rstudio-desktop/#download\nTutorial: https://livro.curso-r.com/1-2-instalacao-do-rstudio.html\nCaso você tenha dificuldade em instalar o R e o RStudio, você pode utilizar a Posit Cloud gratuitamente: https://posit.cloud/",
     "crumbs": [
       "Materias",
-      "Slides e materiais por aula"
+      "Pré-curso: Instalações necessárias"
     ]
   },
   {
-    "objectID": "slides.html#aula-1",
-    "href": "slides.html#aula-1",
-    "title": "Slides e materiais por aula",
-    "section": "Aula 1",
-    "text": "Aula 1\nSlides\n\nIntrodução ao Curso\nIntrodução ao Quarto\nScripts\n\naula-1.R",
-    "crumbs": [
-      "Materias",
-      "Slides e materiais por aula"
-    ]
-  },
-  {
-    "objectID": "slides.html#aula-2",
-    "href": "slides.html#aula-2",
-    "title": "Slides e materiais por aula",
-    "section": "Aula 2",
-    "text": "Aula 2\nSlides\n\nIntrodução ao conceito de reprodutibilidade",
-    "crumbs": [
-      "Materias",
-      "Slides e materiais por aula"
-    ]
-  },
-  {
-    "objectID": "slides.html#aula-3",
-    "href": "slides.html#aula-3",
-    "title": "Slides e materiais por aula",
-    "section": "Aula 3",
-    "text": "Aula 3\nSlides\n\nElementos úteis para relatórios acadêmicos",
-    "crumbs": [
-      "Materias",
-      "Slides e materiais por aula"
-    ]
-  },
-  {
-    "objectID": "licenca.html",
-    "href": "licenca.html",
-    "title": "Licença de uso",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Relatórios reprodutíveis com R",
     "section": "",
-    "text": "Estes materiais são disponibilizados com a licença Creative Commons Atribuição-Compartilha Igual (CC BY-SA), ou seja, você pode compartilhar e adaptar este material, porém deve atribuir os créditos para as pessoas autoras, adicionando um link para o material original, e o seu material também deve ter este mesmo tipo de licença.\nSaiba mais em: Creative Commons\nVisual da página inspirado em: STA 210: Regression Analysis, por Mine Çetinkaya-Rundel.",
+    "text": "Atenção!\n\n\n\nCurso iniciado. Para turmas futuras, acompanhe no site do Programa de Verão IME-USP."
+  },
+  {
+    "objectID": "index.html#sobre-o-curso",
+    "href": "index.html#sobre-o-curso",
+    "title": "Relatórios reprodutíveis com R",
+    "section": "Sobre o curso",
+    "text": "Sobre o curso\nUtilizaremos o Quarto (https://quarto.org/), e conheceremos como criar relatórios reprodutíveis, como: listas de exercícios, relatórios, apresentações em HTML, apresentações em powerpoint, relatórios em word, relatórios interativos, entre outros.\nAprenderemos também a criar relatórios reprodutíveis utilizando relatórios parametrizados, que permitem especificar parâmetros para customizar a análise, o que é muito útil para criar relatórios que podem ser reutilizados.\nTambém aprenderemos a disponibilizar o conteúdo criado no curso de forma online."
+  },
+  {
+    "objectID": "index.html#temas-abordados",
+    "href": "index.html#temas-abordados",
+    "title": "Relatórios reprodutíveis com R",
+    "section": "Temas abordados",
+    "text": "Temas abordados\n\nO que é reprodutibilidade;\nComo criar um documento reprodutível com Quarto;\nO que é o RMarkdown e o Quarto, e quais são as diferenças;\nComo disponibilizar estes documentos HTML criados com Quarto na internet para que outras pessoas consigam acessar."
+  },
+  {
+    "objectID": "index.html#edições-passadas",
+    "href": "index.html#edições-passadas",
+    "title": "Relatórios reprodutíveis com R",
+    "section": "Edições passadas",
+    "text": "Edições passadas\n\nConfira a página do curso de 2023 e os trabalhos finais criados pelas pessoas participantes da edição.\nConfira a página do curso de 2022 e os trabalhos finais criados pelas pessoas participantes da edição."
+  },
+  {
+    "objectID": "duvidas/justificado.html",
+    "href": "duvidas/justificado.html",
+    "title": "Untitled",
+    "section": "",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla imperdiet tellus at pulvinar placerat. Praesent vitae elit interdum, lacinia odio in, efficitur enim. In id leo mattis, maximus ipsum id, placerat justo. Sed dignissim ante ligula, sed fermentum enim imperdiet sed. Vestibulum maximus lacus eget vulputate placerat. Vestibulum eleifend, augue a hendrerit feugiat, justo felis viverra dui, eget sodales urna elit eget magna. Nam enim arcu, dignissim quis mauris id, rhoncus lobortis mi. Integer blandit justo sed mi sollicitudin, vitae auctor augue scelerisque. In lacinia nisl tortor, et egestas nunc semper vitae. Maecenas ut dui placerat, tincidunt dui hendrerit, posuere nibh. Integer semper quam et finibus mollis.\n\nPraesent odio arcu, fermentum eu nisl lobortis, iaculis mollis tortor. Nunc bibendum velit nec quam malesuada auctor. Aliquam fermentum eu massa non venenatis. Phasellus dui nisi, vulputate ac arcu et, convallis pellentesque ipsum. Nulla magna ipsum, accumsan quis lacus nec, tempor tincidunt magna. Nullam vel arcu pulvinar, sagittis orci non, placerat risus. Nullam lacinia tempus mauris. Vestibulum aliquet elit non vehicula molestie. Cras ultrices rutrum diam, posuere cursus lorem ultricies nec. Cras sed lacinia turpis. Sed sapien dolor, interdum non volutpat vel, placerat bibendum nibh. Praesent interdum felis vitae malesuada bibendum. Curabitur dapibus erat vitae nisi vehicula ullamcorper. Donec luctus semper turpis. Suspendisse hendrerit eget quam eget mollis. Quisque dapibus dui a velit vestibulum, non dapibus enim rutrum.\n\n\n\n\n\nNam orci velit, consectetur sit amet tempus non, cursus quis orci. Sed viverra ac risus eu facilisis. Fusce dui augue, aliquam sit amet lacus vitae, efficitur finibus sem. Ut ultricies facilisis cursus. Vivamus ac est tincidunt, mollis dolor ut, blandit erat. Maecenas pellentesque lobortis tortor, in aliquet felis luctus non. Donec mattis, sem a sagittis ullamcorper, ex libero auctor lorem, a pulvinar felis dui a metus. Nunc at tincidunt urna, vel elementum lacus. Proin lectus augue, ultrices sit amet diam nec, sodales venenatis leo. Mauris vestibulum nec odio eget dictum. Fusce rutrum elit velit, sed sollicitudin sapien tincidunt vulputate. Sed interdum vulputate lorem, quis scelerisque augue semper commodo.\nCurabitur gravida rhoncus eros nec consectetur. Morbi mi ante, rutrum ac volutpat et, varius ac sapien. Curabitur eros est, elementum at interdum ut, porta et lorem. Nam pharetra nisi sit amet sagittis tempor. Aenean sodales lacus sed quam rutrum, eleifend mattis tellus commodo. Integer bibendum, enim a hendrerit tincidunt, lacus nisi egestas sem, vulputate eleifend nunc libero quis leo. Integer eu lacus et magna tempor scelerisque id non urna.\n\nmtcars |&gt; \n  dplyr::count(gear)\n\n  gear  n\n1    3 15\n2    4 12\n3    5  5\n\n\n\nmtcars |&gt; \n  dplyr::count(gear) |&gt; \n  knitr::kable()\n\n\n\ngear\nn\n\n\n\n3\n15\n\n\n4\n12\n\n\n5\n5\n\n\n\n\n\n\nmtcars |&gt; \n  dplyr::count(gear) |&gt; \n  flextable::flextable()\n\n\n\n\n\ngear\nn\n\n\n\n3\n15\n\n\n4\n12\n\n\n5\n5\n\n\n\n\n\n\nUt tempus molestie tincidunt. Vivamus quis orci arcu. Morbi eu massa in massa convallis efficitur. Nulla facilisi. Donec ut ultricies neque, et volutpat orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris consectetur sem ac ultricies accumsan. Suspendisse id lectus gravida quam dictum tincidunt at a est. Phasellus nec rhoncus tortor. Nam aliquet ac eros a viverra. Morbi molestie augue eget scelerisque dapibus. Sed gravida nec magna at convallis. Donec orci risus, interdum et odio ut, finibus finibus odio. Aliquam quis pharetra nisl.\n\np {\n  text-align: justify;\n}"
+  },
+  {
+    "objectID": "duvidas/2023/index.html",
+    "href": "duvidas/2023/index.html",
+    "title": "Dúvidas",
+    "section": "",
+    "text": "Dúvidas enviadas por alunas e alunos do curso e não deu tempo de responder durante a aula!\nlibrary(tidyverse)\nlibrary(dados)"
+  },
+  {
+    "objectID": "duvidas/2023/index.html#na-em-tabelas",
+    "href": "duvidas/2023/index.html#na-em-tabelas",
+    "title": "Dúvidas",
+    "section": "NA em tabelas",
+    "text": "NA em tabelas\n\n“Como substituir NA com “-” em tabelas? Existe uma forma geral de fazer isso ou o jeito é trabalhar cada tabela mesmo?”\n\nPreparando uma tabela de exemplo\n\ntabela_com_NA &lt;- dados_starwars |&gt; \n  select(nome:cor_do_cabelo) |&gt; \n  dplyr::filter(is.na(altura) | is.na(cor_do_cabelo)) \n\nUsando knitr\n\n# essa opcão do knitr deixa você escolher o que aparece onde tem NA\noptions(knitr.kable.NA = '-')\n\ntabela_com_NA |&gt; \n  knitr::kable()\n\n\n\nnome\naltura\nmassa\ncor_do_cabelo\n\n\n\nC-3PO\n167\n75\n-\n\n\nR2-D2\n96\n32\n-\n\n\nR5-D4\n97\n32\n-\n\n\nGreedo\n173\n74\n-\n\n\nJabba Desilijic Tiure\n175\n1358\n-\n\n\nArvel Crynyd\n-\n-\nCastanho\n\n\nFinn\n-\n-\nPreto\n\n\nRey\n-\n-\nCastanho\n\n\nPoe Dameron\n-\n-\nCastanho\n\n\nBB8\n-\n-\nNenhum\n\n\nCaptain Phasma\n-\n-\nNenhum\n\n\n\n\n\nUsando outras funções para gerar tabelas\n\nPesquisar na documentação se existe algum argumento para isso, ou..\nsubstituir nas colunas:\n\n\ntabela_com_NA_tratado &lt;- tabela_com_NA |&gt;\n  mutate(across(.fns = ~ as.character(.x) |&gt; tidyr::replace_na(\"-\")))\n\n\ntabela_com_NA_tratado |&gt; glimpse()\n\nRows: 11\nColumns: 4\n$ nome          &lt;chr&gt; \"C-3PO\", \"R2-D2\", \"R5-D4\", \"Greedo\", \"Jabba Desilijic Ti…\n$ altura        &lt;chr&gt; \"167\", \"96\", \"97\", \"173\", \"175\", \"-\", \"-\", \"-\", \"-\", \"-\"…\n$ massa         &lt;chr&gt; \"75\", \"32\", \"32\", \"74\", \"1358\", \"-\", \"-\", \"-\", \"-\", \"-\",…\n$ cor_do_cabelo &lt;chr&gt; \"-\", \"-\", \"-\", \"-\", \"-\", \"Castanho\", \"Preto\", \"Castanho\"…\n\n\n\ntabela_com_NA_tratado |&gt; \n  DT::datatable()"
+  },
+  {
+    "objectID": "duvidas/2023/index.html#formatação-numérica-brasileira",
+    "href": "duvidas/2023/index.html#formatação-numérica-brasileira",
+    "title": "Dúvidas",
+    "section": "Formatação numérica brasileira",
+    "text": "Formatação numérica brasileira\n\nComo utilizar vírgula decimal e ponto de milhar? Esse não testei depois de aprender lang= pt, sabem me dizer se a alteração é automática colocando lang ou se precisa fazer outra coisa?\n\n\nNão, lang=pt não altera isso :(\n\nPreparando uma tabela de exemplo\n\npinguins_selecionada &lt;- pinguins |&gt; \n  select(especie:profundidade_bico, massa_corporal) |&gt; \n  head()\n\nEm textos\nA função format é útil!\n\nformat(\n  pinguins_selecionada$massa_corporal,\n  decimal.mark = \",\",\n  big.mark = \".\"\n)\n\n[1] \"3.750\" \"3.800\" \"3.250\" \"   NA\" \"3.450\" \"3.650\"\n\n\nEm tabelas (knitr)\n\npinguins_selecionada |&gt; \n  knitr::kable(format.args = list(decimal.mark = \",\", big.mark = \".\"))\n\n\n\n\n\n\n\n\n\n\nespecie\nilha\ncomprimento_bico\nprofundidade_bico\nmassa_corporal\n\n\n\nPinguim-de-adélia\nTorgersen\n39,1\n18,7\n3.750\n\n\nPinguim-de-adélia\nTorgersen\n39,5\n17,4\n3.800\n\n\nPinguim-de-adélia\nTorgersen\n40,3\n18,0\n3.250\n\n\nPinguim-de-adélia\nTorgersen\n-\n-\n-\n\n\nPinguim-de-adélia\nTorgersen\n36,7\n19,3\n3.450\n\n\nPinguim-de-adélia\nTorgersen\n39,3\n20,6\n3.650\n\n\n\n\n\nEm tabelas (outras)\n\nPesquisar na documentação se existe algum argumento para isso, ou..\nsubstituir nas colunas:\n\n\npinguins_selecionado_formatado &lt;- pinguins_selecionada |&gt; \n  mutate(across(.cols = where(is.numeric),\n                .fns = ~format(.x, decimal.mark = \",\", big.mark = \".\")))\n\n\npinguins_selecionado_formatado |&gt; glimpse()\n\nRows: 6\nColumns: 5\n$ especie           &lt;fct&gt; Pinguim-de-adélia, Pinguim-de-adélia, Pinguim-de-adé…\n$ ilha              &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…\n$ comprimento_bico  &lt;chr&gt; \"39,1\", \"39,5\", \"40,3\", \"  NA\", \"36,7\", \"39,3\"\n$ profundidade_bico &lt;chr&gt; \"18,7\", \"17,4\", \"18,0\", \"  NA\", \"19,3\", \"20,6\"\n$ massa_corporal    &lt;chr&gt; \"3.750\", \"3.800\", \"3.250\", \"   NA\", \"3.450\", \"3.650\"\n\n\n\npinguins_selecionado_formatado |&gt; \n  DT::datatable()\n\n\n\n\n\nEm gráficos\n\nggplot(pinguins) +\n  geom_point(aes(x = comprimento_bico, y = massa_corporal, color = especie)) +\n  theme_light() +\n  # AQUI EMBAIXO FORMATAMOS, NO SCALE_Y_CONTINUOUS\n  scale_y_continuous(labels = ~format(.x, decimal.mark = \",\", big.mark = \".\")) +\n  labs(\n    x = \"Comprimento do bico (cm)\",\n    y = \"Massa corporal (g)\",\n    color = \"Espécie\"\n  ) +\n  theme(legend.position = \"top\") +\n  scale_color_viridis_d()"
+  },
+  {
+    "objectID": "faq.html",
+    "href": "faq.html",
+    "title": "Perguntas Frequentes (FAQ)",
+    "section": "",
+    "text": "O curso será online ou presencial?\n\nO curso será oferecido de forma online.\n\nApenas estudantes da USP podem participar do curso?\n\nAs inscrições serão abertas para todas as pessoas interessadas.\n\nComo posso me inscrever?\n\nA inscrição será realizada através do IME-USP. Acompanhe as informações na página do Programa de Verão do IME-USP.\n\nO curso é gratuito?\n\nNão, o curso é pago. Acompanhe as informações na página do Programa de Verão do IME-USP.\n\nAs aulas serão gravadas?\n\nSim.",
     "crumbs": [
-      "Licença de uso"
+      "Sobre o curso",
+      "Perguntas Frequentes (FAQ)"
     ]
   },
   {
@@ -131,97 +166,54 @@
     ]
   },
   {
-    "objectID": "faq.html",
-    "href": "faq.html",
-    "title": "Perguntas Frequentes (FAQ)",
+    "objectID": "licenca.html",
+    "href": "licenca.html",
+    "title": "Licença de uso",
     "section": "",
-    "text": "O curso será online ou presencial?\n\nO curso será oferecido de forma online.\n\nApenas estudantes da USP podem participar do curso?\n\nAs inscrições serão abertas para todas as pessoas interessadas.\n\nComo posso me inscrever?\n\nA inscrição será realizada através do IME-USP. Acompanhe as informações na página do Programa de Verão do IME-USP.\n\nO curso é gratuito?\n\nNão, o curso é pago. Acompanhe as informações na página do Programa de Verão do IME-USP.\n\nAs aulas serão gravadas?\n\nSim.",
+    "text": "Estes materiais são disponibilizados com a licença Creative Commons Atribuição-Compartilha Igual (CC BY-SA), ou seja, você pode compartilhar e adaptar este material, porém deve atribuir os créditos para as pessoas autoras, adicionando um link para o material original, e o seu material também deve ter este mesmo tipo de licença.\nSaiba mais em: Creative Commons\nVisual da página inspirado em: STA 210: Regression Analysis, por Mine Çetinkaya-Rundel.",
     "crumbs": [
-      "Sobre o curso",
-      "Perguntas Frequentes (FAQ)"
+      "Licença de uso"
     ]
   },
   {
-    "objectID": "duvidas/2023/index.html",
-    "href": "duvidas/2023/index.html",
-    "title": "Dúvidas",
+    "objectID": "slides.html",
+    "href": "slides.html",
+    "title": "Slides e materiais por aula",
     "section": "",
-    "text": "Dúvidas enviadas por alunas e alunos do curso e não deu tempo de responder durante a aula!\nlibrary(tidyverse)\nlibrary(dados)"
-  },
-  {
-    "objectID": "duvidas/2023/index.html#na-em-tabelas",
-    "href": "duvidas/2023/index.html#na-em-tabelas",
-    "title": "Dúvidas",
-    "section": "NA em tabelas",
-    "text": "NA em tabelas\n\n“Como substituir NA com “-” em tabelas? Existe uma forma geral de fazer isso ou o jeito é trabalhar cada tabela mesmo?”\n\nPreparando uma tabela de exemplo\n\ntabela_com_NA &lt;- dados_starwars |&gt; \n  select(nome:cor_do_cabelo) |&gt; \n  dplyr::filter(is.na(altura) | is.na(cor_do_cabelo)) \n\nUsando knitr\n\n# essa opcão do knitr deixa você escolher o que aparece onde tem NA\noptions(knitr.kable.NA = '-')\n\ntabela_com_NA |&gt; \n  knitr::kable()\n\n\n\nnome\naltura\nmassa\ncor_do_cabelo\n\n\n\nC-3PO\n167\n75\n-\n\n\nR2-D2\n96\n32\n-\n\n\nR5-D4\n97\n32\n-\n\n\nGreedo\n173\n74\n-\n\n\nJabba Desilijic Tiure\n175\n1358\n-\n\n\nArvel Crynyd\n-\n-\nCastanho\n\n\nFinn\n-\n-\nPreto\n\n\nRey\n-\n-\nCastanho\n\n\nPoe Dameron\n-\n-\nCastanho\n\n\nBB8\n-\n-\nNenhum\n\n\nCaptain Phasma\n-\n-\nNenhum\n\n\n\n\n\nUsando outras funções para gerar tabelas\n\nPesquisar na documentação se existe algum argumento para isso, ou..\nsubstituir nas colunas:\n\n\ntabela_com_NA_tratado &lt;- tabela_com_NA |&gt;\n  mutate(across(.fns = ~ as.character(.x) |&gt; tidyr::replace_na(\"-\")))\n\n\ntabela_com_NA_tratado |&gt; glimpse()\n\nRows: 11\nColumns: 4\n$ nome          &lt;chr&gt; \"C-3PO\", \"R2-D2\", \"R5-D4\", \"Greedo\", \"Jabba Desilijic Ti…\n$ altura        &lt;chr&gt; \"167\", \"96\", \"97\", \"173\", \"175\", \"-\", \"-\", \"-\", \"-\", \"-\"…\n$ massa         &lt;chr&gt; \"75\", \"32\", \"32\", \"74\", \"1358\", \"-\", \"-\", \"-\", \"-\", \"-\",…\n$ cor_do_cabelo &lt;chr&gt; \"-\", \"-\", \"-\", \"-\", \"-\", \"Castanho\", \"Preto\", \"Castanho\"…\n\n\n\ntabela_com_NA_tratado |&gt; \n  DT::datatable()"
-  },
-  {
-    "objectID": "duvidas/2023/index.html#formatação-numérica-brasileira",
-    "href": "duvidas/2023/index.html#formatação-numérica-brasileira",
-    "title": "Dúvidas",
-    "section": "Formatação numérica brasileira",
-    "text": "Formatação numérica brasileira\n\nComo utilizar vírgula decimal e ponto de milhar? Esse não testei depois de aprender lang= pt, sabem me dizer se a alteração é automática colocando lang ou se precisa fazer outra coisa?\n\n\nNão, lang=pt não altera isso :(\n\nPreparando uma tabela de exemplo\n\npinguins_selecionada &lt;- pinguins |&gt; \n  select(especie:profundidade_bico, massa_corporal) |&gt; \n  head()\n\nEm textos\nA função format é útil!\n\nformat(\n  pinguins_selecionada$massa_corporal,\n  decimal.mark = \",\",\n  big.mark = \".\"\n)\n\n[1] \"3.750\" \"3.800\" \"3.250\" \"   NA\" \"3.450\" \"3.650\"\n\n\nEm tabelas (knitr)\n\npinguins_selecionada |&gt; \n  knitr::kable(format.args = list(decimal.mark = \",\", big.mark = \".\"))\n\n\n\n\n\n\n\n\n\n\nespecie\nilha\ncomprimento_bico\nprofundidade_bico\nmassa_corporal\n\n\n\nPinguim-de-adélia\nTorgersen\n39,1\n18,7\n3.750\n\n\nPinguim-de-adélia\nTorgersen\n39,5\n17,4\n3.800\n\n\nPinguim-de-adélia\nTorgersen\n40,3\n18,0\n3.250\n\n\nPinguim-de-adélia\nTorgersen\n-\n-\n-\n\n\nPinguim-de-adélia\nTorgersen\n36,7\n19,3\n3.450\n\n\nPinguim-de-adélia\nTorgersen\n39,3\n20,6\n3.650\n\n\n\n\n\nEm tabelas (outras)\n\nPesquisar na documentação se existe algum argumento para isso, ou..\nsubstituir nas colunas:\n\n\npinguins_selecionado_formatado &lt;- pinguins_selecionada |&gt; \n  mutate(across(.cols = where(is.numeric),\n                .fns = ~format(.x, decimal.mark = \",\", big.mark = \".\")))\n\n\npinguins_selecionado_formatado |&gt; glimpse()\n\nRows: 6\nColumns: 5\n$ especie           &lt;fct&gt; Pinguim-de-adélia, Pinguim-de-adélia, Pinguim-de-adé…\n$ ilha              &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…\n$ comprimento_bico  &lt;chr&gt; \"39,1\", \"39,5\", \"40,3\", \"  NA\", \"36,7\", \"39,3\"\n$ profundidade_bico &lt;chr&gt; \"18,7\", \"17,4\", \"18,0\", \"  NA\", \"19,3\", \"20,6\"\n$ massa_corporal    &lt;chr&gt; \"3.750\", \"3.800\", \"3.250\", \"   NA\", \"3.450\", \"3.650\"\n\n\n\npinguins_selecionado_formatado |&gt; \n  DT::datatable()\n\n\n\n\n\nEm gráficos\n\nggplot(pinguins) +\n  geom_point(aes(x = comprimento_bico, y = massa_corporal, color = especie)) +\n  theme_light() +\n  # AQUI EMBAIXO FORMATAMOS, NO SCALE_Y_CONTINUOUS\n  scale_y_continuous(labels = ~format(.x, decimal.mark = \",\", big.mark = \".\")) +\n  labs(\n    x = \"Comprimento do bico (cm)\",\n    y = \"Massa corporal (g)\",\n    color = \"Espécie\"\n  ) +\n  theme(legend.position = \"top\") +\n  scale_color_viridis_d()"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Relatórios reprodutíveis com R",
-    "section": "",
-    "text": "Atenção!\n\n\n\nCurso iniciado. Para turmas futuras, acompanhe no site do Programa de Verão IME-USP."
-  },
-  {
-    "objectID": "index.html#sobre-o-curso",
-    "href": "index.html#sobre-o-curso",
-    "title": "Relatórios reprodutíveis com R",
-    "section": "Sobre o curso",
-    "text": "Sobre o curso\nUtilizaremos o Quarto (https://quarto.org/), e conheceremos como criar relatórios reprodutíveis, como: listas de exercícios, relatórios, apresentações em HTML, apresentações em powerpoint, relatórios em word, relatórios interativos, entre outros.\nAprenderemos também a criar relatórios reprodutíveis utilizando relatórios parametrizados, que permitem especificar parâmetros para customizar a análise, o que é muito útil para criar relatórios que podem ser reutilizados.\nTambém aprenderemos a disponibilizar o conteúdo criado no curso de forma online."
-  },
-  {
-    "objectID": "index.html#temas-abordados",
-    "href": "index.html#temas-abordados",
-    "title": "Relatórios reprodutíveis com R",
-    "section": "Temas abordados",
-    "text": "Temas abordados\n\nO que é reprodutibilidade;\nComo criar um documento reprodutível com Quarto;\nO que é o RMarkdown e o Quarto, e quais são as diferenças;\nComo disponibilizar estes documentos HTML criados com Quarto na internet para que outras pessoas consigam acessar."
-  },
-  {
-    "objectID": "index.html#edições-passadas",
-    "href": "index.html#edições-passadas",
-    "title": "Relatórios reprodutíveis com R",
-    "section": "Edições passadas",
-    "text": "Edições passadas\n\nConfira a página do curso de 2023 e os trabalhos finais criados pelas pessoas participantes da edição.\nConfira a página do curso de 2022 e os trabalhos finais criados pelas pessoas participantes da edição."
-  },
-  {
-    "objectID": "instrucoes-de-instalacao.html",
-    "href": "instrucoes-de-instalacao.html",
-    "title": "Pré-curso: Instalações necessárias",
-    "section": "",
-    "text": "Instalar o R - Versão 4.2 ou superior:\n\n\nDownload direto: https://vps.fmvz.usp.br/CRAN/\nTutorial: https://livro.curso-r.com/1-1-instalacao-do-r.html\n\n\n\nInstalar o RStudio - Versão mínima 2023.12:\n\n\nDownload direto: https://posit.co/download/rstudio-desktop/#download\nTutorial: https://livro.curso-r.com/1-2-instalacao-do-rstudio.html\nCaso você tenha dificuldade em instalar o R e o RStudio, você pode utilizar a Posit Cloud gratuitamente: https://posit.cloud/",
+    "text": "O que é o R?\nO que é o RStudio?\nVersões gratuitas do RStudio\n\n\n\n\nIntrodução ao Curso\nIntrodução ao Quarto\nIntrodução ao conceito de reprodutibilidade\nElementos úteis para relatórios acadêmicos\nFeedbacks - Trabalho final",
     "crumbs": [
       "Materias",
-      "Pré-curso: Instalações necessárias"
+      "Slides e materiais por aula"
     ]
   },
   {
-    "objectID": "instrucoes-de-instalacao.html#instalações-obrigatórias",
-    "href": "instrucoes-de-instalacao.html#instalações-obrigatórias",
-    "title": "Pré-curso: Instalações necessárias",
+    "objectID": "slides.html#revisão-de-conceitos-úteis",
+    "href": "slides.html#revisão-de-conceitos-úteis",
+    "title": "Slides e materiais por aula",
     "section": "",
-    "text": "Instalar o R - Versão 4.2 ou superior:\n\n\nDownload direto: https://vps.fmvz.usp.br/CRAN/\nTutorial: https://livro.curso-r.com/1-1-instalacao-do-r.html\n\n\n\nInstalar o RStudio - Versão mínima 2023.12:\n\n\nDownload direto: https://posit.co/download/rstudio-desktop/#download\nTutorial: https://livro.curso-r.com/1-2-instalacao-do-rstudio.html\nCaso você tenha dificuldade em instalar o R e o RStudio, você pode utilizar a Posit Cloud gratuitamente: https://posit.cloud/",
+    "text": "O que é o R?\nO que é o RStudio?\nVersões gratuitas do RStudio\n\n\n\n\nIntrodução ao Curso\nIntrodução ao Quarto\nIntrodução ao conceito de reprodutibilidade\nElementos úteis para relatórios acadêmicos\nFeedbacks - Trabalho final",
     "crumbs": [
       "Materias",
-      "Pré-curso: Instalações necessárias"
+      "Slides e materiais por aula"
     ]
   },
   {
-    "objectID": "profs.html#monitoria-em-ordem-alfabética",
-    "href": "profs.html#monitoria-em-ordem-alfabética",
-    "title": "Docentes",
-    "section": "Monitoria (em ordem alfabética)",
-    "text": "Monitoria (em ordem alfabética)",
+    "objectID": "slides.html#apresentação-de-anos-anteriores",
+    "href": "slides.html#apresentação-de-anos-anteriores",
+    "title": "Slides e materiais por aula",
+    "section": "Apresentação de anos anteriores",
+    "text": "Apresentação de anos anteriores\n\nParâmetros\nIntrodução ao RMarkdown",
     "crumbs": [
-      "Sobre o curso",
-      "Docentes"
+      "Materias",
+      "Slides e materiais por aula"
     ]
+  },
+  {
+    "objectID": "slides/06-feedback-trabalho-final.html#references",
+    "href": "slides/06-feedback-trabalho-final.html#references",
+    "title": "Feedback do trabalho final",
+    "section": "Referências citadas nos slides",
+    "text": "Referências citadas nos slides\n\n\n\n\nSlides por Beatriz Milz, feito com Quarto. Código disponível no GitHub.\n\n\n\n\nGohel, David, e Panagiotis Skintzos. 2023. flextable: Functions for Tabular Reporting. https://ardata-fr.github.io/flextable-book/.\n\n\nLin, Greg. 2023. reactable: Interactive Data Tables for R. https://glin.github.io/reactable/.\n\n\nWickham, Hadley, e Jennifer Bryan. 2023. readxl: Read Excel Files. https://readxl.tidyverse.org.\n\n\nWickham, Hadley, Winston Chang, Lionel Henry, Thomas Lin Pedersen, Kohske Takahashi, Claus Wilke, Kara Woo, Hiroaki Yutani, e Dewey Dunnington. 2023. ggplot2: Create Elegant Data Visualisations Using the Grammar of Graphics. https://ggplot2.tidyverse.org.\n\n\nWickham, Hadley, Romain François, Lionel Henry, Kirill Müller, e Davis Vaughan. 2023. dplyr: A Grammar of Data Manipulation. https://dplyr.tidyverse.org.\n\n\nXie, Yihui. 2023. knitr: A General-Purpose Package for Dynamic Report Generation in R. https://yihui.org/knitr/.\n\n\nXie, Yihui, Joe Cheng, e Xianying Tan. 2023. DT: A Wrapper of the JavaScript Library DataTables. https://github.com/rstudio/DT."
   },
   {
     "objectID": "trabalho_final.html",
@@ -266,26 +258,5 @@
       "Materias",
       "Trabalho final"
     ]
-  },
-  {
-    "objectID": "slides/06-feeback-trabalho-final.html#references",
-    "href": "slides/06-feeback-trabalho-final.html#references",
-    "title": "Feedback do trabalho final",
-    "section": "Referências citadas nos slides",
-    "text": "Referências citadas nos slides\n\n\n\n\nSlides por Beatriz Milz, feito com Quarto. Código disponível no GitHub.\n\n\n\n\nGohel, David, e Panagiotis Skintzos. 2023. flextable: Functions for Tabular Reporting. https://ardata-fr.github.io/flextable-book/.\n\n\nLin, Greg. 2023. reactable: Interactive Data Tables for R. https://glin.github.io/reactable/.\n\n\nWickham, Hadley, e Jennifer Bryan. 2023. readxl: Read Excel Files. https://readxl.tidyverse.org.\n\n\nWickham, Hadley, Winston Chang, Lionel Henry, Thomas Lin Pedersen, Kohske Takahashi, Claus Wilke, Kara Woo, Hiroaki Yutani, e Dewey Dunnington. 2023. ggplot2: Create Elegant Data Visualisations Using the Grammar of Graphics. https://ggplot2.tidyverse.org.\n\n\nWickham, Hadley, Romain François, Lionel Henry, Kirill Müller, e Davis Vaughan. 2023. dplyr: A Grammar of Data Manipulation. https://dplyr.tidyverse.org.\n\n\nXie, Yihui. 2023. knitr: A General-Purpose Package for Dynamic Report Generation in R. https://yihui.org/knitr/.\n\n\nXie, Yihui, Joe Cheng, e Xianying Tan. 2023. DT: A Wrapper of the JavaScript Library DataTables. https://github.com/rstudio/DT."
-  },
-  {
-    "objectID": "slides/06-feedback-trabalho-final.html#references",
-    "href": "slides/06-feedback-trabalho-final.html#references",
-    "title": "Feedback do trabalho final",
-    "section": "Referências citadas nos slides",
-    "text": "Referências citadas nos slides\n\n\n\n\nSlides por Beatriz Milz, feito com Quarto. Código disponível no GitHub.\n\n\n\n\nGohel, David, e Panagiotis Skintzos. 2023. flextable: Functions for Tabular Reporting. https://ardata-fr.github.io/flextable-book/.\n\n\nLin, Greg. 2023. reactable: Interactive Data Tables for R. https://glin.github.io/reactable/.\n\n\nWickham, Hadley, e Jennifer Bryan. 2023. readxl: Read Excel Files. https://readxl.tidyverse.org.\n\n\nWickham, Hadley, Winston Chang, Lionel Henry, Thomas Lin Pedersen, Kohske Takahashi, Claus Wilke, Kara Woo, Hiroaki Yutani, e Dewey Dunnington. 2023. ggplot2: Create Elegant Data Visualisations Using the Grammar of Graphics. https://ggplot2.tidyverse.org.\n\n\nWickham, Hadley, Romain François, Lionel Henry, Kirill Müller, e Davis Vaughan. 2023. dplyr: A Grammar of Data Manipulation. https://dplyr.tidyverse.org.\n\n\nXie, Yihui. 2023. knitr: A General-Purpose Package for Dynamic Report Generation in R. https://yihui.org/knitr/.\n\n\nXie, Yihui, Joe Cheng, e Xianying Tan. 2023. DT: A Wrapper of the JavaScript Library DataTables. https://github.com/rstudio/DT."
-  },
-  {
-    "objectID": "duvidas/justificado.html",
-    "href": "duvidas/justificado.html",
-    "title": "Untitled",
-    "section": "",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla imperdiet tellus at pulvinar placerat. Praesent vitae elit interdum, lacinia odio in, efficitur enim. In id leo mattis, maximus ipsum id, placerat justo. Sed dignissim ante ligula, sed fermentum enim imperdiet sed. Vestibulum maximus lacus eget vulputate placerat. Vestibulum eleifend, augue a hendrerit feugiat, justo felis viverra dui, eget sodales urna elit eget magna. Nam enim arcu, dignissim quis mauris id, rhoncus lobortis mi. Integer blandit justo sed mi sollicitudin, vitae auctor augue scelerisque. In lacinia nisl tortor, et egestas nunc semper vitae. Maecenas ut dui placerat, tincidunt dui hendrerit, posuere nibh. Integer semper quam et finibus mollis.\n\nPraesent odio arcu, fermentum eu nisl lobortis, iaculis mollis tortor. Nunc bibendum velit nec quam malesuada auctor. Aliquam fermentum eu massa non venenatis. Phasellus dui nisi, vulputate ac arcu et, convallis pellentesque ipsum. Nulla magna ipsum, accumsan quis lacus nec, tempor tincidunt magna. Nullam vel arcu pulvinar, sagittis orci non, placerat risus. Nullam lacinia tempus mauris. Vestibulum aliquet elit non vehicula molestie. Cras ultrices rutrum diam, posuere cursus lorem ultricies nec. Cras sed lacinia turpis. Sed sapien dolor, interdum non volutpat vel, placerat bibendum nibh. Praesent interdum felis vitae malesuada bibendum. Curabitur dapibus erat vitae nisi vehicula ullamcorper. Donec luctus semper turpis. Suspendisse hendrerit eget quam eget mollis. Quisque dapibus dui a velit vestibulum, non dapibus enim rutrum.\n\n\n\n\n\nNam orci velit, consectetur sit amet tempus non, cursus quis orci. Sed viverra ac risus eu facilisis. Fusce dui augue, aliquam sit amet lacus vitae, efficitur finibus sem. Ut ultricies facilisis cursus. Vivamus ac est tincidunt, mollis dolor ut, blandit erat. Maecenas pellentesque lobortis tortor, in aliquet felis luctus non. Donec mattis, sem a sagittis ullamcorper, ex libero auctor lorem, a pulvinar felis dui a metus. Nunc at tincidunt urna, vel elementum lacus. Proin lectus augue, ultrices sit amet diam nec, sodales venenatis leo. Mauris vestibulum nec odio eget dictum. Fusce rutrum elit velit, sed sollicitudin sapien tincidunt vulputate. Sed interdum vulputate lorem, quis scelerisque augue semper commodo.\nCurabitur gravida rhoncus eros nec consectetur. Morbi mi ante, rutrum ac volutpat et, varius ac sapien. Curabitur eros est, elementum at interdum ut, porta et lorem. Nam pharetra nisi sit amet sagittis tempor. Aenean sodales lacus sed quam rutrum, eleifend mattis tellus commodo. Integer bibendum, enim a hendrerit tincidunt, lacus nisi egestas sem, vulputate eleifend nunc libero quis leo. Integer eu lacus et magna tempor scelerisque id non urna.\n\nmtcars |&gt; \n  dplyr::count(gear)\n\n  gear  n\n1    3 15\n2    4 12\n3    5  5\n\n\n\nmtcars |&gt; \n  dplyr::count(gear) |&gt; \n  knitr::kable()\n\n\n\ngear\nn\n\n\n\n3\n15\n\n\n4\n12\n\n\n5\n5\n\n\n\n\n\n\nmtcars |&gt; \n  dplyr::count(gear) |&gt; \n  flextable::flextable()\n\n\n\n\n\ngear\nn\n\n\n\n3\n15\n\n\n4\n12\n\n\n5\n5\n\n\n\n\n\n\nUt tempus molestie tincidunt. Vivamus quis orci arcu. Morbi eu massa in massa convallis efficitur. Nulla facilisi. Donec ut ultricies neque, et volutpat orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris consectetur sem ac ultricies accumsan. Suspendisse id lectus gravida quam dictum tincidunt at a est. Phasellus nec rhoncus tortor. Nam aliquet ac eros a viverra. Morbi molestie augue eget scelerisque dapibus. Sed gravida nec magna at convallis. Donec orci risus, interdum et odio ut, finibus finibus odio. Aliquam quis pharetra nisl.\n\np {\n  text-align: justify;\n}"
   }
 ]

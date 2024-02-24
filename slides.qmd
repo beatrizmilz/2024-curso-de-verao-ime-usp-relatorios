@@ -2,25 +2,6 @@
 title: "Slides e materiais por aula"
 ---
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
-googlesheets4::gs4_auth(email = "milz.bea@gmail.com")
-sheet_links <-
-  googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/127pSSmT7o6zTjg9wslajkklXiXgb2lXAWwHcatZEYbU/", sheet = "links-extras") |> 
-  dplyr::mutate(numero_aula = as.character(numero_aula))
-
-criar_tabela_links_extras <- function(links_extras) {
-  if (nrow(links_extras) >= 1) {
-    links_extras |>
-      dplyr::mutate(link_completo = glue::glue("<a href='{link}' target='_blank'>{nome_link}</a>")) |>
-      dplyr::select(tema, idioma, link_completo) |>
-      dplyr::arrange(tema) |> 
-      knitr::kable(col.names = c("Tema", "Idioma", "Link"))
-  } else {
-    htmltools::strong("Em breve!")
-  }
-}
-```
-
 ## Revisão de conceitos úteis
 
 -   [O que é o R?](https://www.instagram.com/p/C2DDu-MLZ4W/)
@@ -29,7 +10,8 @@ criar_tabela_links_extras <- function(links_extras) {
 
 -   [Versões gratuitas do RStudio](https://www.instagram.com/p/C2Xh63gLWIM/?img_index=4)
 
-## Aula 1
+- [O que é o tidyverse?](https://www.instagram.com/p/C2fQI7FrlC2/?img_index=1)
+
 
 ### Slides
 
@@ -37,116 +19,22 @@ criar_tabela_links_extras <- function(links_extras) {
 
 -   [Introdução ao Quarto](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/02-intro-quarto.html)
 
-### Scripts
-
--   [aula-1.R](https://github.com/beatrizmilz/2024-curso-de-verao-ime-usp-relatorios/blob/main/pratica/aula-1/aula-1.qmd)
-
-<!-- ### Links úteis -->
-
-<!-- ```{r, echo=FALSE, message=FALSE, warning=FALSE} -->
-
-<!-- sheet_links |> -->
-
-<!--   dplyr::filter(numero_aula == 1) |> -->
-
-<!--   criar_tabela_links_extras() -->
-
-<!-- ``` -->
-
-## Aula 2
-
-### Slides
-
 -   [Introdução ao conceito de reprodutibilidade](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/03-reprodutibilidade.html)
-
-<!-- ### Scripts/anotações -->
-
-<!-- -   [aula-2.R](https://github.com/beatrizmilz/2024-curso-de-verao-ime-usp-relatorios/blob/main/pratica/aula-2.R) - anotações. -->
-
-<!-- -   [Pasta com arquivos da aula 2](https://github.com/beatrizmilz/2024-curso-de-verao-ime-usp-relatorios/blob/main/pratica/aula-2/) - experimentando algumas funcionalidades de relatório. -->
-
-## Aula 3
-
-### Slides
 
 -   [Elementos úteis para relatórios acadêmicos](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/04-elementos-acad.html)
 
-<!-- ### Scripts/anotações -->
 
-<!-- -   [Pasta com arquivos da aula 3](https://github.com/beatrizmilz/2024-curso-de-verao-ime-usp-relatorios/blob/main/pratica/aula-3/). -->
+-   [Feedbacks - Trabalho final](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/06-feedback-trabalho-final.html)
 
-<!-- ### Links úteis -->
 
-<!-- ```{r, echo=FALSE, message=FALSE, warning=FALSE} -->
+## Apresentação de anos anteriores
 
-<!-- sheet_links |> -->
 
-<!--   dplyr::filter(numero_aula == 3) |> -->
+-   [Parâmetros](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/05-parametros.html)
 
-<!--   criar_tabela_links_extras() -->
 
-<!-- ``` -->
+-   [Introdução ao RMarkdown](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/extra-1-intro-rmarkdown.html)
 
-<!-- ## Aula 4 -->
 
-<!-- ### Slides -->
 
-<!-- -   [Slide 6 - Relatórios em R com parâmetros](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/06-parametros.html) -->
 
-<!-- -   [Slide 7 - Introdução ao Git e GitHub no RStudio](https://beatrizmilz.github.io/2022-curso-de-verao-ime-usp-relatorios/slides/#80) -->
-
-<!-- ### Materiais -->
-
-<!-- -   [Baixar para a aula - zip com materiais para as práticas](https://github.com/beatrizmilz/2024-curso-de-verao-ime-usp-relatorios/raw/main/materiais/pratica-aula-4.zip) -->
-
-<!-- ### Scripts/anotações -->
-
-<!-- -   [Pasta com arquivos da aula 4](https://github.com/beatrizmilz/2024-curso-de-verao-ime-usp-relatorios/blob/main/pratica/aula-4/). -->
-
-<!-- ### Links úteis -->
-
-<!-- ```{r, echo=FALSE, message=FALSE, warning=FALSE} -->
-
-<!-- sheet_links |> -->
-
-<!--   dplyr::filter(numero_aula == 4) |> -->
-
-<!--   criar_tabela_links_extras() -->
-
-<!-- ``` -->
-
-<!-- ## Aula 5 -->
-
-<!-- ### Slides -->
-
-<!-- -   [Slide 7 - Introdução ao Git e GitHub no RStudio](https://beatrizmilz.github.io/2022-curso-de-verao-ime-usp-relatorios/slides/#80) -->
-
-<!-- ### Scripts/anotações -->
-
-<!-- -   [Pasta com arquivos da aula 5](https://github.com/beatrizmilz/2024-curso-de-verao-ime-usp-relatorios/blob/main/pratica/aula-5/). -->
-
-<!-- ### Links úteis -->
-
-<!-- ```{r, echo=FALSE, message=FALSE, warning=FALSE} -->
-
-<!-- sheet_links |> -->
-
-<!--   dplyr::filter(numero_aula == 5) |> -->
-
-<!--   criar_tabela_links_extras() -->
-
-<!-- ``` -->
-
-<!-- ## Extra -->
-
-<!-- ### Links úteis -->
-
-<!-- ```{r, echo=FALSE, message=FALSE, warning=FALSE} -->
-
-<!-- sheet_links |> -->
-
-<!--   dplyr::filter(numero_aula == "Extra") |> -->
-
-<!--   criar_tabela_links_extras() -->
-
-<!-- ``` -->

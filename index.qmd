@@ -3,11 +3,9 @@ title: "Relatórios reprodutíveis com R"
 ---
 
 ::: callout-warning
-
 ## Atenção!
 
 **Curso iniciado.** Para turmas futuras, acompanhe no site do [Programa de Verão IME-USP](https://www.ime.usp.br/verao/index.php/turmas/apresentacao.php).
-
 :::
 
 ## Sobre o curso

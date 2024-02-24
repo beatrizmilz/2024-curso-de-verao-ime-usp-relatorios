@@ -8,7 +8,7 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.521">
+  <meta name="generator" content="quarto-1.4.549">
 
   <meta name="author" content="Ministrante: Beatriz Milz">
   <title>Relatórios reprodutíveis com R (2024) - Elementos úteis para relatórios acadêmicos</title>
@@ -411,7 +411,7 @@ Ministrante: Beatriz Milz
 </ul>
 <p><span class="math display">\[{\text{Média}=\frac {a_{1}+a_{2}+\cdots +a_{n}}{n}}\]</span></p>
 <p><strong>Código Markdown:</strong></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a>$${\text{Média}=\frac {a_{1}+a_{2}+\cdots +a_{n}}{n}}$$</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a>$${\text{Média}=\frac {a_{1}+a_{2}+\cdots +a_{n}}{n}}$$</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section class="slide level2">
 <h2>Adicionar equações</h2>
@@ -422,7 +422,7 @@ Ministrante: Beatriz Milz
 <p>Ou também na linha <span class="math inline">\({\text{Média}=\frac {a_{1}+a_{2}+\cdots +a_{n}}{n}}\)</span>, junto ao texto!</p>
 </blockquote>
 <p><strong>Código Markdown:</strong></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1"></a>Ou também na linha ${\text{Média}=\frac {a_{1}+a_{2}+\cdots +a_{n}}{n}}$, junto ao texto!</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a>Ou também na linha ${\text{Média}=\frac {a_{1}+a_{2}+\cdots +a_{n}}{n}}$, junto ao texto!</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section class="slide level2">
 <h2>Adicionar referências</h2>
@@ -467,10 +467,10 @@ please cite it when using it for data analysis. See also
 <li>Podemos gerar um <code>.bib</code> com as referências de pacotes utilizados usando a função <code>knitr::write_bib()</code>:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>pacotes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"tidyverse"</span>)</span>
-<span id="cb5-2"><a href="#cb5-2"></a>knitr<span class="sc">::</span><span class="fu">write_bib</span>(pacotes, <span class="co"># pacotes para gerar a referencia</span></span>
-<span id="cb5-3"><a href="#cb5-3"></a>                 <span class="co"># local para salvar o arquivo</span></span>
-<span id="cb5-4"><a href="#cb5-4"></a>                 <span class="st">'packages.bib'</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>pacotes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"tidyverse"</span>)</span>
+<span id="cb5-2"><a></a>knitr<span class="sc">::</span><span class="fu">write_bib</span>(pacotes, <span class="co"># pacotes para gerar a referencia</span></span>
+<span id="cb5-3"><a></a>                 <span class="co"># local para salvar o arquivo</span></span>
+<span id="cb5-4"><a></a>                 <span class="st">'packages.bib'</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section class="slide level2">
@@ -572,9 +572,11 @@ please cite it when using it for data analysis. See also
 <li>Referência: <a href="https://bookdown.org/yihui/rmarkdown-cookbook/cross-ref.html" class="uri">https://bookdown.org/yihui/rmarkdown-cookbook/cross-ref.html</a></li>
 </ul>
 
-
-<img src="https://www.ime.usp.br/verao/assets/images/logo_verao.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<div class="quarto-auto-generated-content">
+<p><img src="https://www.ime.usp.br/verao/assets/images/logo_verao.png" class="slide-logo"></p>
+<div class="footer footer-default">
 <p>Slides por <a href="https://beamilz.com">Beatriz Milz</a> (<span class="citation" data-cites="BeaMilz">@BeaMilz</span>), feito com <a href="https://quarto.org/docs/presentations/revealjs/index.html">Quarto</a>. Código disponível no <a href="https://beatrizmilz.github.io/2023-curso-de-verao-ime-usp-relatorios/">GitHub</a>.</p>
+</div>
 </div>
 </section>
     </div>

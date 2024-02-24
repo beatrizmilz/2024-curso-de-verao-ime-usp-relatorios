@@ -8,7 +8,7 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.521">
+  <meta name="generator" content="quarto-1.4.549">
 
   <meta name="author" content="Ministrante: Beatriz Milz">
   <title>Relatórios reprodutíveis com R (2024) - Introdução ao Quarto</title>
@@ -432,7 +432,7 @@ Ministrante: Beatriz Milz
 <li>O Quarto é um sistema de escrita técnica e científica, de código aberto.</li>
 </ul>
 
-<img data-src="images/quarto_schematic.png" data-out.width="50%" class="r-stretch quarto-figure-center"><p class="caption">A schematic representing the multi-language input (e.g.&nbsp;Python, R, Observable, Julia) and multi-format output (e.g.&nbsp;PDF, html, Word documents, and more) versatility of Quarto</p><div class="footer">
+<img data-src="images/quarto_schematic.png" class="quarto-figure quarto-figure-center r-stretch" data-out.width="50%"><p class="caption">A schematic representing the multi-language input (e.g.&nbsp;Python, R, Observable, Julia) and multi-format output (e.g.&nbsp;PDF, html, Word documents, and more) versatility of Quarto</p><div class="footer">
 <p>Arte por <a href="https://mobile.twitter.com/allison_horst">Allison Horst</a>.</p>
 </div>
 </section>
@@ -493,27 +493,27 @@ Ministrante: Beatriz Milz
 </section>
 <section class="slide level2">
 <h2></h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">/cloud/project$</span> quarto help</span>
-<span id="cb1-2"><a href="#cb1-2"></a>  <span class="ex">Usage:</span>   quarto </span>
-<span id="cb1-3"><a href="#cb1-3"></a>  <span class="ex">Version:</span> 1.1.251</span>
-<span id="cb1-4"><a href="#cb1-4"></a>                  </span>
-<span id="cb1-5"><a href="#cb1-5"></a>  <span class="ex">Description:</span></span>
-<span id="cb1-6"><a href="#cb1-6"></a>    <span class="ex">Quarto</span> CLI</span>
-<span id="cb1-7"><a href="#cb1-7"></a>  <span class="ex">Options:</span></span>
-<span id="cb1-8"><a href="#cb1-8"></a>    <span class="ex">-h,</span> <span class="at">--help</span>     <span class="at">-</span> Show this help.                            </span>
-<span id="cb1-9"><a href="#cb1-9"></a>    <span class="ex">-V,</span> <span class="at">--version</span>  <span class="at">-</span> Show the version number for this program.  </span>
-<span id="cb1-10"><a href="#cb1-10"></a>  <span class="ex">Commands:</span></span>
-<span id="cb1-11"><a href="#cb1-11"></a>    <span class="ex">render</span>          <span class="pp">[</span><span class="ss">input</span><span class="pp">]</span> <span class="pp">[</span><span class="ss">args...</span><span class="pp">]</span>   <span class="at">-</span> Render input file<span class="er">(</span><span class="ex">s</span><span class="kw">)</span> <span class="ex">to</span> various document types.            </span>
-<span id="cb1-12"><a href="#cb1-12"></a>    <span class="ex">preview</span>         <span class="pp">[</span><span class="ss">file</span><span class="pp">]</span> <span class="pp">[</span><span class="ss">args...</span><span class="pp">]</span>    <span class="at">-</span> Render and preview a document or website project.          </span>
-<span id="cb1-13"><a href="#cb1-13"></a>    <span class="ex">serve</span>           <span class="pp">[</span><span class="ss">input</span><span class="pp">]</span>             <span class="at">-</span> Serve a Shiny interactive document.                        </span>
-<span id="cb1-14"><a href="#cb1-14"></a>    <span class="ex">create-project</span>  <span class="pp">[</span><span class="ss">dir</span><span class="pp">]</span>               <span class="at">-</span> Create a project for rendering multiple documents          </span>
-<span id="cb1-15"><a href="#cb1-15"></a>    <span class="ex">convert</span>         <span class="op">&lt;</span>input<span class="op">&gt;</span>             - Convert documents to alternate representations.            </span>
-<span id="cb1-16"><a href="#cb1-16"></a>    <span class="ex">pandoc</span>          <span class="pp">[</span><span class="ss">args...</span><span class="pp">]</span>           <span class="at">-</span> Run the version of Pandoc embedded within Quarto.          </span>
-<span id="cb1-17"><a href="#cb1-17"></a>    <span class="ex">run</span>             <span class="pp">[</span><span class="ss">script</span><span class="pp">]</span> <span class="pp">[</span><span class="ss">args...</span><span class="pp">]</span>  <span class="at">-</span> Run a TypeScript, R, Python, or Lua script.                </span>
-<span id="cb1-18"><a href="#cb1-18"></a>    <span class="fu">install</span>         <span class="op">&lt;</span>type<span class="op">&gt;</span> <span class="pp">[</span><span class="ss">target</span><span class="pp">]</span>     <span class="at">-</span> Installs an extension or global dependency.                </span>
-<span id="cb1-19"><a href="#cb1-19"></a>    <span class="ex">publish</span>         <span class="pp">[</span><span class="ss">provider</span><span class="pp">]</span> <span class="pp">[</span><span class="ss">path</span><span class="pp">]</span>   <span class="at">-</span> Publish a document or project. Available providers include:</span>
-<span id="cb1-20"><a href="#cb1-20"></a>    <span class="ex">check</span>           <span class="pp">[</span><span class="ss">target</span><span class="pp">]</span>            <span class="at">-</span> Verify correct functioning of Quarto installation.         </span>
-<span id="cb1-21"><a href="#cb1-21"></a>    <span class="bu">help</span>            <span class="pp">[</span><span class="ss">command</span><span class="pp">]</span>           <span class="at">-</span> Show this help or the help of a sub-command.               </span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a></a><span class="ex">/cloud/project$</span> quarto help</span>
+<span id="cb1-2"><a></a>  <span class="ex">Usage:</span>   quarto </span>
+<span id="cb1-3"><a></a>  <span class="ex">Version:</span> 1.1.251</span>
+<span id="cb1-4"><a></a>                  </span>
+<span id="cb1-5"><a></a>  <span class="ex">Description:</span></span>
+<span id="cb1-6"><a></a>    <span class="ex">Quarto</span> CLI</span>
+<span id="cb1-7"><a></a>  <span class="ex">Options:</span></span>
+<span id="cb1-8"><a></a>    <span class="ex">-h,</span> <span class="at">--help</span>     <span class="at">-</span> Show this help.                            </span>
+<span id="cb1-9"><a></a>    <span class="ex">-V,</span> <span class="at">--version</span>  <span class="at">-</span> Show the version number for this program.  </span>
+<span id="cb1-10"><a></a>  <span class="ex">Commands:</span></span>
+<span id="cb1-11"><a></a>    <span class="ex">render</span>          <span class="pp">[</span><span class="ss">input</span><span class="pp">]</span> <span class="pp">[</span><span class="ss">args...</span><span class="pp">]</span>   <span class="at">-</span> Render input file<span class="er">(</span><span class="ex">s</span><span class="kw">)</span> <span class="ex">to</span> various document types.            </span>
+<span id="cb1-12"><a></a>    <span class="ex">preview</span>         <span class="pp">[</span><span class="ss">file</span><span class="pp">]</span> <span class="pp">[</span><span class="ss">args...</span><span class="pp">]</span>    <span class="at">-</span> Render and preview a document or website project.          </span>
+<span id="cb1-13"><a></a>    <span class="ex">serve</span>           <span class="pp">[</span><span class="ss">input</span><span class="pp">]</span>             <span class="at">-</span> Serve a Shiny interactive document.                        </span>
+<span id="cb1-14"><a></a>    <span class="ex">create-project</span>  <span class="pp">[</span><span class="ss">dir</span><span class="pp">]</span>               <span class="at">-</span> Create a project for rendering multiple documents          </span>
+<span id="cb1-15"><a></a>    <span class="ex">convert</span>         <span class="op">&lt;</span>input<span class="op">&gt;</span>             - Convert documents to alternate representations.            </span>
+<span id="cb1-16"><a></a>    <span class="ex">pandoc</span>          <span class="pp">[</span><span class="ss">args...</span><span class="pp">]</span>           <span class="at">-</span> Run the version of Pandoc embedded within Quarto.          </span>
+<span id="cb1-17"><a></a>    <span class="ex">run</span>             <span class="pp">[</span><span class="ss">script</span><span class="pp">]</span> <span class="pp">[</span><span class="ss">args...</span><span class="pp">]</span>  <span class="at">-</span> Run a TypeScript, R, Python, or Lua script.                </span>
+<span id="cb1-18"><a></a>    <span class="fu">install</span>         <span class="op">&lt;</span>type<span class="op">&gt;</span> <span class="pp">[</span><span class="ss">target</span><span class="pp">]</span>     <span class="at">-</span> Installs an extension or global dependency.                </span>
+<span id="cb1-19"><a></a>    <span class="ex">publish</span>         <span class="pp">[</span><span class="ss">provider</span><span class="pp">]</span> <span class="pp">[</span><span class="ss">path</span><span class="pp">]</span>   <span class="at">-</span> Publish a document or project. Available providers include:</span>
+<span id="cb1-20"><a></a>    <span class="ex">check</span>           <span class="pp">[</span><span class="ss">target</span><span class="pp">]</span>            <span class="at">-</span> Verify correct functioning of Quarto installation.         </span>
+<span id="cb1-21"><a></a>    <span class="bu">help</span>            <span class="pp">[</span><span class="ss">command</span><span class="pp">]</span>           <span class="at">-</span> Show this help or the help of a sub-command.               </span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section class="slide level2">
 <h2>Como começar a usar o quarto</h2>
@@ -535,7 +535,7 @@ Ministrante: Beatriz Milz
 </ul>
 <h3>Com knitr</h3>
 <p>Caso não tenha o pacote knitr instalado, execute no console:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">install.packages</span>(<span class="st">"knitr"</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">install.packages</span>(<span class="st">"knitr"</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><br></p>
 <h3>Com jupyter</h3>
 <p>Caso não tenha o jupyter instalado, execute no terminal:</p>
@@ -563,27 +563,27 @@ Ministrante: Beatriz Milz
 </section>
 <section class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Altere o cabeçalho do arquivo!</h2>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb4-1" class="hljs-ln-code"><a href="#cb4-1"></a><span class="sc">---</span></span>
-<span id="cb4-2" class="hljs-ln-code"><a href="#cb4-2"></a>title<span class="sc">:</span> <span class="st">"Título"</span></span>
-<span id="cb4-3" class="hljs-ln-code"><a href="#cb4-3"></a>format<span class="sc">:</span> html</span>
-<span id="cb4-4" class="hljs-ln-code"><a href="#cb4-4"></a>editor<span class="sc">:</span> visual</span>
-<span id="cb4-5" class="hljs-ln-code"><a href="#cb4-5"></a><span class="sc">---</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb4-1" class="hljs-ln-code"><a></a><span class="sc">---</span></span>
+<span id="cb4-2" class="hljs-ln-code"><a></a>title<span class="sc">:</span> <span class="st">"Título"</span></span>
+<span id="cb4-3" class="hljs-ln-code"><a></a>format<span class="sc">:</span> html</span>
+<span id="cb4-4" class="hljs-ln-code"><a></a>editor<span class="sc">:</span> visual</span>
+<span id="cb4-5" class="hljs-ln-code"><a></a><span class="sc">---</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Word</h2>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb5-1" class="hljs-ln-code"><a href="#cb5-1"></a><span class="sc">---</span></span>
-<span id="cb5-2" class="hljs-ln-code"><a href="#cb5-2"></a>title<span class="sc">:</span> <span class="st">"Título"</span></span>
-<span id="cb5-3" class="hljs-ln-code"><a href="#cb5-3"></a>format<span class="sc">:</span> docx</span>
-<span id="cb5-4" class="hljs-ln-code"><a href="#cb5-4"></a>editor<span class="sc">:</span> visual</span>
-<span id="cb5-5" class="hljs-ln-code"><a href="#cb5-5"></a><span class="sc">---</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb5-1" class="hljs-ln-code"><a></a><span class="sc">---</span></span>
+<span id="cb5-2" class="hljs-ln-code"><a></a>title<span class="sc">:</span> <span class="st">"Título"</span></span>
+<span id="cb5-3" class="hljs-ln-code"><a></a>format<span class="sc">:</span> docx</span>
+<span id="cb5-4" class="hljs-ln-code"><a></a>editor<span class="sc">:</span> visual</span>
+<span id="cb5-5" class="hljs-ln-code"><a></a><span class="sc">---</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">PDF</h2>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb6-1" class="hljs-ln-code"><a href="#cb6-1"></a><span class="sc">---</span></span>
-<span id="cb6-2" class="hljs-ln-code"><a href="#cb6-2"></a>title<span class="sc">:</span> <span class="st">"Título"</span></span>
-<span id="cb6-3" class="hljs-ln-code"><a href="#cb6-3"></a>format<span class="sc">:</span> pdf</span>
-<span id="cb6-4" class="hljs-ln-code"><a href="#cb6-4"></a>editor<span class="sc">:</span> visual</span>
-<span id="cb6-5" class="hljs-ln-code"><a href="#cb6-5"></a><span class="sc">---</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb6-1" class="hljs-ln-code"><a></a><span class="sc">---</span></span>
+<span id="cb6-2" class="hljs-ln-code"><a></a>title<span class="sc">:</span> <span class="st">"Título"</span></span>
+<span id="cb6-3" class="hljs-ln-code"><a></a>format<span class="sc">:</span> pdf</span>
+<span id="cb6-4" class="hljs-ln-code"><a></a>editor<span class="sc">:</span> visual</span>
+<span id="cb6-5" class="hljs-ln-code"><a></a><span class="sc">---</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <!-- ## Apresentação {auto-animate="true"} -->
 <!-- ``` r -->
 <!-- --- -->
@@ -606,9 +606,11 @@ Ministrante: Beatriz Milz
 <!-- -   [Workshop Get Started with Quarto](https://rstudio-conf-2022.github.io/get-started-quarto/) -->
 <!-- -   [Awesome Quarto](https://github.com/mcanouil/awesome-quarto) -->
 
-
-<img src="https://www.ime.usp.br/verao/assets/images/logo_verao.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<div class="quarto-auto-generated-content">
+<p><img src="https://www.ime.usp.br/verao/assets/images/logo_verao.png" class="slide-logo"></p>
+<div class="footer footer-default">
 <p>Slides por <a href="https://beamilz.com">Beatriz Milz</a> (<span class="citation" data-cites="BeaMilz">@BeaMilz</span>), feito com <a href="https://quarto.org/docs/presentations/revealjs/index.html">Quarto</a>. Código disponível no <a href="https://beatrizmilz.github.io/2023-curso-de-verao-ime-usp-relatorios/">GitHub</a>.</p>
+</div>
 </div>
 </section></section>
     </div>
