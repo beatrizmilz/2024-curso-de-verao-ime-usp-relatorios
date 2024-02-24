@@ -105,7 +105,6 @@ contagem_especies |>
 
 ### Sugestão do Bruno
 
-
 ```{r}
 starwars |>
 dplyr::count(species, sort = T) |>
