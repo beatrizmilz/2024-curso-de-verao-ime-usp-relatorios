@@ -180,7 +180,7 @@
     "href": "slides.html",
     "title": "Slides e materiais por aula",
     "section": "",
-    "text": "O que é o R?\nO que é o RStudio?\nVersões gratuitas do RStudio\n\n\n\n\nIntrodução ao Curso\nIntrodução ao Quarto\nIntrodução ao conceito de reprodutibilidade\nElementos úteis para relatórios acadêmicos\nFeedbacks - Trabalho final",
+    "text": "O que é o R?\nO que é o RStudio?\nVersões gratuitas do RStudio\nO que é o tidyverse?",
     "crumbs": [
       "Materias",
       "Slides e materiais por aula"
@@ -191,7 +191,29 @@
     "href": "slides.html#revisão-de-conceitos-úteis",
     "title": "Slides e materiais por aula",
     "section": "",
-    "text": "O que é o R?\nO que é o RStudio?\nVersões gratuitas do RStudio\n\n\n\n\nIntrodução ao Curso\nIntrodução ao Quarto\nIntrodução ao conceito de reprodutibilidade\nElementos úteis para relatórios acadêmicos\nFeedbacks - Trabalho final",
+    "text": "O que é o R?\nO que é o RStudio?\nVersões gratuitas do RStudio\nO que é o tidyverse?",
+    "crumbs": [
+      "Materias",
+      "Slides e materiais por aula"
+    ]
+  },
+  {
+    "objectID": "slides.html#códigos",
+    "href": "slides.html#códigos",
+    "title": "Slides e materiais por aula",
+    "section": "Códigos",
+    "text": "Códigos\n\nBaixe o repositório do GitHub",
+    "crumbs": [
+      "Materias",
+      "Slides e materiais por aula"
+    ]
+  },
+  {
+    "objectID": "slides.html#slides",
+    "href": "slides.html#slides",
+    "title": "Slides e materiais por aula",
+    "section": "Slides",
+    "text": "Slides\n\nIntrodução ao Curso\nIntrodução ao Quarto\nIntrodução ao conceito de reprodutibilidade\nElementos úteis para relatórios acadêmicos\nFeedbacks - Trabalho final",
     "crumbs": [
       "Materias",
       "Slides e materiais por aula"

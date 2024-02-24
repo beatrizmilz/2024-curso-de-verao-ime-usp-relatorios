@@ -12,8 +12,11 @@ title: "Slides e materiais por aula"
 
 - [O que é o tidyverse?](https://www.instagram.com/p/C2fQI7FrlC2/?img_index=1)
 
+## Códigos
 
-### Slides
+- [Baixe o repositório do GitHub](https://github.com/beatrizmilz/2024-curso-de-verao-ime-usp-relatorios/archive/refs/heads/main.zip) 
+
+## Slides
 
 -   [Introdução ao Curso](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/01-intro-curso.html)
 
