@@ -142,24 +142,21 @@ lang: pt
 
 ## Centralizar imagens
 
--  Utilize o argumento `fig-align: center` para centralizar as imagens geradas em chunks.
+-   Utilize o argumento `fig-align: center` para centralizar as imagens geradas em chunks.
 
-- Em caso de imagens geradas via código markdown, utilize o argumento `fig-align="center"`.
+-   Em caso de imagens geradas via código markdown, utilize o argumento `fig-align="center"`.
 
-```
+```         
 ![](img-feedback/escala-naruto.jpg){fig-align="center"}
 ```
 
-- Caso, mesmo assim, a imagem não esteja centralizada, utilize a "força bruta" e centralize com HTML:
+-   Caso, mesmo assim, a imagem não esteja centralizada, utilize a "força bruta" e centralize com HTML:
 
-```
+```         
 <center>
   ....
 </center>
 ```
-
-
-
 
 ## Não apresentar tabelas como output do R
 
@@ -234,31 +231,27 @@ file =  "feedback-packages.bib")
 
 [![](img-feedback/documentacao-quarto.png){fig-align="center"}](https://quarto.org/docs/guide/)
 
-
 # Fechamento do curso
 
 ## Próximos passos
 
-- Aula extra sobre Git e GitHub (opcional): 06/03. O acesso é igual às aulas comuns (através da plataforma).
+-   Aula extra sobre Git e GitHub (opcional): 06/03. O acesso é igual às aulas comuns (através da plataforma).
 
-- Irei enviar para a secretaria do IME as notas para receberem o certificado. Em breve vocês devem receber um retorno.
+-   Irei enviar para a secretaria do IME as notas para receberem o certificado. Em breve vocês devem receber um retorno.
 
-- Amanhã irei atualizar o repositório do curso com os materiais completos.
+-   Amanhã irei atualizar o repositório do curso com os materiais completos.
 
 ## Recebimento de certificado
 
 Para receber o certificado, é necessário:
 
-- Presença nas aulas  (regra USP: mínimo 75% de presença, ou seja, ter participado de pelo menos 4 das 5 aulas)
+-   Presença nas aulas (regra USP: mínimo 75% de presença, ou seja, ter participado de pelo menos 4 das 5 aulas)
 
-- Entrega do trabalho final (quem entregou recebeu a pontuação máxima)
+-   Entrega do trabalho final (quem entregou recebeu a pontuação máxima)
 
-- Formulário pós-curso - 1 ponto extra! (precisa se identificar no formulário para contar)
-
-
+-   Formulário pós-curso - 1 ponto extra! (precisa se identificar no formulário para contar)
 
 <!-- Pontos extras ajudam pessoas que tiveram 3 presenças e entregaram o trabalho final.  -->
-
 
 # Feedback do curso
 
@@ -268,10 +261,10 @@ Para receber o certificado, é necessário:
 
 # Agradeço a participação de todas e todos!
 
-- Blog: <https://beamilz.com/>
+-   Blog: <https://beamilz.com/>
 
-- Instagram: <https://www.instagram.com/dadoseambiente>
+-   Instagram: <https://www.instagram.com/dadoseambiente>
 
-- Linkedin: <https://www.linkedin.com/in/beatrizmilz/>
+-   Linkedin: <https://www.linkedin.com/in/beatrizmilz/>
 
 ## Referências citadas nos slides

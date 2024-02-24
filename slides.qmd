@@ -59,21 +59,17 @@ criar_tabela_links_extras <- function(links_extras) {
 
 -   [Introdução ao conceito de reprodutibilidade](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/03-reprodutibilidade.html)
 
-
 <!-- ### Scripts/anotações -->
 
 <!-- -   [aula-2.R](https://github.com/beatrizmilz/2024-curso-de-verao-ime-usp-relatorios/blob/main/pratica/aula-2.R) - anotações. -->
 
 <!-- -   [Pasta com arquivos da aula 2](https://github.com/beatrizmilz/2024-curso-de-verao-ime-usp-relatorios/blob/main/pratica/aula-2/) - experimentando algumas funcionalidades de relatório. -->
 
-
 ## Aula 3
 
 ### Slides
 
 -   [Elementos úteis para relatórios acadêmicos](https://beatrizmilz.github.io/2024-curso-de-verao-ime-usp-relatorios/slides/04-elementos-acad.html)
-
-
 
 <!-- ### Scripts/anotações -->
 

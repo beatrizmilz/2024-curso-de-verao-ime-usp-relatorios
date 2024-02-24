@@ -1,0 +1,40 @@
+---
+title: "Untitled"
+engine: knitr
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla imperdiet tellus at pulvinar placerat. Praesent vitae elit interdum, lacinia odio in, efficitur enim. In id leo mattis, maximus ipsum id, placerat justo. Sed dignissim ante ligula, sed fermentum enim imperdiet sed. Vestibulum maximus lacus eget vulputate placerat. Vestibulum eleifend, augue a hendrerit feugiat, justo felis viverra dui, eget sodales urna elit eget magna. Nam enim arcu, dignissim quis mauris id, rhoncus lobortis mi. Integer blandit justo sed mi sollicitudin, vitae auctor augue scelerisque. In lacinia nisl tortor, et egestas nunc semper vitae. Maecenas ut dui placerat, tincidunt dui hendrerit, posuere nibh. Integer semper quam et finibus mollis.
+
+<center>Praesent odio arcu, fermentum eu nisl lobortis, iaculis mollis tortor. Nunc bibendum velit nec quam malesuada auctor. Aliquam fermentum eu massa non venenatis. Phasellus dui nisi, vulputate ac arcu et, convallis pellentesque ipsum. Nulla magna ipsum, accumsan quis lacus nec, tempor tincidunt magna. Nullam vel arcu pulvinar, sagittis orci non, placerat risus. Nullam lacinia tempus mauris. Vestibulum aliquet elit non vehicula molestie. Cras ultrices rutrum diam, posuere cursus lorem ultricies nec. Cras sed lacinia turpis. Sed sapien dolor, interdum non volutpat vel, placerat bibendum nibh. Praesent interdum felis vitae malesuada bibendum. Curabitur dapibus erat vitae nisi vehicula ullamcorper. Donec luctus semper turpis. Suspendisse hendrerit eget quam eget mollis. Quisque dapibus dui a velit vestibulum, non dapibus enim rutrum.</center>
+
+![](../slides/img-feedback/formulario-feedback.png){fig-align="center" width="50%"}
+
+Nam orci velit, consectetur sit amet tempus non, cursus quis orci. Sed viverra ac risus eu facilisis. Fusce dui augue, aliquam sit amet lacus vitae, efficitur finibus sem. Ut ultricies facilisis cursus. Vivamus ac est tincidunt, mollis dolor ut, blandit erat. Maecenas pellentesque lobortis tortor, in aliquet felis luctus non. Donec mattis, sem a sagittis ullamcorper, ex libero auctor lorem, a pulvinar felis dui a metus. Nunc at tincidunt urna, vel elementum lacus. Proin lectus augue, ultrices sit amet diam nec, sodales venenatis leo. Mauris vestibulum nec odio eget dictum. Fusce rutrum elit velit, sed sollicitudin sapien tincidunt vulputate. Sed interdum vulputate lorem, quis scelerisque augue semper commodo.
+
+Curabitur gravida rhoncus eros nec consectetur. Morbi mi ante, rutrum ac volutpat et, varius ac sapien. Curabitur eros est, elementum at interdum ut, porta et lorem. Nam pharetra nisi sit amet sagittis tempor. Aenean sodales lacus sed quam rutrum, eleifend mattis tellus commodo. Integer bibendum, enim a hendrerit tincidunt, lacus nisi egestas sem, vulputate eleifend nunc libero quis leo. Integer eu lacus et magna tempor scelerisque id non urna.
+
+```{r}
+mtcars |> 
+  dplyr::count(gear)
+```
+
+```{r}
+mtcars |> 
+  dplyr::count(gear) |> 
+  knitr::kable()
+```
+
+```{r}
+mtcars |> 
+  dplyr::count(gear) |> 
+  flextable::flextable()
+```
+
+
+Ut tempus molestie tincidunt. Vivamus quis orci arcu. Morbi eu massa in massa convallis efficitur. Nulla facilisi. Donec ut ultricies neque, et volutpat orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris consectetur sem ac ultricies accumsan. Suspendisse id lectus gravida quam dictum tincidunt at a est. Phasellus nec rhoncus tortor. Nam aliquet ac eros a viverra. Morbi molestie augue eget scelerisque dapibus. Sed gravida nec magna at convallis. Donec orci risus, interdum et odio ut, finibus finibus odio. Aliquam quis pharetra nisl.
+
+```{css}
+p {
+  text-align: justify;
+}
+```
